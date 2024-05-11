@@ -665,7 +665,7 @@ h2 {
 .wrapp_service 
  .service-desc {
     background: #ffaf002b;
-    padding: 80px 50px;
+    padding: 50px;   /* change padding */
     border-top-left-radius: 60px;
     border-bottom-right-radius: 60px;
 }
@@ -681,13 +681,14 @@ h2 {
 .wrapp_service .service-desc ul li {
     font-size: 17px;
     margin-bottom: 10px;
-    width: 50%;
+    width: 100%;   /*change to 50 to 100 cause each list will take full width */
 }
 
 .overview-image img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
+    mix-blend-mode: multiply;
 }
 
 @media(max-width:576px)
@@ -1767,35 +1768,3 @@ font-size: 17px;
   # carrer page end
   
   --------------------------------------------------------------*/
-
-  /* map css */
-  .embed-responsive-16by9 {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-  }
-  
-  .embed-responsive-16by9 iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  /* --------------contact page icon style---------------------------- */
-  .contact-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.8em;
-    border: 0.5px solid var(--sub-text-color);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.1s ease-in-out;
-  }
-  .contact-icons:hover{
-    color: #ffffff;
-    background-color: var(--primary-bg);
-    border-color: var(--primary-bg);
-  }
