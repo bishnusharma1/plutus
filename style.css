@@ -56,10 +56,14 @@ a {
 
 }
 p{
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
     color: RGB(49, 49, 49);
 }
+p, li, span {
+    text-align: justify;
+}
+
 /* img{
     width: 100%;
     height: 100%;
@@ -67,6 +71,19 @@ p{
     max-height: 100%;
     margin: auto;
 } */
+
+.swiper-container-hero {
+    position: relative;
+}
+
+.swiper-container-hero .overlay-text {
+    right: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .hero-section {
     overflow: hidden;
     margin-top: 76px;
@@ -74,6 +91,7 @@ p{
     max-width: 1920px;
     height: calc(80vh - 76px) !important;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -84,7 +102,7 @@ p{
     background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
 }
 .overlay-text {
-    z-index: 9;
+    z-index: 2;
     position: relative;
     max-width: 800px;
 }
@@ -104,7 +122,7 @@ p{
 @media screen and (max-width: 768px) {
     .hero-section{
         height: 50px;
-        margin-top: 5.5em;
+        margin-top: 3.3em;
         border-radius: 0;
       height: calc(60vh - 76px) !important;
     }
@@ -120,6 +138,7 @@ p{
 }
 .text-color {
     color: #fff;
+        text-align: center;
 }
 
 button {
@@ -232,8 +251,9 @@ section {
 }
 
 .common-text {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
+    text-align: center;
 }
 
 h2 {
@@ -332,6 +352,7 @@ h2 {
 .why_choose .had_chose p {
     margin: 17px 0px 0px;
     text-shadow: 0 0 black;
+    text-align: center;
 }
 
 .why_choose .question-container h2.accordion-header {
@@ -363,8 +384,11 @@ h2 {
 
 .review {
     margin-left: 1.5em;
-    padding: 3.5em;
+    padding: 40px 0px;
     border-radius: 2em;
+}
+.review .swiper-slide {
+    padding: 0px 20px;
 }
 
 .review-content .title-r {
@@ -384,7 +408,7 @@ h2 {
     }
 
     .review {
-        padding: 1.2em;
+         padding: 20px 0px;
 
     }
 
@@ -435,7 +459,7 @@ h2 {
 .page-title-area {
     position: relative;
     z-index: 1;
-    background-image: url(assets/compressed/page-title-bg.webp);
+    background-image: url(assets/page-title-bg.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -513,6 +537,9 @@ h2 {
 .counter-area h2 {
     margin-bottom: 15px;
 }
+.counter-area .counter-contents p {
+    text-align: center;
+}
 
 .counter-area .counter-contents {
     max-width: 1000px;
@@ -521,7 +548,7 @@ h2 {
 
 .about-section {
     background: #FFF;
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .about-section .about-content h2 {
@@ -535,8 +562,8 @@ h2 {
 }
 
 .about-section .about-content p {
-    margin: 0;
-    font-size: 15px;
+    margin: 0px 0px 10px 0px;
+    font-size: 17px;
     line-height: 1.7em;
 }
 
@@ -567,9 +594,47 @@ h2 {
 /***about us page css end***/
 
 
+/***about us page team css start***/
+
+.main_tea_leader .head_teamm_title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.main_tea_leader .head_teamm_title p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.7em;
+}
+
+.main_tea_leader .card.border-primary {
+    border-color: #caaf6c !important;
+    height: 100%;
+}
+.main_tea_leader {
+    padding: 4em 2em 4em;
+}
+
+.fludi_wrap {
+    position: relative;
+}
+
+.fludi_wrap:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+/***about us page team css end***/
+
 /****service***/
 .item-bg2 {
-    background-image: url(assets/compressed/page-title-bg-2.webp);
+    background-image: url(assets/page-title-bg-2.jpg);
 }
 
 .overview-section {
@@ -665,7 +730,7 @@ h2 {
 .wrapp_service 
  .service-desc {
     background: #ffaf002b;
-    padding: 50px;   /* change padding */
+    padding: 50px;
     border-top-left-radius: 60px;
     border-bottom-right-radius: 60px;
 }
@@ -681,7 +746,7 @@ h2 {
 .wrapp_service .service-desc ul li {
     font-size: 17px;
     margin-bottom: 10px;
-    width: 100%;   /*change to 50 to 100 cause each list will take full width */
+    width: 100%;
 }
 
 .overview-image img {
@@ -1036,7 +1101,7 @@ padding: 0em;
     gap: 0.5em;
 }
 .blog-card .time-blog p{
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text-grey);
 }
 .blog-bottom .link-blog{
@@ -1085,6 +1150,44 @@ font-size: 17px;
     margin-bottom: 1.5em;
 }
 
+
+/*****contact us css start*****/
+.wroap_coint .inncontact img {
+    max-width: 100%;
+    display: block;
+}
+
+.shadow_inncontact {
+    background: #FFF;
+    animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+/*****contact us css end*****/
 
 /***cookie pop css start****/
 .onetrust-consent-sdk {
@@ -1165,6 +1268,7 @@ font-size: 17px;
     letter-spacing: 0.5px;
     color: #FFFFFF;
     margin: 0 30px 10px 30px;
+    text-align: justify;
 }
 
 #onetrust-consent-sdk #onetrust-button-group-parent {
@@ -1408,7 +1512,7 @@ font-size: 17px;
   }
   
   .main_about .about_content p {
-    font-size: 16px;
+    font-size: 17px;
     text-align: justify;
     color: #393939;
     margin-bottom: 30px;
@@ -1734,6 +1838,11 @@ font-size: 17px;
     margin-top: 30px;
   }
   
+  .card-body figcaption p.text-secondary {
+    font-size: 16px;
+    text-align: left;
+}
+
   @media(max-width:767px)
   {
     .carrer_options .car_title {
@@ -1763,8 +1872,12 @@ font-size: 17px;
   .carrer_hero {
     margin-top: 60.6px;
 }
+
+.swiper-container-hero {
+    padding: 0;
+}
+
   }
   /*--------------------------------------------------------------
   # carrer page end
-  
   --------------------------------------------------------------*/
