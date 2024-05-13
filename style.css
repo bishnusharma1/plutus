@@ -242,7 +242,7 @@ section {
 }
 
 .active-image {
-    background-image: url('assets/bgtax.png');
+    background-image: url('assets/bgtax.webp');
     background-size: cover;
 }
 
@@ -459,7 +459,7 @@ h2 {
 .page-title-area {
     position: relative;
     z-index: 1;
-    background-image: url(assets/page-title-bg.jpg);
+    background-image: url(assets/page-title-bg.webp);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -634,7 +634,7 @@ h2 {
 
 /****service***/
 .item-bg2 {
-    background-image: url(assets/page-title-bg-2.jpg);
+    background-image: url(assets/page-title-bg-2.webp);
 }
 
 .overview-section {
@@ -1000,7 +1000,7 @@ svg{
 }
 
 .middle-about{
-    background-image: url('assets/about.png');
+    background-image: url('assets/about.webp');
     background-size: cover;
     height: 80%;
 }
@@ -1881,3 +1881,326 @@ font-size: 17px;
   /*--------------------------------------------------------------
   # carrer page end
   --------------------------------------------------------------*/
+
+  
+  /******Apply job coan pop css start*****/
+
+.btn_command {
+    background: #E6EBF6 !important;
+    color: #7E7E7E;
+    border: 0;
+    display: flex;
+    align-items: center;
+    padding: 7px 15px;
+}
+
+.drop_coman_file .modal-content {
+    padding: 30px;
+    outline: 2px dashed #D2DBE5;
+    outline-offset: -20px;
+    border-radius: 10px;
+}
+.drop_coman_file .modal-content .modal-header {
+    border: 0;
+    padding: 0;
+}
+.drop_coman_file .modal-content .modal-header button.close {
+    border: 0;
+    width: 22px;
+    height: 22px;
+    opacity: 0.5;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    position: relative;
+}
+.drop_coman_file .modal-header button.close span svg {
+    width: 100%;
+    height: 100%;
+}
+.drop_coman_file .modal-content .modal-body {
+    padding: 0;
+}
+.drop_coman_file .modal-content .modal-body h3 {
+    display: none;
+}
+.drop_coman_file .modal-content .modal-body form.upload-form {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.drop_coman_file .modal-content .modal-body .file-area {
+    border: 0;
+    width:100%;
+    padding: 0;
+    min-height: unset;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    outline-offset: -2px;
+}
+.drop_coman_file .modal-content .modal-body span.basic-file {
+    display: none;
+}
+.drop_coman_file button.btn {
+    background: #E6EBF6 !important;
+    color: #7E7E7E;
+    border: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    margin: 0;
+}
+
+.drop_coman_file .file-area input[type=file] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+.drop_coman_file .modal-content .modal-body .file-area .file-dummy {
+    background: transparent;
+    border: 0;
+    width: 100%;
+    padding: 30px;
+    padding-top: 10px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.drop_coman_file .file-dummy .default {
+    font-weight: 600;
+    color: #9f9f9f;
+    font-size: 16px;
+}
+.drop_coman_file .modal-content .modal-body .file-dummy .upload_icon {
+    margin: 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+}
+.drop_coman_file .file-area .upload_icon svg {
+    position: relative;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    top: unset;
+    fill: #9f9f9f;
+}
+.drop_coman_file .success {
+    display: none;
+}
+.drop_coman_file .file-dummy .default .fille {
+    border-bottom: 1px solid #9f9f9f;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+.dark-only .drop_coman_file .modal-header button.close svg {
+    filter: invert(1);
+}
+.dark-only .drop_coman_file button.btn {
+    background: linear-gradient(100.13deg, #81ACFF 14.53%, #5790FF 72.91%) !important;
+    color: #FFF;
+}
+/* / have title / */
+.drop_coman_file.have_title .modal-header {
+    justify-content: center;
+}
+
+
+.drop_coman_file.have_title .modal-header .modal-title {
+    font-size: 20px;
+    font-weight: 600 !important;
+    letter-spacing: 0;
+    padding: 0px 0px 20px;
+    line-height: normal;
+}
+
+.drop_coman_file.have_title .modal-header button.close {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    width: 16px;
+    height: 17px;
+    opacity: 1;
+}
+.drop_coman_file.have_title .modal-content {
+    outline: none !important;
+    outline-offset: 0;
+}
+
+.drop_coman_file.have_title .modal-content.green-outline .file-area {
+    outline: green dashed 2px;
+}
+
+.drop_coman_file.have_title .modal-content .file-area {
+    outline: 2px dashed #D2DBE5;
+}
+.drop_coman_file.have_title .modal-content .modal-body form.upload-form {
+    display: block;
+}
+
+.drop_coman_file.have_title .modal-content .gropu_form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 0px 10px;
+}
+
+.drop_coman_file.have_title .modal-content .gropu_form label {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    flex: 1;
+    text-align: left;
+}
+.drop_coman_file.have_title .modal-content .gropu_form.test-areaa {
+    display: block;
+    text-align: left;
+}
+
+.drop_coman_file.have_title .modal-content .gropu_form.test-areaa textarea {
+    border: 1px solid #D9D9D9;
+    flex: 1;
+    padding: 5px 5px;
+    color: #ABABAB;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    margin: 10px 0px 10px;
+    width: 100%;
+    min-height: 100px;
+}
+
+.drop_coman_file.have_title .modal-content .select_group .gropu_form {
+    display: block;
+    text-align: left;
+}
+
+.drop_coman_file.have_title .modal-content .select_group .gropu_form select {
+    width: 100%;
+}
+
+.drop_coman_file.have_title .modal-content .gropu_form .search_nt {
+    position: relative;
+}
+
+.drop_coman_file.have_title .modal-content .gropu_form .search_nt .svg_srch {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.drop_coman_file.have_title .modal-content .gropu_form .search_nt input {
+    min-width: 200px;
+    padding: 5px 5px 5px 33px;
+}
+.drop_coman_file.have_title .modal-content .gropu_form.ivoice-upload .file-area {
+    width: 100%;
+    flex: 2 !important;
+}
+
+.drop_coman_file.have_title .modal-content .gropu_form.ivoice-upload .file-area .file-dummy {
+    padding: 20px 0px 20px;
+}
+
+.drop_coman_file.have_title .modal-content .gropu_form.ivoice-upload  .selected-file {
+    padding: 47px 0px 0px;
+    font-size: 13px;
+}
+
+
+.drop_coman_file.have_title .modal-content .gropu_form.ivoice-upload .file-area .default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.drop_coman_file.have_title .modal-content .gropu_form.ivoice-upload .file-area .default .upload_icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.drop_coman_file.have_title .modal-content .gropu_form .input_year {
+    display: flex;
+    align-items: center;
+    gap: 0px 6px;
+}
+
+.drop_coman_file.have_title .modal-content .gropu_form input, .drop_coman_file.have_title .modal-content .gropu_form select, .drop_coman_file.have_title .modal-content .gropu_form textarea {
+    border: 1px solid #D9D9D9;
+    min-width: 120px;
+    flex: 2;
+    padding: 5px 5px;
+    color: #646464;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
+.drop_coman_file.have_title .modal-content .gropu_form input::placeholder {
+    color: #646464;
+}
+
+.drop_coman_file.have_title .modal-content .root_btn {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px 0px;
+}
+
+.drop_coman_file.have_title .modal-content .root_btn button {
+    background: #cbaf66 !important;
+    color: #FFF;
+    border-radius: 10px !important;
+    padding: 9px 30px;
+}
+
+.drop_coman_file.have_title .modal-content .file-area svg {
+    width: 30px;
+    height: 30px;
+}
+
+.drop_coman_file.have_title .modal-content .file-area .upload_icon {
+    margin: 10px 0px 10px;
+}
+
+.selected-file {
+    position: absolute;
+    color: green;
+    padding: 85px 0 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.flag_cnty {
+    flex: 2;
+}
+
+.flag_cnty .iti {
+    width: 100%;
+}
+
+.flag_cnty .iti input {
+    width: 100%;
+    padding-left: 45px !IMPORTANT;
+}
+
+/******Apply job coan pop css end*****/

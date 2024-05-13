@@ -24,7 +24,7 @@
   <nav class="navbar fixed-top z-3 navbar-expand-lg " style="background:var(--bg-box-color)">
     <div class="container col-lg-6">
       <a href="index.html" class="navbar-brand" href="#" style="max-width: 60%;margin-right:3.5em">
-        <img src="assets/logo-1@2x.png" alt="" style="width: 120px;">
+        <img src="assets/logo.webp" alt="" style="width: 120px;">
       </a>
 
       <button class="navbar-toggler" style="background-color: #fff;" type="button" data-bs-toggle="collapse"
@@ -49,7 +49,7 @@
             <a href="aboutUs.html" class="nav-link " href="#" style="color: #fff;">About us</a>
           </li>
           <li class="nav-item">
-            <a href="services.html" class="nav-link " href="#" style="color: #fff;">Services</a>
+            <a href="accounting-and-assurance.html" class="nav-link " href="#" style="color: #fff;">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://plutusco.com/blogs/" style="color: #fff;">Our Blogs</a>
@@ -83,8 +83,8 @@
   <section id="carrer_hero" class="carrer_hero" data-aos="fade-down" data-aos-delay="100">
 
     <div class="career_hero_image">
-    <img class="desk-show" src="assets/carrer-hero.png" alt="img">
-    <img class="mbl-show" src="assets/carrer-hero-mbl.png" alt="img" style="display: none;">
+    <img class="desk-show" src="assets/carrer-hero.webp" alt="img">
+    <img class="mbl-show" src="assets/carrer-hero-mbl.webp" alt="img" style="display: none;">
     <div class="hero_text" data-aos="fade-down" data-aos-delay="400">
         <h2>Where Passion Meets Purpose, and Every Voice Shapes Tomorrow</h2>
     </div>
@@ -114,8 +114,8 @@
     <div class="opp_select">
         <select id="post_division" name="options">
             <option value="All">All</option>
-              <option value="Engineering">Engineering</option>
-              <option value="Design">Developer</option>
+              <!-- <option value="Engineering">Engineering</option>
+              <option value="Design">Developer</option> -->
             </select>
     </div>
                 </div>
@@ -138,95 +138,75 @@
                     </div>
     
                     <div class="col-sm-8">
-    <div class="car_repet_nt">
-    
-        <div class="inner_car_repet" data-aos="fade-up" data-aos-delay="100">
-            <div class="top_car_nt">
-                <h2>Software QA Engineer</h2>
-                <span><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="3" cy="3" r="3" fill="#707070"/>
-                    </svg>
-                     Engineering</span>
-            </div>
-            <div class="middle_car_nt">
-    <p>Milliondox seeks a talented Software QA Engineer - II-1 (Manual Testing) to join our vibrant team, igniting a fulfilling career path filled with growth and accomplishment. Join us on our journey of innovation and excellence.</p>
-            </div>
-            <div class="bottom_car_nt">
-    <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_498_86)">
-        <path d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4ZM12 6C12.2449 6.00003 12.4813 6.08996 12.6644 6.25271C12.8474 6.41547 12.9643 6.63975 12.993 6.883L13 7V11.586L15.707 14.293C15.8863 14.473 15.9905 14.7144 15.9982 14.9684C16.006 15.2223 15.9168 15.4697 15.7487 15.6603C15.5807 15.8508 15.3464 15.9703 15.0935 15.9944C14.8406 16.0185 14.588 15.9454 14.387 15.79L14.293 15.707L11.293 12.707C11.1376 12.5514 11.0378 12.349 11.009 12.131L11 12V7C11 6.73478 11.1054 6.48043 11.2929 6.29289C11.4804 6.10536 11.7348 6 12 6Z" fill="#9D9D9D"/>
-        </g>
-        <defs>
-        <clipPath id="clip0_498_86">
-        <rect width="24" height="24" fill="white"/>
-        </clipPath>
-        </defs>
-        </svg>Full-time</span>
-        <a href="#">APPLY NOW
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black"/>
-                </svg>
-        </a>
-            </div>
-        </div>
-    
-    </div>
+                      <?php
+// URL of the PHP script on your GoDaddy server
+$url = 'https://milliondox.com/fetch_data.php';
+
+// Initialize cURL session
+$curl = curl_init();
+
+// Set the cURL options
+curl_setopt_array($curl, array(
+    CURLOPT_URL => $url,
+    CURLOPT_RETURNTRANSFER => true,
+));
+
+// Execute the cURL request and store the response
+$response = curl_exec($curl);
+
+// Check for errors
+if ($response === false) {
+    echo 'Error: ' . curl_error($curl);
+} else {
+    // Process the response (e.g., decode JSON)
+    $data = json_decode($response, true);
+    // Output the fetched data (example)
+    foreach ($data as $row) {
+        echo "<div class='car_repet_nt'>";
+        echo "<div class='inner_car_repet' data-aos='fade-up' data-aos-delay='100'>";
+        echo "<div class='top_car_nt'>";
+        echo "<h2>" . $row["jobname"] . "</h2>";
+        echo "<span><svg width='6' height='6' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'>";
+        echo "<circle cx='3' cy='3' r='3' fill='#707070'/>";
+        echo "</svg>" . $row["category"] . "</span>";
+        echo "</div>";
+        echo "<div class='middle_car_nt'>";
+        echo "<p>" . $row["jobdescription"] . "</p>";
+        echo "</div>";
+        echo "<div class='bottom_car_nt'>";
+        echo "<span><svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>";
+        echo "<g clip-path='url(#clip0_498_86)'>";
+        echo "<path d='M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4ZM12 6C12.2449 6.00003 12.4813 6.08996 12.6644 6.25271C12.8474 6.41547 12.9643 6.63975 12.993 6.883L13 7V11.586L15.707 14.293C15.8863 14.473 15.9905 14.7144 15.9982 14.9684C16.006 15.2223 15.9168 15.4697 15.7487 15.6603C15.5807 15.8508 15.3464 15.9703 15.0935 15.9944C14.8406 16.0185 14.588 15.9454 14.387 15.79L14.293 15.707L11.293 12.707C11.1376 12.5514 11.0378 12.349 11.009 12.131L11 12V7C11 6.73478 11.1054 6.48043 11.2929 6.29289C11.4804 6.10536 11.7348 6 12 6Z' fill='#9D9D9D'/>";
+        echo "</g>";
+        echo "<defs>";
+        echo "<clipPath id='clip0_498_86'>";
+        echo "<rect width='24' height='24' fill='white'/>";
+        echo "</clipPath>";
+        echo "</defs>";
+        echo "</svg>Full-time</span>";
+        echo "<a data-bs-toggle='modal' data-bs-target='#apply_job'>APPLY NOW";
+        echo "<svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>";
+        echo "<path d='M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z' fill='black'/>";
+        echo "</svg>";
+        echo "</a>";
+        echo "</div>";
+        echo "</div>";
+        echo "</div>";
+    }
+}
+
+// Close cURL session
+curl_close($curl);
+?>
+
+
                     </div>
                     </div>
                     </div>
                 </div>
                     <!-- ======= Engineering End ======= -->
     
-                                  <!-- ======= Design Start ======= -->
-    <div id="Design" class="Design">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-    <div class="car_title" data-aos="fade-up" data-aos-delay="400">
-        <h2>Developer</h2>
-    </div>
-                    </div>
-    
-                    <div class="col-sm-8">
-    <div class="car_repet_nt">
-    
-        <div class="inner_car_repet" data-aos="fade-up" data-aos-delay="400">
-            <div class="top_car_nt">
-                <h2>Senior PHP Developer</h2>
-                <span><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="3" cy="3" r="3" fill="#707070"/>
-                    </svg>
-                    Developer</span>
-            </div>
-            <div class="middle_car_nt">
-    <p>Join our innovative team at Milliondox as a Senior PHP Developer and pave the way for cutting-edge solutions in web development. Take your career to new heights with exciting challenges and endless opportunities for growth.</p>
-            </div>
-            <div class="bottom_car_nt">
-    <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_498_86)">
-        <path d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4ZM12 6C12.2449 6.00003 12.4813 6.08996 12.6644 6.25271C12.8474 6.41547 12.9643 6.63975 12.993 6.883L13 7V11.586L15.707 14.293C15.8863 14.473 15.9905 14.7144 15.9982 14.9684C16.006 15.2223 15.9168 15.4697 15.7487 15.6603C15.5807 15.8508 15.3464 15.9703 15.0935 15.9944C14.8406 16.0185 14.588 15.9454 14.387 15.79L14.293 15.707L11.293 12.707C11.1376 12.5514 11.0378 12.349 11.009 12.131L11 12V7C11 6.73478 11.1054 6.48043 11.2929 6.29289C11.4804 6.10536 11.7348 6 12 6Z" fill="#9D9D9D"/>
-        </g>
-        <defs>
-        <clipPath id="clip0_498_86">
-        <rect width="24" height="24" fill="white"/>
-        </clipPath>
-        </defs>
-        </svg>Full-time</span>
-        <a href="#">APPLY NOW
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="black"/>
-                </svg>
-        </a>
-            </div>
-        </div>
-    
-    
-    </div>
-                    </div>
-                    </div>
-                    </div>
-                </div>
-                    <!-- ======= Design End ======= -->
+                                
     
                     </section>  <!-- ======= carrer_options Section ======= -->
 
@@ -236,7 +216,7 @@
     <div class="d-flex flex-wrap gap-5 justify-content-evenly footer-head">
       <div class="d-flex flex-column gap-2">
         <div class="f-logo">
-          <img src="assets/logo-1@2x.png" alt="">
+          <img src="assets/logo.webp" alt="">
         </div>
         <h4 style="font-size: 14px;color:#727375">info@plutusco.com</h4>
         <div class="icon d-flex justify-content-center align-items-center">
@@ -273,7 +253,7 @@
         <li><a href="refund-policy.html">Refund Policy</a></li>
         <li><a href="termandcondition.html">Terms & Conditions</a></li>
         <li><a href="cookie.html">Cookie Policy</a></li>
-        <li><a class="active" href="career.html">Career</a></li>
+        <li><a class="active" href="career.php">Career</a></li>
       </ul>
       </div>
     <div class="footer-end">
