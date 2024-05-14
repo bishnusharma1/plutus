@@ -2356,7 +2356,19 @@ a {
 
 /* --------service end-------*/
 /* --------------------dropdown --------------*/
+.dropdown-toggle{
+    color: #ffffff;
+}
 
+.dropdown-menu li a{
+   color: #ffffff;
+   transition: 0.2s ease-in-out;
+}
+.dropdown-menu li a:hover{
+    background: none;
+    color: #ffaf00;
+    transform: translateX(5px);
+}
 @media all and (min-width: 992px) {
     .navbar .dropdown-menu-end {
         right: 0;
@@ -2375,10 +2387,6 @@ a {
 
     .navbar .nav-item:hover .nav-link {
         color: var(--primary-bg);
-    }
-
-    .navbar .nav-item .dropdown-menu a {
-        color: #ffffff;
     }
 
     .navbar .dropdown-menu.fade-down {
@@ -2407,20 +2415,17 @@ a {
     padding: 50px 0;
     /* Adjust as needed */
 }
-
+.hr-custom{
+    height: 1.2px;
+    width: 100%;
+    border: none;
+    background: linear-gradient(to right, rgb(241, 157, 1) 20%, rgb(88, 88, 88) 5%, rgb(90, 90, 90) 100%);
+}
 .service-content {
-
     padding: 15px;
     background: #F3F3F4;
     border-radius: 0.5em;
-    
 }
-
-.service-content h2 {
-    border-bottom: 1px solid #5E6162;
-    padding-bottom: 0.5em;
-}
-
 .service-content ul {
     padding-left: 0;
 }
@@ -2428,7 +2433,7 @@ a {
 .service-content li {
     list-style: none;
     padding: 12px 15px;
-    background-color: #ffae00b7;
+    background-color: #e79f02b7;
     margin-top: 1em;
     color: #ffffff;
     font-weight: 600;
