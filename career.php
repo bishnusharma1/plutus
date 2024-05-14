@@ -24,7 +24,7 @@
   <nav class="navbar fixed-top z-3 navbar-expand-lg " style="background:var(--bg-box-color)">
     <div class="container col-lg-6">
       <a href="index.html" class="navbar-brand" href="#" style="max-width: 60%;margin-right:3.5em">
-        <img src="assets/logo.webp" alt="" style="width: 120px;">
+        <img src="assets/logo-1@2x.png" alt="" style="width: 120px;">
       </a>
 
       <button class="navbar-toggler" style="background-color: #fff;" type="button" data-bs-toggle="collapse"
@@ -56,6 +56,11 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link" href="#" style="color: #fff;">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active-nav" href="career.php" style="color: #fff;">Career</a>
+            
+            
           </li>
           <!-- <li class="nav-link d-lg-block d-none">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
@@ -133,7 +138,7 @@
             <div class="row">
                 <div class="col-sm-4">
     <div class="car_title" data-aos="fade-up" data-aos-delay="100">
-        <h2>Engineering</h2>
+        <h2>Jobs</h2>
     </div>
                     </div>
     
@@ -161,8 +166,10 @@ if ($response === false) {
     // Process the response (e.g., decode JSON)
     $data = json_decode($response, true);
     // Output the fetched data (example)
-    foreach ($data as $row) {
-        echo "<div class='car_repet_nt'>";
+ if (!empty($data)) {
+        // Output the fetched data
+        foreach ($data as $row) {
+            echo "<div class='car_repet_nt'>";
         echo "<div class='inner_car_repet' data-aos='fade-up' data-aos-delay='100'>";
         echo "<div class='top_car_nt'>";
         echo "<h2>" . $row["jobname"] . "</h2>";
@@ -184,7 +191,7 @@ if ($response === false) {
         echo "</clipPath>";
         echo "</defs>";
         echo "</svg>Full-time</span>";
-        echo "<a data-bs-toggle='modal' data-bs-target='#apply_job'>APPLY NOW";
+       echo "<a data-bs-toggle='modal' data-bs-target='#apply_job' data-job-category='" . $row["category"] . "'>APPLY NOW";
         echo "<svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>";
         echo "<path d='M15.7071 8.70711C16.0976 8.31658 16.0976 7.68342 15.7071 7.29289L9.34315 0.928932C8.95262 0.538408 8.31946 0.538408 7.92893 0.928932C7.53841 1.31946 7.53841 1.95262 7.92893 2.34315L13.5858 8L7.92893 13.6569C7.53841 14.0474 7.53841 14.6805 7.92893 15.0711C8.31946 15.4616 8.95262 15.4616 9.34315 15.0711L15.7071 8.70711ZM0 9H15V7H0V9Z' fill='black'/>";
         echo "</svg>";
@@ -192,6 +199,11 @@ if ($response === false) {
         echo "</div>";
         echo "</div>";
         echo "</div>";
+    }
+
+}else {
+        // Display a message when no job records are available
+        echo "No job available";
     }
 }
 
@@ -205,10 +217,150 @@ curl_close($curl);
                     </div>
                 </div>
                     <!-- ======= Engineering End ======= -->
-    
+     <!-- model start -->
+<div class="modal fade drop_coman_file have_title" id="apply_job" tabindex="-1" role="dialog" aria-labelledby="apply_job" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" style="font-weight:700">Apply Job</h5>
+                                    <button class="close" style="border-radius:5px;" type="button" data-bs-dismiss="modal">
+                                      <span aria-hidden="true">
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <rect width="4.27093" height="66.172" transform="matrix(0.702074 -0.712104 0.709324 0.704883 0 3.31244)" fill="black" />
+                                          <rect width="4.27086" height="66.3713" transform="matrix(-0.704896 -0.70931 0.706518 -0.707695 3.10742 50)" fill="black" />
+                                        </svg>
+                                      </span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h3>Apply Job</h3>
+
+
+                                    <form action="https://milliondox.com/job-assign-panel/store_form_data.php" method="POST" enctype="multipart/form-data" class="upload-form apply-form">                                      									 									                                                                          
+                                    <div class="file-area">      
+                                    <input type="file" class="dragfile" id="contractfile" name="file" accept=".pdf,.doc,.docx" >    
+                          
+  <div class="file-dummy">
+    <div class="success">Great, your files are selected. Keep on.</div>
+    <div class="default">
+    <span class="upload_icon">
+      
+                          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.09 122.88"><title>file-upload</title><path d="M64.64,13,86.77,36.21H64.64V13ZM42.58,71.67a3.25,3.25,0,0,1-4.92-4.25l9.42-10.91a3.26,3.26,0,0,1,4.59-.33,5.14,5.14,0,0,1,.4.41l9.3,10.28a3.24,3.24,0,0,1-4.81,4.35L52.8,67.07V82.52a3.26,3.26,0,1,1-6.52,0V67.38l-3.7,4.29ZM24.22,85.42a3.26,3.26,0,1,1,6.52,0v7.46H68.36V85.42a3.26,3.26,0,1,1,6.51,0V96.14a3.26,3.26,0,0,1-3.26,3.26H27.48a3.26,3.26,0,0,1-3.26-3.26V85.42ZM99.08,39.19c.15-.57-1.18-2.07-2.68-3.56L63.8,1.36A3.63,3.63,0,0,0,61,0H6.62A6.62,6.62,0,0,0,0,6.62V116.26a6.62,6.62,0,0,0,6.62,6.62H92.46a6.62,6.62,0,0,0,6.62-6.62V39.19Zm-7.4,4.42v71.87H7.4V7.37H57.25V39.9A3.71,3.71,0,0,0,61,43.61Z"/></svg>
+                          </span>  
+                          Upload a resume <span class="fille">Choose File</span>
+  </div>
+  </div>
+  <br><div class="selected-file"></div>
+</div> 
+                          <span class="basic-file">Note:- file|mimes:pdf,doc,docx|max size:2048kb</span>    
+
+<hr class="cusrom_hr"/>
+
+                          <div class="gropu_form">
+                          <label for="fname">First Name</label>
+                           <input placeholder="First Name" type="text" value="" required id="first_name" name="first_name">
+                          </div>
+						  
+						   <div class="gropu_form">
+                          <label for="lname">Last Name</label>
+                           <input placeholder="Last Name" type="text" value="" required id="last_name" name="last_name">
+                          </div>
+						  
+						  <div class="gropu_form">
+                          <label for="lname">Phone No:</label>
+                          
+                                            <div class="flag_cnty">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+                    <form id="registration-form" class="formpaddsettingss logss" method="POST"  action="">
+                        	
+                          <input id="phoneNumbers" type="text" name="phone" placeholder="Phone no">
+<script>
+  const phoneInputFields = document.querySelector("#phoneNumbers");
+  const phoneInputs = window.intlTelInput(phoneInputFields, {
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    initialCountry: "in" // Set initial country to India
+  });
+</script>
+                  </div>
+                          
+                          </div>
+						  
+						  <div class="gropu_form">
+                          <label for="lname">E-mail</label>
+                          <input placeholder="E-mail" type="email" id="email" name="email">
+                          </div>
+
+
+                          <div class="gropu_form">
+                          <label for="con_type">Job type</label>
+            <select id="category" name="category" required="">
+            <option value="" disabled="" selected="">select</option>
+            
+            <option value="Accounts and finance">Accounts and finance</option>
+            <option value="Client servicing">Client servicing</option>
+            <option value="Paid assistants">Paid assistants</option>
+            <option value="Office administrations">Office administrations</option>
+            <option value="Founders Office">Founders Office</option>             
+            </select>
+                          </div>
+                        
+  
+  <div class="gropu_form test-areaa">
+                          <label for="fname">Cover Letter</label>
+                          <textarea name="cover_letter" required style="height: 58px;"></textarea>
+                          </div>
+
+</div>
+
+                <div class="root_btn">                        
+                          <button class="btn btn-primary"  style="border-radius:5px;" type="submit">Apply</button>
+</div>
+				
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            
+<!-- model end -->
                                 
     
                     </section>  <!-- ======= carrer_options Section ======= -->
+<script>
+    // Wait for the document to be fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get all the "APPLY NOW" buttons
+        var applyButtons = document.querySelectorAll("a[data-bs-target='#apply_job']");
+        
+        // Loop through each button
+        applyButtons.forEach(function(button) {
+            // Add a click event listener to each button
+            button.addEventListener("click", function() {
+                // Get the job category from the button's data attribute
+                var jobCategory = button.getAttribute("data-job-category");
+                
+                // Get the select element
+                var categorySelect = document.getElementById("category");
+
+                // Loop through each option in the select element
+                for (var i = 0; i < categorySelect.options.length; i++) {
+                    // If the option's value matches the selected job category
+                    if (categorySelect.options[i].value === jobCategory) {
+                        // Enable this option
+                        categorySelect.options[i].disabled = false;
+                    } else {
+                        // Disable all other options
+                        categorySelect.options[i].disabled = true;
+                    }
+                }
+                
+                // Set the value of the job category select element in the modal form
+                categorySelect.value = jobCategory;
+            });
+        });
+    });
+</script>
+
 
 
 
@@ -216,7 +368,7 @@ curl_close($curl);
     <div class="d-flex flex-wrap gap-5 justify-content-evenly footer-head">
       <div class="d-flex flex-column gap-2">
         <div class="f-logo">
-          <img src="assets/logo.webp" alt="">
+          <img src="assets/logo-1@2x.png" alt="">
         </div>
         <h4 style="font-size: 14px;color:#727375">info@plutusco.com</h4>
         <div class="icon d-flex justify-content-center align-items-center">
@@ -291,6 +443,37 @@ curl_close($curl);
             $("#post_division").trigger("change");
         });
     </script>
+    <script>
+        // Add event listener to input file elements with class 'dragfile'
+    document.querySelectorAll('.dragfile').forEach(function(input) {
+        input.addEventListener('change', function() {
+            console.log('File input changed');
+            var fileInput = input;
+            var fileArea = input.closest('.modal-content');
+            console.log('File Area:', fileArea);
+
+            if (fileInput.files.length > 0) {
+                console.log('File selected:', fileInput.files[0].name);
+                var selectedFileDiv = fileArea.querySelector('.selected-file');
+                console.log('Selected file div:', selectedFileDiv);
+                selectedFileDiv.textContent = fileInput.files[0].name;
+                fileArea.classList.add('green-outline');
+                // Add style to modal content when file is chosen
+                fileArea.style.outline = '2px dashed green';
+
+                // Hide the span when file is chosen
+                input.closest('.file-dummy').querySelector('.fille').style.display = 'none';
+            } else {
+                fileArea.classList.remove('green-outline');
+                // Add style to modal content when file is not chosen
+                fileArea.style.outline = '2px dashed #D2DBE5';
+
+                // Show the span when file is not chosen
+                input.closest('.file-dummy').querySelector('.fille').style.display = 'inline';
+            }
+        });
+    });
+</script>
   </body>
 
 </html>
