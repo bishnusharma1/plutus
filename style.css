@@ -2342,20 +2342,13 @@ height: 400px;
         max-width: 100%;
         -ms-flex: 0 0 100%;
     }
-
     .overview-section {
         padding: 80px 0px 50px;
     }
-
-    .wrapp_service .service-desc {
-        padding: 40px 30px;
-    }
-
     .wrapp_service .service-desc ul li {
         width: 100%;
         margin-bottom: 20px;
     }
-
     .service-wrapper-part {
         flex-wrap: wrap;
     }
@@ -2434,6 +2427,11 @@ height: 400px;
 
     }
 }
+@media  screen and (max-width:576px) {
+     .navbar .nav-item .dropdown-menu {
+        background-color: #1d1d1d;}
+
+}
 /* -------------------------------dropdown end--------------------------*/
 
 /* -------------------------------our services --------------------------*/
@@ -2472,6 +2470,7 @@ background-color: #ffaf00;
 }
 .service-content li a {
     color: #FFFFFF;
+    font-weight: 600;
 }
 .left-content-service-img  img{
     max-width: 100%;
