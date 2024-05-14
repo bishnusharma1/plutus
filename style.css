@@ -2236,7 +2236,7 @@ a {
 .overview-content .features-list li {
 
     -webkit-box-flex: 0;
-    margin-top: 25px;
+margin-bottom: 25px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -2299,7 +2299,6 @@ a {
 }
 
 
-
 .wrapp_service .service-desc ul {
     list-style:decimal;
     display: flex;
@@ -2321,15 +2320,23 @@ a {
     align-items: center;
     margin: 0 auto;
     mix-blend-mode: multiply;
-}
+   margin-left: 5em;
+    border-radius: 0.5em;
+height: 400px;
 
+}
+.wrapp_service{
+    margin-left: 2em;
+}
 
 @media (max-width:576px) {
     .overview-content h2 {
         font-size: 26px;
         margin: 18px 0 15px 0;
     }
-
+    .wrapp_service,.overview-image img{
+        margin-left: auto;
+    }
     .overview-content .features-list li {
         flex: 0 0 100%;
         max-width: 100%;
@@ -2466,7 +2473,16 @@ background-color: #ffaf00;
 .service-content li a {
     color: #FFFFFF;
 }
-
+.left-content-service-img  img{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    mix-blend-mode: multiply;
+   margin-left: 5em;
+    border-radius: 0.5em;
+}
 .sticky {
     position: -webkit-sticky;
     position: sticky;
