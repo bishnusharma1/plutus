@@ -2345,7 +2345,7 @@ height: 380px;
 
 .special-btn {
     display: inline-block;
-    transition: all 0.2s ease-in;
+    transition: all 0.25s ease-in;
     position: relative;
     overflow: hidden;
     z-index: 1;
