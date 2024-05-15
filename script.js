@@ -1,5 +1,7 @@
  // Initialize Swiper
-
+ AOS.init({
+  duration: 600
+ });
  var swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
