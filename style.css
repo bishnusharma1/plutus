@@ -2208,7 +2208,13 @@ a {
 
     padding: 80px 0px;
 }
+.overview-content{
+    overflow: hidden;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+   
 
+}
 .overview-content h2 {
     font-size: 36px;
     color: #404040;
@@ -2216,10 +2222,38 @@ a {
     font-weight: 700;
 }
 
-.overview-content p {
-    margin: 0 0 0 0;
+
+.overview-content .features-list {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+   
+
+
+
 }
 
+.features-list .tab-pane .active {
+    border-bottom: 2px solid var(--primary-bg);
+}
+.overview-content  ul {
+    padding-left: 0;
+}
+
+.overview-content .features-list .tab-link {
+    text-align: center;
+    min-width: 150px;
+    padding: 0.8em;
+    border-radius: 1em;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.overview-content .tab-link.active{
+    background-color: #FFAF01;
+    color: white;
+    font-weight: 600;
+    
+}
+/* 
 .overview-content .features-list {
     display: -ms-flexbox;
     display: -webkit-box;
@@ -2239,8 +2273,8 @@ a {
 margin-bottom: 25px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
+} */
+/* 
 .overview-content .features-list li span {
     position: relative;
     z-index: 1;
@@ -2259,9 +2293,9 @@ margin-bottom: 25px;
     box-shadow: -1px 3px 20px 0px rgb(82, 90, 101, 0.1);
     overflow: hidden;
     cursor: pointer;
-}
+} */
 
-.overview-content .features-list li span.active {
+/* .overview-content .features-list li span.active {
     color: #fff;
     padding-left: 30px;
 }
@@ -2279,9 +2313,9 @@ margin-bottom: 25px;
     z-index: -1;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-}
+} */
 
-.overview-content .features-list li span.active:before {
+/* .overview-content .features-list li span.active:before {
     right: 0;
 }
 
@@ -2296,11 +2330,11 @@ margin-bottom: 25px;
 
 .overview-section h2::first-letter {
     color: #ffaf00;
-}
+} */
 
 
 .wrapp_service .service-desc ul {
-    list-style:none;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     max-width: 600px;
@@ -2311,9 +2345,9 @@ margin-bottom: 25px;
     font-size: 17px;
     margin-bottom: 10px;
     width: 100%;
-	text-align: center;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
-       padding: 0.5em;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1em;
     border-radius: 1em;
 
 }
@@ -2327,15 +2361,12 @@ margin-bottom: 25px;
     mix-blend-mode: multiply;
 
     border-radius: 1em;
-height: 380px;
+    height: auto;
     object-fit: cover;
 
 }
-.wrapp_service{
-    
-}
-.service-wrapper-part{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    padding: 0.5em;
+
+.service-wrapper-part {
     align-items: center;
     margin-left: 2em;
     border-radius: 1em;
@@ -2357,14 +2388,14 @@ height: 380px;
     background: #ffffff;
     border: 1px solid #e8e8e8;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-  }
-  
-  .special-btn:active {
+}
+
+.special-btn:active {
     color: #666;
     box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
-  }
-  
-  .special-btn:before {
+}
+
+.special-btn:before {
     content: "";
     position: absolute;
     left: 50%;
@@ -2377,9 +2408,9 @@ height: 380px;
     display: block;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -1;
-  }
-  
-  .special-btn:after {
+}
+
+.special-btn:after {
     content: "";
     position: absolute;
     left: 55%;
@@ -2392,75 +2423,91 @@ height: 380px;
     display: block;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -1;
-  }
-  
-  .special-btn:hover {
+}
+
+.special-btn:hover {
     color: #ffffff;
     border: 1px solid #FFAF01;
-  }
-  .special-btn li:hover, .special-btn a:hover{
+}
+
+.special-btn li:hover,
+.special-btn a:hover {
     color: #ffffff;
-  }
-  .special-btn:hover:before {
+}
+
+.special-btn:hover:before {
     top: -35%;
     background-color: #FFAF01;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-  }
-  
-  .special-btn:hover:after {
+}
+
+.special-btn:hover:after {
     top: -45%;
     background-color: #FFAF01;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-  }
-  
+}
 
 
-  #heading p{
+
+#heading p {
     max-width: 60%;
     margin: auto;
+}
+.tab-content{
+    margin-top: 4em;
 }
 @media (max-width:576px) {
     .overview-content h2 {
         font-size: 26px;
         margin: 18px 0 15px 0;
     }
-    .wrapp_service,.overview-image img{
+
+    .wrapp_service,
+    .overview-image img {
         margin-left: auto;
     }
+
     .overview-content .features-list li {
-        flex: 0 0 100%;
+        
         max-width: 100%;
         -ms-flex: 0 0 100%;
     }
+
     .overview-section {
         padding: 80px 0px 50px;
     }
-    .service-wrapper-part .wrapp_service ul{
+
+    .service-wrapper-part .wrapp_service ul {
         padding-left: 0;
     }
+
     .wrapp_service .service-desc ul li {
         width: 100%;
         margin-bottom: 20px;
-		    text-align: center;
+        text-align: center;
     }
+
     .service-wrapper-part {
         flex-wrap: wrap;
         margin-left: 0;
     }
-    #heading p{
+
+    #heading p {
         max-width: 100%;
-       
+
     }
-    #tab-top{
+
+    #tab-top {
         width: 100%;
     }
 }
 
-.service-contact{
+.service-contact {
     width: 100vw;
     position: relative;
 }
-.service-contact::before{
+
+.service-contact::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -2470,7 +2517,8 @@ height: 380px;
     background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(https://demo.htmlcodex.com/2639/financial-services-website-template/img/bg.png);
     z-index: -1;
 }
-.service-contact-wrapper{
+
+.service-contact-wrapper {
     max-width: 1200px;
     margin: auto;
 }
@@ -2479,19 +2527,21 @@ height: 380px;
 
 /* --------service end-------*/
 /* --------------------dropdown --------------*/
-.dropdown-toggle{
+.dropdown-toggle {
     color: #ffffff;
 }
 
-.dropdown-menu li a{
-   color: #ffffff;
-   transition: 0.2s ease-in-out;
+.dropdown-menu li a {
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
 }
-.dropdown-menu li a:hover{
+
+.dropdown-menu li a:hover {
     background: none;
     color: #ffaf00;
     transform: translateX(5px);
 }
+
 @media all and (min-width: 992px) {
     .navbar .dropdown-menu-end {
         right: 0;
@@ -2531,11 +2581,14 @@ height: 380px;
 
     }
 }
-@media  screen and (max-width:576px) {
-     .navbar .nav-item .dropdown-menu {
-        background-color: #1d1d1d;}
+
+@media screen and (max-width:576px) {
+    .navbar .nav-item .dropdown-menu {
+        background-color: #1d1d1d;
+    }
 
 }
+
 /* -------------------------------dropdown end--------------------------*/
 
 /* -------------------------------our services --------------------------*/
@@ -2543,17 +2596,20 @@ height: 380px;
     padding: 50px 0;
     /* Adjust as needed */
 }
-.hr-custom{
+
+.hr-custom {
     height: 1.2px;
     width: 100%;
     border: none;
     background: linear-gradient(to right, rgb(241, 157, 1) 20%, rgb(88, 88, 88) 5%, rgb(90, 90, 90) 100%);
 }
+
 .service-content {
     padding: 15px;
     background: #F3F3F4;
     border-radius: 0.5em;
 }
+
 .service-content ul {
     padding-left: 0;
 }
@@ -2569,23 +2625,27 @@ height: 380px;
     transition: 0.5s ease-in-out;
     border-radius: 0.5em;
 }
-.service-content li:hover{
-background-color: #ffaf00;
+
+.service-content li:hover {
+    background-color: #ffaf00;
 }
+
 .service-content li a {
     color: #FFFFFF;
     font-weight: 600;
 }
-.left-content-service-img  img{
+
+.left-content-service-img img {
     max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     mix-blend-mode: multiply;
-   margin-left: 5em;
+    margin-left: 5em;
     border-radius: 0.5em;
 }
+
 .sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -2606,5 +2666,5 @@ background-color: #ffaf00;
     color: #ffffff;
     margin-top: -1em;
 }
-/* -------------------------------our services end --------------------------*/
 
+/* -------------------------------our services end --------------------------*/

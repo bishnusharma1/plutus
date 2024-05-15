@@ -1,5 +1,4 @@
- // Initialize Swiper
- AOS.init({
+AOS.init({
   duration: 600
  });
  var swiper = new Swiper('.swiper-container', {
@@ -136,3 +135,4 @@ swiper.on('slideChange', function () {
 //     });
 // });
   
+ // Initialize Swiper
