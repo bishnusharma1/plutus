@@ -2668,3 +2668,15 @@ margin-bottom: 25px;
 }
 
 /* -------------------------------our services end --------------------------*/
+
+/* --------------hero banner images----------------------- */
+
+#hero-img-1{
+    background-image: url('assets/banner1.webp'); background-size: cover;height:450px;
+}
+#hero-img-2{
+    background-image: url('assets/banner1.webp'); background-size: cover;height:450px;
+}
+#hero-img-3{
+    background-image: url('assets/banner1.webp'); background-size: cover;height:450px;
+}
