@@ -25,7 +25,7 @@
   <nav class="navbar fixed-top z-3 navbar-expand-lg " style="background:var(--bg-box-color)">
     <div class="container col-lg-6">
       <a href="index.html" class="navbar-brand" href="#" style="max-width: 60%;margin-right:3.5em">
-        <img src="assets/logo-1@2x.png" alt="" style="width: 120px;">
+        <img src="assets/logo.webp" alt="logo" style="width: 120px;">
       </a>
 
       <button class="navbar-toggler" style="background-color: #fff;" type="button" data-bs-toggle="collapse"
@@ -44,22 +44,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-5">
           <li class="nav-item ">
-            <a href="index.html" class="nav-link " aria-current="page" href="#" style="color: #fff;">Home</a>
+            <a href="index.html" class="nav-link " aria-current="page" style="color: #fff;">Home</a>
           </li>
           <li class="nav-item">
-            <a href="aboutUs.html" class="nav-link " href="#" style="color: #fff;">About us</a>
+            <a href="aboutUs.html" class="nav-link " style="color: #fff;">About us</a>
           </li>
           <li class="nav-item">
-            <a href="accounting-and-assurance.html" class="nav-link " href="#" style="color: #fff;">Services</a>
+            <a href="services.html" class="nav-link"  style="color: #fff;">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://plutusco.com/blogs/" style="color: #fff;">Our Blogs</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" href="#" style="color: #fff;">Contact</a>
+            <a href="contact.html" class="nav-link" style="color: #fff;">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link active-nav" href="career.php" style="color: #fff;">Career</a>
+            <a class="nav-link active-nav" href="career.php" style="color: #fff;">Career</a>
             
             
           </li>
@@ -112,7 +112,7 @@
                 <div class="col-sm-8">
     <div class="opp_head">
     <h2>Opportunities Await</h2>
-    <p>Discover Your Next Career Move and Propel Your Journey with MillionDox</p>
+    <p>Discover Your Next Career Move and Propel Your Journey with Plutus</p>
     </div>
                 </div>
     
@@ -369,7 +369,7 @@ curl_close($curl);
     <div class="d-flex flex-wrap gap-5 justify-content-evenly footer-head">
       <div class="d-flex flex-column gap-2">
         <div class="f-logo">
-          <img src="assets/logo-1@2x.png" alt="">
+          <img src="assets/logo.webp" alt="logo">
         </div>
         <h4 style="font-size: 14px;color:#727375">info@plutusco.com</h4>
         <div class="icon d-flex justify-content-center align-items-center">
