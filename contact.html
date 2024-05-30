@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="Plutus Consulting, Contact, Get in touch, Client support, Customer service, Contact information, Phone, Email, Address, Consultation, Inquiry, Support, Service requests">
-<meta name="description" content="Contact Plutus Consulting for expert advisory and consulting services. Get in touch with our team for inquiries, support, and consultation. Find our phone number, email, and address here.">
+  <meta name="keywords"
+    content="Plutus Consulting, Contact, Get in touch, Client support, Customer service, Contact information, Phone, Email, Address, Consultation, Inquiry, Support, Service requests">
+  <meta name="description"
+    content="Contact Plutus Consulting for expert advisory and consulting services. Get in touch with our team for inquiries, support, and consultation. Find our phone number, email, and address here.">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -44,23 +46,23 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-5">
           <li class="nav-item ">
-            <a href="index.html" class="nav-link " aria-current="page" style="color: #fff;">Home</a>
+            <a href="index.html" class="nav-link " aria-current="page"  style="color: #fff;">Home</a>
           </li>
           <li class="nav-item">
-            <a href="aboutUs.html" class="nav-link " style="color: #fff;">About us</a>
+            <a href="aboutUs.html" class="nav-link "  style="color: #fff;">About us</a>
           </li>
           <li class="nav-item">
-            <a href="services.html" class="nav-link " style="color: #fff;">Services</a>
+            <a href="services.html" class="nav-link "  style="color: #fff;">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://plutusco.com/blogs/" style="color: #fff;">Our Blogs</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link active-nav" style="color: #fff;">Contact</a>
+            <a href="#" class="nav-link active-nav"  style="color: #fff;">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="career.php" style="color: #fff;">Career</a>
-          </li>
+         <li class="nav-item">
+                        <a  class="nav-link" href="career.php" style="color: #fff;">Career</a>
+                    </li>
           <!-- <li class="nav-link d-lg-block d-none">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -124,10 +126,10 @@
 
         </div>
         <div class="service_detail d-flex flex-column gap-3 bg-grey" style="flex:2; min-width:320px;padding:1.5em">
-          <form id="contact-form" class="row g-3">
+          <form class="row g-3">
             <div class="col-md-6">
-              <label for="inputService" class="form-label">Select Service</label>
-              <select id="inputService" class="form-select">
+              <label for="inputState" class="form-label">Select Service</label>
+              <select id="inputState" class="form-select">
                 <option selected>Select</option>
                 <option>Service 1</option>
                 <option>Service 2</option>
@@ -138,204 +140,148 @@
               </select>
             </div>
             <div class="col-md-6">
-              <label for="inputName" class="form-label">Name</label>
-              <input type="text" class="form-control" id="inputName" placeholder="Enter name">
+              <label for="inputEmail4" class="form-label">Name</label>
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Enter name">
             </div>
             <div class="col-md-6">
-              <label for="inputEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Enter email">
             </div>
             <div class="col-md-6">
-              <label for="inputMobile" class="form-label">Mobile</label>
-              <input type="number" class="form-control" id="inputMobile" placeholder="Enter mobile number">
+              <label for="inputEmail4" class="form-label">Mobile</label>
+              <input type="number" class="form-control" id="inputEmail4" placeholder="Enter mobile number">
             </div>
             <div class="mb-3">
-              <label for="inputMessage" class="form-label">Leave a message</label>
-              <textarea class="form-control" id="inputMessage" rows="3"></textarea>
-            </div>
-            <div id="contact-message" class="col-12 text-center justify-content-center">
-              <!-- Message will be displayed here -->
+              <label for="exampleFormControlTextarea1" class="form-label">Leave a message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class="col-12 text-center justify-content-center">
-              <button type="submit" class="btn" style="color: #fff;">Submit</button>
+              <button type="submit" class="btn " style="color: #fff;">Submit</button>
             </div>
           </form>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
-        <!-- <script>
-          (function () {
-            emailjs.init("service_ar9avg9");// Replace with your actual user ID from EmailJS
-          })();
-        </script>
-        <script>
-          /*=============== EMAIL JS ===============*/
-          const contactForm = document.getElementById('contact-form'),
-            contactName = document.getElementById('inputName'),
-            contactEmail = document.getElementById('inputEmail'),
-            contactProject = document.getElementById('inputService'),
-            contactMessage = document.getElementById('contact-message')
+      </div>
+    </div>
+  </section>
 
-          const sendEmail = (e) => {
-            e.preventDefault()
+  <!-- cards -->
+  <div class="section-wrapper bottm_gapp">
+    <section class="bg-grey">
+      <div class="d-flex justify-content-center gap-5 flex-wrap">
 
-            // Check value fields
-            if (contactName.value === '' || contactEmail.value === '' || contactProject.value === 'Select') {
-              // Add and remove color
-              contactMessage.classList.remove('color-blue')
-              contactMessage.classList.add('color-red')
+        <div class="contact-cards ag-courses_box " style="padding: 0;">
+          <div class="ag-courses_item">
+            <div class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+              <div class="ag-courses-item_title ">
+                <h3 class="contact-title text-center">Corporate Office</h3>
+                <p>503, Nilgiri Apartments, 9, Barakhamba Road, New Delhi 110001</p>
 
-              // Show message
-              contactMessage.textContent = 'Please fill in all the input fields'
-            } else {
-              // Service ID, template ID, #form, public key
-              emailjs.sendForm('service_ar9avg9', 'template_ayj5amf', '#contact-form', 'mqPKD7KVZlmvyQ8lt')
-                .then(() => {
-                  // Show message and add color
-                  contactMessage.classList.add('color-blue')
-                  contactMessage.classList.remove('color-red')
-                  contactMessage.textContent = 'Message Sent Successfully'
-
-                  // Remove message after 5 seconds
-                  setTimeout(() => {
-                    contactMessage.textContent = ''
-                  }, 5000)
-                }, (error) => {
-                  alert('OOPS! Something went wrong. Don\'t worry, it\'s not your fault...', error)
-                })
-
-              // Clear input fields
-              contactName.value = ''
-              contactEmail.value = ''
-              contactProject.value = 'Select'
-            }
-          }
-
-          contactForm.addEventListener('submit', sendEmail)
-        </script> -->
-
-        <!-- cards -->
-        <div class="section-wrapper bottm_gapp">
-          <section class="bg-grey">
-            <div class="d-flex justify-content-center gap-5 flex-wrap">
-
-              <div class="contact-cards ag-courses_box " style="padding: 0;">
-                <div class="ag-courses_item">
-                  <div class="ag-courses-item_link">
-                    <div class="ag-courses-item_bg"></div>
-                    <div class="ag-courses-item_title ">
-                      <h3 class="contact-title text-center">Corporate Office</h3>
-                      <p>503, Nilgiri Apartments, 9, Barakhamba Road, New Delhi 110001</p>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="contact-cards ag-courses_box " style="padding: 0;">
-                <div class="ag-courses_item">
-                  <div href="#" class="ag-courses-item_link">
-                    <div class="ag-courses-item_bg"></div>
-                    <div class="ag-courses-item_title">
-                      <h2 class="contact-title text-center">State Office</h2>
-                      <p>Office 101-102, Building no. A-9, Amrit Bhawan, Street 3, Guru Nanakpura, Laxmi Nagar, Delhi
-                        110092
-                      </p>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="contact-cards ag-courses_box " style="padding: 0;">
-                <div class="ag-courses_item">
-                  <div href="#" class="ag-courses-item_link">
-                    <div class="ag-courses-item_bg"></div>
-                    <div class="ag-courses-item_title">
-                      <h3 class="contact-title text-center">Guwahati</h3>
-                      <p>2nd Floor, House no. 41, Lake View, Tayebulla complex, Md. Tayebulla road Dighalipukhuri Par
-                        (East),
-                        Guwahati-781001 Assam</p>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="contact-cards ag-courses_box " style="padding: 0;">
-                <div class="ag-courses_item">
-                  <div href="#" class="ag-courses-item_link ">
-                    <div class="ag-courses-item_bg"></div>
-                    <div class="ag-courses-item_title">
-                      <h3 class="contact-title text-center">Noida</h3>
-                      <p>Nukleus Co-working Tower I.T. Tower, Plot no. 29, Sector 142, Noida, Uttar Pradesh - 201301</p>
-
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
-          </section>
+          </div>
         </div>
-        <footer style="padding:0;">
-          <div class="d-flex flex-wrap gap-5 justify-content-evenly footer-head">
-            <div class="d-flex flex-column gap-2">
-              <div class="f-logo">
-                <img src="assets/logo.webp" alt="logo">
-              </div>
-              <h4 style="font-size: 14px;color:#727375">info@plutusco.com</h4>
-              <div class="icon d-flex justify-content-center align-items-center">
-                in
-              </div>
-            </div>
-            <div class="d-flex gap-3 justify-content-end flex-wrap col-lg-6 col-12 footer-right">
-              <div class="d-flex flex-column gap-2 ">
-                <div class="city">New Delhi</div>
-                <div class="office">Corporate Office</div>
-                <div class="address">503, Nilgiri Apartments,
-                  9, Barakhamba Road, New Delhi 110001</div>
-              </div>
-              <div class="d-flex flex-column gap-2">
-                <div class="city">Guwahati</div>
-                <div class="address">2nd Floor, House no. 41, Lake View, Tayebulla complex, Md. Tayebulla road
-                  Dighalipukhuri
-                  Par (East), Guwahati, Assam 781001</div>
-              </div>
-              <div class="d-flex flex-column gap-2">
-                <div class="office">State Office</div>
-                <div class="address">Office 101-102, Building no. A-9, Amrit Bhawan, Street 3,
-                  Guru Nanakpura, Laxmi Nagar, Delhi 110092</div>
-              </div>
-              <div class="d-flex flex-column gap-2">
-                <div class="city">Noida</div>
-                <div class="address">Nukleus Co-working Tower I.T. Tower, Plot no. 29, Sector 142, Noida, Uttar Pradesh
-                  201301
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fotter_comman">
-            <ul>
-              <li><a href="privacy-policy.html">Privacy Policy</a></li>
-              <li><a href="refund-policy.html">Refund Policy</a></li>
-              <li><a href="termandcondition.html">Terms & Conditions</a></li>
-              <li><a href="cookie.html">Cookie Policy</a></li>
-              <li><a href="career.php">Career</a></li>
-            </ul>
-          </div>
-          <div class="footer-end">
-            <div class="text-center " style="font-size: 14px; color:#ffffff">Copyright © plutusco.com | All Right
-              Reserved
-            </div>
-          </div>
-        </footer>
 
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-          crossorigin="anonymous"></script>
-        </body>
+        <div class="contact-cards ag-courses_box " style="padding: 0;">
+          <div class="ag-courses_item">
+            <div href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+              <div class="ag-courses-item_title">
+                <h2 class="contact-title text-center">State Office</h2>
+                <p>Office 101-102, Building no. A-9, Amrit Bhawan, Street 3, Guru Nanakpura, Laxmi Nagar, Delhi 110092
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="contact-cards ag-courses_box " style="padding: 0;">
+          <div class="ag-courses_item">
+            <div href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+              <div class="ag-courses-item_title">
+                <h3 class="contact-title text-center">Guwahati</h3>
+                <p>2nd Floor, House no. 41, Lake View, Tayebulla complex, Md. Tayebulla road Dighalipukhuri Par (East),
+                  Guwahati-781001 Assam</p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="contact-cards ag-courses_box " style="padding: 0;">
+          <div class="ag-courses_item">
+            <div href="#" class="ag-courses-item_link ">
+              <div class="ag-courses-item_bg"></div>
+              <div class="ag-courses-item_title">
+                <h3 class="contact-title text-center">Noida</h3>
+                <p>Nukleus Co-working Tower I.T. Tower, Plot no. 29, Sector 142, Noida, Uttar Pradesh - 201301</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  <footer style="padding:0;">
+    <div class="d-flex flex-wrap gap-5 justify-content-evenly footer-head">
+      <div class="d-flex flex-column gap-2">
+        <div class="f-logo">
+          <img src="assets/logo.webp" alt="logo">
+        </div>
+        <h4 style="font-size: 14px;color:#727375">info@plutusco.com</h4>
+        <div class="icon d-flex justify-content-center align-items-center">
+          in
+        </div>
+      </div>
+      <div class="d-flex gap-3 justify-content-end flex-wrap col-lg-6 col-12 footer-right">
+        <div class="d-flex flex-column gap-2 ">
+          <div class="city">New Delhi</div>
+          <div class="office">Corporate Office</div>
+          <div class="address">503, Nilgiri Apartments,
+            9, Barakhamba Road, New Delhi 110001</div>
+        </div>
+        <div class="d-flex flex-column gap-2">
+          <div class="city">Guwahati</div>
+          <div class="address">2nd Floor, House no. 41, Lake View, Tayebulla complex, Md. Tayebulla road Dighalipukhuri
+            Par (East), Guwahati, Assam 781001</div>
+        </div>
+        <div class="d-flex flex-column gap-2">
+          <div class="office">State Office</div>
+          <div class="address">Office 101-102, Building no. A-9, Amrit Bhawan, Street 3,
+            Guru Nanakpura, Laxmi Nagar, Delhi 110092</div>
+        </div>
+        <div class="d-flex flex-column gap-2">
+          <div class="city">Noida</div>
+          <div class="address">Nukleus Co-working Tower I.T. Tower, Plot no. 29, Sector 142, Noida, Uttar Pradesh 201301
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fotter_comman">
+      <ul>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="refund-policy.html">Refund Policy</a></li>
+        <li><a href="termandcondition.html">Terms & Conditions</a></li>
+        <li><a href="cookie.html">Cookie Policy</a></li>
+        <li><a href="career.php">Career</a></li>
+      </ul>
+    </div>
+    <div class="footer-end">
+      <div class="text-center " style="font-size: 14px; color:#ffffff">Copyright © plutusco.com | All Right Reserved
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  </body>
 
 </html>
