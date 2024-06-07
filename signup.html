@@ -25,6 +25,10 @@
 <body>
 
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         .text-primary {
             color: #E1B248 !important;
         }
@@ -42,18 +46,31 @@
             height: 1px;
             background: #eee;
         }
+        .head{
+            padding-top: 5.5em;
+        }
+        @media screen and (max-width:768px) {
+            .head{
+                padding-top: 2.5em;
+            }
+            .head-txt{
+                margin-top: 0 !important;
+            }
+        }
     </style>
     <!-- Section: Design Block -->
-    <section class="vh-100">
-
+     <div class="navbar fixed-top z-3 navbar-expand-lg " style="background-color: #ffffff;">
+        <div class=" container">
+            <img class="text-center d-flex align-content-center justify-content-center " src="assets/logo.webp"
+                alt="logo">
+        </div>
+     </div>
+    <section style="height: 100%;"  class="head">
         <div class="container py-5 h-100 d-flex flex-column justify-content-center align-content-center">
-            <div class="mb-1">
-                <img class="text-center d-flex align-content-center justify-content-center " src="assets/logo.webp"
-                    alt="">
-            </div>
+           
             <div class="row gx-lg-5 align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h1 class="my-5 display-3 fw-bold ls-tight">
+                    <h1 class="my-5 head-txt display-3 fw-bold ls-tight">
                         The best offer <br />
                         <span class="text-primary">for your business</span>
                     </h1>
