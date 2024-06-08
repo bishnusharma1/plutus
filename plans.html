@@ -88,7 +88,6 @@
         .list-group-item {
             font-size: 14px;
         }
-       
     </style>
 
 
@@ -191,8 +190,8 @@
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
             border-radius: 5px;
-            background:#E0B147;
-           
+            background: #E0B147;
+
         }
 
         .pricing-item .pricing-body {
@@ -300,22 +299,26 @@
             font-size: 12px;
             padding: 0.5em;
             font-weight: 700;
-            background:#E0B147 !important;
+            background: #E0B147 !important;
         }
+
         .price-wrapper.reason .txt-1 {
             color: #fff;
             text-decoration: underline;
         }
+
         .price-wrapper.reason .currency.txt-2 {
             font-size: 15px;
             text-align: center;
             color: #ffffff;
-          
+
         }
-        .center-heading .section-title{
+
+        .center-heading .section-title {
             font-size: 34px;
             font-weight: 700;
-            padding-bottom: 0.8em;;
+            padding-bottom: 0.8em;
+            ;
         }
     </style>
     <section class="section pt-5 pb-5" id="pricing-plans" style="margin-top: 5.5em;">
@@ -413,7 +416,7 @@
                                 <span class="txt-1">Most Appropriate for </span>
                                 <span class="currency txt-2">Partnerships/ LLP/ Pvt.
                                     Ltd. in 2nd - 3rd Gear
-                                    </span>
+                                </span>
                             </div>
                         </div>
                         <div class="pricing-footer">
@@ -508,84 +511,95 @@
         </div>
     </section>
     <!-- end plan cards -->
-<style>
-    .table {
-border-radius: 1em;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-    .table tr td:first-child{
-        font-weight: 600;
+    <style>
+        h5 {
+           text-align: center;
+           font-weight: 800;
+       }
+      h6 {
+           font-size: 18px;
+           font-weight: bold;
+           font-family: 'Roboto', sans-serif;
+           color: #031521;
+           text-transform: uppercase;
+           letter-spacing: 1px;
+           margin-bottom: 10px;
+           border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+           padding-bottom: 5px;
+           font-weight: 600;
+       }
 
-    }
-    .table tr th{
-        font-weight: 600;
-        background: var(--bg-box-color);
-        color: #fff;
-    }
-</style>
+       strong {
+           font-weight: 600;
+       }
+
+       strong,
+       p {
+           font-size: 18px;
+       }
+
+    
+       .card-header{
+           color: #ffffff;
+           background-image: linear-gradient(135deg, #e73d3d 0%, #decb3d 100%);
+           background: #1D1D1D;
+       }
+   </style>
     <section>
         <!-- extend comparision table -->
-        <div class="table-responsive">
-            <div>
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">Comparison Table</h2>
+        <div class="container my-3">
+            <div class="center-heading">
+                <h2 class="section-title">Comparison Table</h2>
+                <h3 style="font-size: 24px; margin-top: -1em; font-weight: 700;padding-bottom: 1.5em;">Plan Criteria</h3>
+            </div>
+        
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Criteria-1: No. of GSTIN**</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <p><strong>Kickstart:</strong> Upto 1</p>
+                        <p><strong>Accelerate:</strong> Upto 2</p>
+                        <p><strong>Corporate:</strong> Upto 4</p>
+                        <p><strong>Enterprise:</strong> More than 5</p>
                     </div>
                 </div>
-        
             </div>
-            <table class="table table-striped text-success table-border border-light" >
-                <thead class="border-light">
-                    <tr>
-                        <th scope="col"><strong>Plan Criteria</strong></th>
-                        <th scope="col"><strong>Function</strong></th>
-                        <th scope="col"><strong>KICKSTART</strong></th>
-                        <th scope="col"><strong>ACCELERATE</strong></th>
-                        <th scope="col"><strong>CORPORATE</strong></th>
-                        <th scope="col"><strong>ENTERPRISE</strong></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Criteria-1</td>
-                        <td>No. of GSTIN**</td>
-                        <td>Upto 1</td>
-                        <td>Upto 2</td>
-                        <td>Upto 4</td>
-                        <td>More than 5</td>
-                    </tr>
-                    <tr>
-                        <td>Criteria-2</td>
-                        <td>No. of Employees</td>
-                        <td>Upto 9</td>
-                        <td>Upto 19</td>
-                        <td>Upto 75</td>
-                        <td>More than 75</td>
-                    </tr>
-                    <tr>
-                        <td>Criteria-3</td>
-                        <td>No. of accounting entries P.M.</td>
-                        <td>Upto 300</td>
-                        <td>Upto 600</td>
-                        <td>Upto 1000</td>
-                        <td>More than 1,000</td>
-                    </tr>
-                      <!-- <tr>
-                        <th class=""></th>
-                        <th class=""><button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">Sign-up</button></th>
-                        <th class=""><button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">Buy Now</button></th>
-                        <th class=""><button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary">Buy Now</button></th>
-                        <th class=""></th>
-                    </tr> -->
-                </tbody>
-            </table>
-                  
-           
-            
+        
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Criteria-2: No. of Employees</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <p><strong>Kickstart:</strong> Upto 9</p>
+                        <p><strong>Accelerate:</strong> Upto 19</p>
+                        <p><strong>Corporate:</strong> Upto 75</p>
+                        <p><strong>Enterprise:</strong> More than 75</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Criteria-3: No. of accounting entries P.M.</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <p><strong>Kickstart:</strong> Upto 300</p>
+                        <p><strong>Accelerate:</strong> Upto 600</p>
+                        <p><strong>Corporate:</strong> Upto 1000</p>
+                        <p><strong>Enterprise:</strong> More than 1,000</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        
 
         <div class="note">
-            <p><strong>Note: <br> * Plan Pricing shall be subject to a pre-agreed escalation at the rate of 10% per annum.</strong></p>
+            <p><strong>Note: <br> * Plan Pricing shall be subject to a pre-agreed escalation at the rate of 10% per
+                    annum.</strong></p>
             <p><strong>** Customised solutions available for E-commerce companies</strong></p>
         </div>
     </section>
@@ -594,105 +608,124 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     <!-- end comparison table -->
 
     <!-- add on table -->
-  
+
     <section>
         <!-- extend comparision table -->
-        <div class="table-responsive">
-            <div>
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">ADD-ONS SERVICES AS PER YOUR NEED</h2>
-                        <h3 style="font-size: 20px;margin-top: -1em;font-weight: 600;"> ADDITIONAL MODULES PURCHASE</h3>
+        <div class="container my-3">
+            <div class="center-heading">
+                <h2 class="section-title">ADD-ONS SERVICES AS PER YOUR NEED</h2>
+                <h3 style="font-size: 24px; margin-top: -1em; font-weight: 700;padding-bottom: 1.5em;">ADDITIONAL MODULES PURCHASE</h3>
+            </div>
+        
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Add-On 1: Extra GSTIN</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <p><strong>Kickstart:</strong> <span class="text-danger">N.A.</span></p>
+                        <p class="text-muted">Variation up to 1 additional GSTIN allowed under the current plan. Thereafter, the plan needs to be upgraded.</p>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>Accelerate:</strong> <span>INR 5,000/- P.M per GSTIN</span></p>
+                        <p class="text-muted">Variation up to 4 additional GSTIN allowed under the current plan. Thereafter, the plan needs to be upgraded.</p>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>Corporate:</strong> <span>INR 5,000/- P.M per GSTIN</span></p>
+                        <p class="text-muted">Variation up to 4 additional GSTIN allowed under the current plan. Thereafter, the plan needs to be upgraded.</p>
+                    </div>
+                    <div>
+                        <p><strong>Enterprise:</strong> <span class="text-warning">Available on request</span></p>
                     </div>
                 </div>
-        
             </div>
-            <table class="table table-striped text-success table-border border-light" style="margin-top: 1.5em;">
-                <thead class="border-light">
-                    <tr>
-                   
-                        <th scope="col"><strong>ADD-ONS</strong></th>
-                        <th scope="col"><strong>CRITERIA</strong></th>
-                        <th scope="col"><strong>KICKSTART</strong></th>
-                        <th scope="col"><strong>ACCELERATE</strong></th>
-                        <th scope="col"><strong>CORPORATE</strong></th>
-                        <th scope="col"><strong>ENTERPRISE</strong></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                  
-                        <td>Add-On 1</td>
-                        <td>Extra GSTIN</td>
-                        <td>N.A.</td>
-                        <td>INR 5,000/- P.M per GSTIN</td>
-                        <td>INR 5,000/- P.M per GSTIN</td>
-                        <td>Available on request</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>Variation upto 1 additional GSTIN allowed under the current plan. Thereafter Plan needs to be upgraded</td>
-                        <td>Variation upto 4 additional GSTIN allowed under the current plan. Thereafter Plan needs to be upgraded</td>
-                        <td>Variation upto 4 additional GSTIN allowed under the current plan. Thereafter Plan needs to be upgraded</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Add-On 2</td>
-                        <td>Additional Employees [subscription in batches]</td>
-                        <td>N.A.</td>
-                        <td>INR 2,500/- per batch per month [One batch shall comprise of 5 employees]</td>
-                        <td>INR 2,500/- per batch per month [One batch shall comprise of 5 employees]</td>
-                        <td>Available on request</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>Variation upto 5 additional batches allowed under the current plan. Thereafter Plan needs to be upgraded</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Add-On 3</td>
-                        <td>Additional Accounting Entries [subscription in batches]</td>
-                        <td>INR 5,000/- per batch per month [One batch shall comprise of 100 entries]</td>
-                        <td>INR 5,000/- per batch per month [One batch shall comprise of 100 entries]</td>
-                        <td>INR 5,000/- per batch per month [One batch shall comprise of 100 entries]</td>
-                        <td>Available on request</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td>Variation upto 2 additional batches allowed under the current plan</td>
-                        <td>Variation upto 2 additional batches allowed under the current plan. Thereafter Plan needs to be upgraded</td>
-                        <td>Variation upto 5 additional batches allowed under the current plan. Thereafter Plan needs to be upgraded</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Discounts & Offer</td>
-                       
-                        <td>N.A.</td>
-                        <td>N.A.</td>
-                        <td>Flat 20% off on total incremental cost per month if two or more Add-Ons are purchased in a particular month</td>
-                        <td>Flat 25% off on total incremental cost per month if two or more Add-Ons are purchased in a particular month</td>
-                        <td>N.A</td>
-                    </tr>
-                    <tr>
-                        <td>Add-On 4 (OPTIONAL)</td>
-                        <td>ANNUAL PROCEDURES FOR AUDIT</td>
-                        <td>INR 50,000/-</td>
-                        <td>INR 75,000/-</td>
-                        <td>INR 100,000/-</td>
-                        <td>GET IN TOUCH</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            
+        
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Add-On 2: Additional Employees [subscription in batches]</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <p><strong>Kickstart:</strong> <span class="text-danger">N.A.</span></p>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>Accelerate:</strong> <span>INR 2,500/- per batch per month [One batch shall comprise of 5 employees]</span></p>
+                        <p class="text-muted">Variation up to 5 additional batches allowed under the current plan. Thereafter, the plan needs to be upgraded.</p>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>Corporate:</strong> <span>INR 2,500/- per batch per month [One batch shall comprise of 5 employees]</span></p>
+                    </div>
+                    <div>
+                        <p><strong>Enterprise:</strong> <span class="text-warning">Available on request</span></p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Add-On 3: Additional Accounting Entries [subscription in batches]</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <p><strong>Kickstart:</strong> <span>INR 5,000/- per batch per month [One batch shall comprise of 100 entries]</span></p>
+                        <p class="text-muted">Variation up to 2 additional batches allowed under the current plan.</p>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>Accelerate:</strong> <span>INR 5,000/- per batch per month [One batch shall comprise of 100 entries]</span></p>
+                        <p class="text-muted">Variation up to 2 additional batches allowed under the current plan. Thereafter, the plan needs to be upgraded.</p>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>Corporate:</strong> <span>INR 5,000/- per batch per month [One batch shall comprise of 100 entries]</span></p>
+                        <p class="text-muted">Variation up to 5 additional batches allowed under the current plan. Thereafter, the plan needs to be upgraded.</p>
+                    </div>
+                    <div>
+                        <p><strong>Enterprise:</strong> <span class="text-warning">Available on request</span></p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Discounts & Offer</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <p><strong>Kickstart:</strong> <span class="text-danger">N.A.</span></p>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>Accelerate:</strong> <span class="text-success">Flat 20% off on total incremental cost per month if two or more Add-Ons are purchased in a particular month</span></p>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>Corporate:</strong> <span class="text-success">Flat 25% off on total incremental cost per month if two or more Add-Ons are purchased in a particular month</span></p>
+                    </div>
+                    <div>
+                        <p><strong>Enterprise:</strong> <span class="text-danger">N.A.</span></p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5>Add-On 4 (OPTIONAL): ANNUAL PROCEDURES FOR AUDIT</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <p><strong>Kickstart:</strong> <span>INR 50,000/-</span></p>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>Accelerate:</strong> <span>INR 75,000/-</span></p>
+                    </div>
+                    <div class="mb-3">
+                        <p><strong>Corporate:</strong> <span>INR 100,000/-</span></p>
+                    </div>
+                    <div>
+                        <p><strong>Enterprise:</strong> <span class="text-warning">GET IN TOUCH</span></p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        
+
     </section>
 
     <footer style="padding: 0;">
@@ -749,7 +782,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         </div>
     </footer>
 
-    
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>

@@ -219,10 +219,16 @@ svg {
 section {
     width: 100%;
     margin: auto;
-    padding: 2em;
+    padding:2em;
     max-width: 1300px;
 
 
+}
+@media screen and (max-width:768px) {
+    section {
+
+        padding:1.5em;
+    }
 }
 
 .section-wrapper {
