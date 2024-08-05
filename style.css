@@ -219,16 +219,10 @@ svg {
 section {
     width: 100%;
     margin: auto;
-    padding:2em;
+    padding: 2em;
     max-width: 1300px;
 
 
-}
-@media screen and (max-width:768px) {
-    section {
-
-        padding:1.5em;
-    }
 }
 
 .section-wrapper {
@@ -2353,9 +2347,20 @@ margin-bottom: 25px;
     width: 100%;
     text-align: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 1em;
+    padding: 0;
     border-radius: 1em;
 
+}
+
+.wrapp_service .service-desc ul li a {
+    width: 100%;
+    display: block;
+    height: 100%;
+    padding: 1em;
+    transition: all 0.25s ease-in;
+}
+.special-btn:hover a {
+    color: #FFF;
 }
 
 .overview-image img {
@@ -2379,6 +2384,106 @@ margin-bottom: 25px;
 }
 
 /* service button */
+
+/* side sticky css start */
+.main_wrap_about {
+    background: #FFF;
+}
+#fresponsive h4{
+    font-weight: 600;
+    margin-bottom: 0.5em;
+
+}
+#fresponsive h4 .color-text{
+    color: #FFAF01;
+}
+.main_wrap_about .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1700px;
+}
+@media screen and (max-width:1440px) {
+    .main_wrap_about .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1320px;
+    }  
+    
+}
+#fresponsive .main_dropdown{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    border-radius: 1em;
+    font-weight: 500;
+}
+.main_wrap_about .container .main_wrap_about_iner {
+    width: 80%;
+    overflow: hidden;
+}
+
+.main_wrap_about .container .stikcy_bar {
+    width: 20%;
+    padding-left: 40px;
+    padding-top: 60px;
+}
+
+.main_wrap_about .container .stikcy_bar #fresponsive {
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_wrap_about .container .stikcy_bar #fresponsive li {
+    display: block;
+    
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+  
+   
+  
+    
+}
+#fresponsive .main_dropdown .dropdown-menu li{
+    font-size: 14px;
+  
+}
+.main_wrap_about .container .stikcy_bar #fresponsive li a.dropdown-toggle {
+    color: #000;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+
+
+
+.main_wrap_about .stikcy_bar .dropdown-menu {
+    padding-left: 12px;
+    border: 0;
+}
+
+.main_wrap_about .stikcy_bar #fresponsive .dropdown-menu li:first-child {
+    border-top: 1px solid #f1f1f1;
+    padding-top: 7px;
+    margin-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+
+.main_wrap_about .stikcy_bar #fresponsive .dropdown-menu li {
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+.main_wrap_about .stikcy_bar .dropdown-menu a.folder-link {
+    color: #000;
+}
+/* additional side sticky css */
+
+
+
+/* side sticky css end */
+
 
 .special-btn {
     display: inline-block;
@@ -2585,6 +2690,18 @@ margin-bottom: 25px;
         top: 100%;
         transform: rotateX(0deg);
 
+    }
+
+}
+
+@media(max-width:992px)
+{
+    .main_wrap_about .container .main_wrap_about_iner {
+        width: 100%;
+    }
+    
+    .main_wrap_about .container .stikcy_bar {
+        display: none;
     }
 }
 

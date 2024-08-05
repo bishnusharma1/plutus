@@ -242,7 +242,7 @@ curl_close($curl);
 
                                     <form action="https://milliondox.com/job-assign-panel/store_form_data.php" method="POST" enctype="multipart/form-data" class="upload-form apply-form">                                      									 									                                                                          
                                     <div class="file-area">      
-                                    <input type="file" class="dragfile" id="contractfile" name="file" accept=".pdf,.doc,.docx" >    
+                                    <input type="file" class="dragfile" id="contractfile" name="file" accept=".pdf,.doc,.docx" required>    
                           
   <div class="file-dummy">
     <div class="success">Great, your files are selected. Keep on.</div>
@@ -276,9 +276,12 @@ curl_close($curl);
                                             <div class="flag_cnty">
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-                    <form id="registration-form" class="formpaddsettingss logss" method="POST"  action="">
+                  
                         	
-                          <input id="phoneNumbers" type="text" name="phone" placeholder="Phone no">
+                          <input id="phoneNumbers" type="tel" name="phone" placeholder="Phone no"
+               pattern="\+?[0-9\s\-]{7,15}" 
+               title="Phone number should be 10 digits."
+               required>
 <script>
   const phoneInputFields = document.querySelector("#phoneNumbers");
   const phoneInputs = window.intlTelInput(phoneInputFields, {
@@ -292,7 +295,10 @@ curl_close($curl);
 						  
 						  <div class="gropu_form">
                           <label for="lname">E-mail</label>
-                          <input placeholder="E-mail" type="email" id="email" name="email">
+                          <input id="email" type="email" name="email" placeholder="E-mail"
+               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+               title="Enter a valid email address in the format: example@domain.com"
+               required>
                           </div>
 
 
@@ -371,9 +377,9 @@ curl_close($curl);
   <footer style="padding:0;">
     <div class="d-flex flex-wrap gap-5 justify-content-evenly footer-head">
       <div class="d-flex flex-column gap-2">
-        <div class="f-logo">
+         <div class="f-logo">
           <img src="assets/logo.webp" alt="logo">
-        </div>
+  </div>
         <h4 style="font-size: 14px;color:#727375">info@plutusco.com</h4>
         <div class="icon d-flex justify-content-center align-items-center">
           in

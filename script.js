@@ -1,3 +1,8 @@
+
+
+
+
+
 AOS.init({
   duration: 600
  });
@@ -13,6 +18,34 @@ AOS.init({
     slideToClickedSlide: true,
     speed: 800,
   });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var dropdowns = document.querySelectorAll('.main_dropdown > a');
+
+    dropdowns.forEach(function(dropdown) {
+        dropdown.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            var subMenu = this.nextElementSibling;
+            var isAlreadyOpen = subMenu.classList.contains('show');
+
+            // Close any currently open dropdowns
+            dropdowns.forEach(function(otherDropdown) {
+                var otherSubMenu = otherDropdown.nextElementSibling;
+                if (otherSubMenu && otherSubMenu.classList.contains('dropdown-menu')) {
+                    otherSubMenu.classList.remove('show');
+                }
+            });
+
+            // Toggle the clicked dropdown if it was not already open
+            if (!isAlreadyOpen && subMenu && subMenu.classList.contains('dropdown-menu')) {
+                subMenu.classList.toggle('show');
+            }
+        });
+    });
+});
+
 
   // Handle tab click to slide
   // var tabs = document.querySelectorAll('.btn-tab');
@@ -107,6 +140,12 @@ swiper.on('slideChange', function () {
           
       });
   });
+
+
+
+
+
+
 
 
 //   document.addEventListener("DOMContentLoaded", function() {
