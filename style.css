@@ -277,6 +277,11 @@ section {
     font-size: 35px;
     margin-bottom: 0.8em;
 }
+@media screen and (max-width:768px) {
+    .bottom-part h2{
+        font-size: 22px;
+    }
+}
 .bottom-part p{
     line-height: 1.8em;
 }
