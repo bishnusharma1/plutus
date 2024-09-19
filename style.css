@@ -261,20 +261,33 @@ section {
 }
 
 .active-image {
-    background-image: url('assets/bgtax.webp');
+    /* background-image: url('assets/bgtax.webp'); */
     background-size: cover;
 }
 
 .active-image img {
     max-width: 48%;
 }
-
+.bottom-part{
+ align-items: start;
+}
+.bottom-part h2{
+    font-weight: 700;
+    text-align: start;
+    font-size: 35px;
+    margin-bottom: 0.8em;
+}
+.bottom-part p{
+    line-height: 1.8em;
+}
 .common-text {
     font-size: 18px;
     font-weight: 600;
     text-align: center;
 }
-
+.min-width{
+    min-width: 300px;
+}
 h2 {
     font-size: 34px;
     font-weight: 600;
@@ -379,7 +392,29 @@ h2 {
     text-shadow: 0 0 black;
     text-align: center;
 }
-
+.why_choose section{
+    max-width: 100%;padding-left: 0;
+}
+.why_choose_container{
+    width: 60%;
+}
+.why_choose_img img{
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-right: 15px solid var(--primary-bg);
+}
+@media screen and (max-width:1200px) {
+    .why_choose section{
+        padding-left: 2em;
+    }
+    .why_choose_container{
+        width: 100%;
+    }
+    .why_choose_img img{
+        border-radius: 2em;
+        border: 10px solid var(--primary-bg);
+    }
+}
 .why_choose .question-container h2.accordion-header {
     font-size: 20px;
     line-height: normal;
@@ -523,7 +558,7 @@ h2 {
     margin-top: 45px;
 }
 
-.page-title-area .page-title-content h2 {
+.page-title-area .page-title-content h2 ,  .page-title-area .page-title-content h1{
     color: #ffffff;
     font-size: 40px;
     font-weight: 700;
@@ -1373,7 +1408,7 @@ a {
     padding: 20px 0px 0px;
 }
 
-.coan_heading_mian h2 {
+.coan_heading_mian h2,.coan_heading_mian h1  {
     font-style: normal;
     font-size: 60px;
     color: #fff;
@@ -1437,7 +1472,7 @@ a {
         font-size: 14px;
     }
 
-    .coan_heading_mian h2 {
+    .coan_heading_mian h2, .coan_heading_mian h1 {
         font-size: 40px;
         max-width: 320px;
     }
@@ -1552,7 +1587,7 @@ a {
     margin-top: 70.6px;
 }
 
-.carrer_hero .hero_text h2 {
+.carrer_hero .hero_text h2 , .carrer_hero .hero_text h1{
     font-size: 42px;
     font-weight: 600;
     letter-spacing: 0;
@@ -1584,7 +1619,7 @@ a {
 }
 
 @media(max-width:992px) {
-    .carrer_hero .hero_text h2 {
+    .carrer_hero .hero_text h2, .carrer_hero .hero_text h1 {
         font-size: 23px;
     }
 

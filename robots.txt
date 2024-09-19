@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/
+Disallow: /noindex/
+
+Sitemap: https://plutusco.com/sitemap.xml

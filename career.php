@@ -95,7 +95,7 @@
     <img class="desk-show" src="assets/carrer-hero.webp" alt="img">
     <img class="mbl-show" src="assets/carrer-hero-mbl.webp" alt="img" style="display: none;">
     <div class="hero_text" data-aos="fade-down" data-aos-delay="400">
-        <h2>Where Passion Meets Purpose, and Every Voice Shapes Tomorrow</h2>
+        <h1>Where Passion Meets Purpose, and Every Voice Shapes Tomorrow</h1>
     </div>
     </div>
     
@@ -377,13 +377,15 @@ curl_close($curl);
   <footer style="padding:0;">
     <div class="d-flex flex-wrap gap-5 justify-content-evenly footer-head">
       <div class="d-flex flex-column gap-2">
-         <div class="f-logo">
+        <div class="f-logo">
+       <a href="index.html" class="f-logo">
           <img src="assets/logo.webp" alt="logo">
-  </div>
-        <h4 style="font-size: 14px;color:#727375">info@plutusco.com</h4>
-        <div class="icon d-flex justify-content-center align-items-center">
-          in
+        </a>
         </div>
+        <h4 style="font-size: 14px;color:#727375">info@plutusco.com</h4>
+        <a href="https://www.linkedin.com/company/plutus-co/" class="icon d-flex justify-content-center align-items-center" target="_blank">
+          in
+        </a>
       </div>
       <div class="d-flex gap-3 justify-content-end flex-wrap col-lg-6 col-12 footer-right">
         <div class="d-flex flex-column gap-2 ">
