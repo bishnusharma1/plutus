@@ -364,20 +364,38 @@ h2 {
 
 .accordion-button {
     font-family: Manrope;
-    background: #F7F7F7;
+  
     padding: 1.5em 0;
     font-weight: 600;
     color: #000;
+ 
 }
 
 .accordion-collapse {
-    background: #F7F7F7;
+    background: #ffffff;
     ;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #F7F7F7;
+    background-color: #ffffff;
 }
+
+.accordion {
+    counter-reset: section; /* Initialize the counter at the parent level */
+}
+
+.accordion-header {
+    counter-increment: section; /* Increment the counter for each accordion header */
+}
+
+.accordion-header .accordion-button::before {
+    content: counter(section, decimal-leading-zero); /* Display the counter with leading zero */
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+    color: var(--primary-bg); /* Adjust the color as needed */
+}
+
 
 .why_choose .had_chose {
     display: block;
@@ -386,22 +404,29 @@ h2 {
     margin: 0 auto;
     text-align: center;
 }
-
+.accordion-button::after{
+    display: none;
+}
 .why_choose .had_chose p {
     margin: 17px 0px 0px;
     text-shadow: 0 0 black;
     text-align: center;
 }
 .why_choose section{
-    max-width: 100%;padding-left: 0;
+    max-width: 1920px;
+    padding-left: 0;
 }
+
 .why_choose_container{
-    width: 60%;
+    width: calc(70% - 10em);
+  
 }
+
 .why_choose_img img{
-    border-top-right-radius: 2em;
-    border-bottom-right-radius: 2em;
-    border-right: 15px solid var(--primary-bg);
+    
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-right: 24px solid var(--primary-bg);
 }
 @media screen and (max-width:1200px) {
     .why_choose section{
@@ -414,6 +439,12 @@ h2 {
         border-radius: 2em;
         border: 10px solid var(--primary-bg);
     }
+    .why_choose_img{
+        justify-content: center;
+    }
+}
+.why_choose .question-container{
+    gap: 5em;
 }
 .why_choose .question-container h2.accordion-header {
     font-size: 20px;
@@ -421,11 +452,12 @@ h2 {
 }
 
 .why_choose .question-container .accordion-button {
-    font-size: inherit;
+    font-size: 16px;
 }
 
 .why_choose .question-container .accordion-body {
     padding: 30px 0px;
+    font-weight:500;
 }
 
 @media screen and (max-width:1200px) {
