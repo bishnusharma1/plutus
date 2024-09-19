@@ -279,6 +279,7 @@ section {
 }
 @media screen and (max-width:768px) {
     .bottom-part h2{
+        margin-top: 2.5em;
         font-size: 22px;
     }
 }
