@@ -450,6 +450,9 @@ h2 {
     }
 }
 .why_choose .question-container{
+    align-items:start;
+}
+.why_choose .question-container{
     gap: 5em;
 }
 .why_choose .question-container h2.accordion-header {
