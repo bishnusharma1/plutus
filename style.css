@@ -3418,6 +3418,7 @@ align-items: center;
     background-image:url(./assets/vcfo/after-border.png);
     background-repeat: no-repeat;
 background-position: center;
+background-size: contain;
     /* Adjust z-index to make sure the pseudo-element is above */
     z-index: 1;
 }
