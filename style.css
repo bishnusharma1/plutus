@@ -3282,7 +3282,7 @@ input[type="checkbox"]:checked::after {
 
 .service_card.swiper-slide {
     width: 388px !important;
-    height: calc(654px - 2em) !important;
+    height: calc(700px - 2em) !important;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -3313,11 +3313,22 @@ input[type="checkbox"]:checked::after {
     font-size: 28px;
     font-weight: 700;
 }
-
+.service-sub-desc {
+    margin-left: 1.2em;
+}
+.service-sub-desc p{
+    font-size: 14px !important;
+}
 @media screen and (max-width:768px) {
     .get-call-btn {
         max-width: 87vw;
     }
+    .service_card.swiper-slide {
+        width: 100% !important;
+        height: auto !important;
+    
+    }
+    
 }
 
 .why_us {
@@ -3493,6 +3504,13 @@ font-size: 20px ;
     .review_card {
         width: 100%;
     }
+    .review_card.swiper-slide {
+        height: auto;
+    }
+    .review_card.swiper-slide h2 {
+        margin-top: 0;
+    }
+
 }
 
 .service_link_card {
@@ -3590,7 +3608,9 @@ font-size: 20px ;
     color: #3D321A;
     font-weight: 700;
 }
-
+.labour_law_hero form h2{
+    font-size: 20px;
+}
 .swiper-slide {}
 
 .labour_service_card.swiper-slide {
@@ -3611,7 +3631,7 @@ font-size: 20px ;
 }
 
 .labour_service_card p {
-    font-size: 54px;
+    font-size: 54px !important;
     color: grey;
     font-weight: 700;
 }
@@ -3682,7 +3702,7 @@ font-size: 20px ;
     display: flex;
     align-items: center;
     position: relative;
-    max-width: 935px;
+    
 }
 .why_do_card{
 padding: 1em;
@@ -3705,6 +3725,13 @@ padding: 1em;
     }
     .why_do:nth-child(odd) .why_do_no, .why_do:nth-child(even) .why_do_no {
         width: 50px;
+    }
+    .hero-vcfo h1, .labour_law_hero h1{
+        font-size: 26px;
+    }
+    .labour_law_hero form h2, .hero-vcfo form h2
+    {
+        font-size: 24px;
     }
 }
 .why_do_no:nth-child(odd)::after {
