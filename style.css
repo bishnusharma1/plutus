@@ -3264,6 +3264,7 @@ input[type="checkbox"]:checked::after {
     /* right: -30%; */
 }
 
+
 @media screen and (max-width:768px) {
     .section-title {
 
@@ -3638,7 +3639,7 @@ font-size: 20px ;
 .labour_law_hero form .corner-radius{
     position: absolute;
     right: -0.2px;
-    top: 33px;
+    top: 34px;
     border-radius: 0.3em;
     width: 50px;
     height: 50px;
@@ -3668,7 +3669,6 @@ font-size: 20px ;
     font-weight: 600;
 }
 
-.swiper-slide {}
 
 .labour_service_card.swiper-slide {
     width: 100%;
@@ -3699,6 +3699,9 @@ font-size: 20px ;
     }
     .labour_service_card.swiper-slide .labour_service_sub_txt span{
         font-size: 14px;
+    }
+    .labour_law_hero form .form_title h2,.labour_law_hero form .form_title span{
+        font-size: 22px;
     }
 }
 
