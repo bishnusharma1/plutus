@@ -3241,9 +3241,14 @@ input[type="checkbox"]:checked::after {
     right: -100%;
 }
 
+/* .border-before.msg_text_title::after{
+    right: -20% !important;
+} */
 .border-after {
+    
     position: relative;
     padding: 0 2em 0 0;
+
 }
 
 .border-after::after {
@@ -3255,13 +3260,16 @@ input[type="checkbox"]:checked::after {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    right: -30%;
+
+    /* right: -30%; */
 }
 
 @media screen and (max-width:768px) {
     .section-title {
 
         font-size: 28px;
+        text-align: center !important;
+        padding: 0;
 
     }
 
@@ -3490,7 +3498,7 @@ font-size: 20px ;
 
 @media screen and (max-width:768px) {
     .msg_founder_container {
-        gap: 5em;
+        gap: 2em ;
     }
 
     .msg_founder button {
@@ -3506,10 +3514,18 @@ font-size: 20px ;
     }
     .review_card.swiper-slide {
         height: auto;
+        gap: 0.5em;
     }
     .review_card.swiper-slide h2 {
         margin-top: 0;
+        font-size: 24px;
     }
+    .review_card.swiper-slide h3{
+        font-size: 20px;
+    }
+    .review_card.swiper-slide  img{
+        width: 50px;
+    } 
 
 }
 
@@ -3608,9 +3624,50 @@ font-size: 20px ;
     color: #3D321A;
     font-weight: 700;
 }
-.labour_law_hero form h2{
-    font-size: 20px;
+.labour_law_hero form{
+    background: transparent;
+    background-image: url('/assets/vcfo/form-bg.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    position: relative;
+ 
+    
 }
+.labour_law_hero form .corner-radius{
+    position: absolute;
+    right: -0.2px;
+    top: 33px;
+    border-radius: 0.3em;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.labour_law_hero form .custom-form{
+    max-width: 95%;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0.5em;
+    padding-bottom: 2.5em;
+}
+.labour_law_hero form .form_title img{
+    width: 38px;
+}
+.labour_law_hero form .form_title h2{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--primary-2);
+}
+.labour_law_hero form .form_title span{
+    font-size: 28px;
+    font-weight: 600;
+}
+
 .swiper-slide {}
 
 .labour_service_card.swiper-slide {
@@ -3639,6 +3696,9 @@ font-size: 20px ;
 @media screen and (max-width:768px) {
     .labour_service_card.swiper-slide {
         max-width: 87vw;
+    }
+    .labour_service_card.swiper-slide .labour_service_sub_txt span{
+        font-size: 14px;
     }
 }
 
