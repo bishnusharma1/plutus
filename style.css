@@ -9,6 +9,7 @@
 :root {
     --primary-color: linear-gradient(90.59deg, #ffe4a9, #ffaf00);
     --primary-bg: #CBAF66;
+    --primary-2:#C08F22;
     --text-color: RGB(3, 21, 33);
     --sub-text-color: RGB(107, 107, 132);
     --text-grey: #666666;
@@ -2965,20 +2966,6 @@ margin-bottom: 25px;
     clip-path: polygon(0% 0%, 5% 100%, 95% 100%, 100% 0%);
 }
 
-.icon-s-container p {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.icon-s {
-    padding: 0.8em;
-    background-color: rgb(255, 255, 255, 12%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
 
 .min-width {
     min-width: 300px;
@@ -3041,10 +3028,14 @@ margin-bottom: 25px;
 }
 
 .vcfo-hero-right form .input-box label {
+    color: var(--sub-text-color);
     font-size: 12px;
     font-weight: 500;
 }
-
+.vcfo-hero-right form input::placeholder{
+    color: var(--text-color);
+    font-weight: 500;
+}
 .vcfo-hero-right form .input-box {
     border: 1px solid var(--text-color);
     padding: 0.5em;
@@ -3061,7 +3052,29 @@ margin-bottom: 25px;
     border-radius: 1em;
 
 }
+input[type="checkbox"] {
+    accent-color:  #C08F22;; 
+    
+ 
+}
 
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--primary-bg); 
+    border-color:var(--primary-bg); 
+    color: white;
+}
+
+input[type="checkbox"]:checked::after {
+ 
+    color: #ffffff;
+}
 @media screen and (max-width:1200px) {
     #vcfo-section-container {
         flex-direction: column;
@@ -3076,6 +3089,20 @@ margin-bottom: 25px;
     }
 
 }
+.icon-s-container p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.icon-s {
+    padding: 0.8em;
+    background-color: rgb(255, 255, 255, 12%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
 
 @media screen and (max-width:768px) {
 
@@ -3084,18 +3111,22 @@ margin-bottom: 25px;
     }
 
     .icon-s-container {
-        flex-wrap: wrap;
         justify-content: center;
 
     }
 
     .icon-s-container p {
+        text-align: center;
         font-size: 12px;
     }
 
     .icon-s-container .icon-s {
         padding: 0.5em;
 
+    }
+    .vcfo-hero-btn button{
+        justify-content: center;
+        width: 100%;
     }
 
 }
@@ -3124,9 +3155,20 @@ margin-bottom: 25px;
 
 }
 
+
 @media screen and (max-width:761px) {
     .icon-card::after {
         display: none;
+    }
+    @media screen and (max-width:768px) {
+        .icon-card{
+            padding-right: 0;
+            padding-left: 0;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+       
     }
 }
 
@@ -3146,7 +3188,8 @@ margin-bottom: 25px;
     bottom: 10px;
     width: 100%;
     height: 10px;
-    background-color: var(--primary-bg);
+    background-color: rgba(192, 143, 34, 0.5);
+
     transform: translateY(-50%);
 }
 
@@ -3160,6 +3203,7 @@ margin-bottom: 25px;
 .section-subtitle {
     text-align: center;
     line-height: 1.5em;
+    max-width: 85%;
 }
 
 .border-after-before {
@@ -3188,10 +3232,12 @@ margin-bottom: 25px;
 
     right: -100%;
 }
-.border-after{
+
+.border-after {
     position: relative;
     padding: 0 2em 0 0;
 }
+
 .border-after::after {
     content: '';
     position: absolute;
@@ -3203,24 +3249,30 @@ margin-bottom: 25px;
     z-index: 1;
     right: -30%;
 }
+
 @media screen and (max-width:768px) {
     .section-title {
 
         font-size: 28px;
-    
+
     }
 
     .border-after-before::before,
     .border-after-before::after {
         display: none;
     }
-    .border-after::after{
+
+    .border-after::after {
         display: none;
     }
+    
+.section-subtitle {
+    max-width: 100%;
+}
 
 }
 
-.service_card {
+.service_card.swiper-slide {
     width: 388px !important;
     height: calc(654px - 2em) !important;
     display: flex;
@@ -3244,7 +3296,18 @@ margin-bottom: 25px;
     font-weight: 500;
     text-decoration: underline;
 }
-
+.get-call-btn svg{
+    width: 40px;
+}
+.get-call-btn p{
+    font-size: 28px;
+    font-weight: 700;
+}
+@media screen and (max-width:768px) {
+    .get-call-btn{
+        max-width: 87vw;
+    }
+}
 .why_us {
     position: relative;
     background: linear-gradient(180deg, rgba(230, 183, 79, 0.2) 100%, rgba(230, 183, 79, 0.1) 30%, rgba(200, 154, 55, 0.1) 30%, rgba(200, 154, 55, 0.1) 100%);
@@ -3269,15 +3332,26 @@ margin-bottom: 25px;
 }
 
 .why_us button {
-    width: fit-content;
+    max-width: fit-content;
     background: var(--bg-box-color);
     color: var(--primary-bg);
     margin: 0;
     font-size: 28px;
-    overflow: hidden;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
+@media (max-width: 768px) {
+    .why_us button {
+        max-width: 90%;
+        font-size: 22px;
+    }
+
+    .why_us section {
+        gap: 2em;
+    }
+}
 
 
 @media screen and (max-width:768px) {
@@ -3300,36 +3374,39 @@ margin-bottom: 25px;
 
 }
 
-.review_card {
+.review_card.swiper-slide {
 
     padding: 2em;
-    width: calc(500px - 4em);
+    /* width: calc(500px - 4em); */
+    width: 100%; /* Let Swiper handle the width */
+    max-width: calc(500px - 4em); /* Maintain the 500px width minus padding */
     height: 366px;
     border-radius: 0.5em;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
     gap: 2em;
     border: 1px solid var(--text-color);
     z-index: 2;
 
 }
 
-.review_card .review-semi {
-    position: absolute;
-    top: 20px;
+.review_card.swiper-slide .review-semi {
+    position: absolute !important;
+    top: 20px !important;
     z-index: -1;
     opacity: 0.3;
 }
 
-.review_card h2 {
+.review_card.swiper-slide  h2 {
     font-size: 28px;
     font-weight: 700;
 }
 
 .review_card p {
     font-weight: 500;
+    margin-bottom: 1em;
 }
 
 .review_card img {
@@ -3338,9 +3415,13 @@ margin-bottom: 25px;
 
 .review_card h3 {
     margin: 0;
-    font-weight: 600;
+    font-weight: 700;
 }
+.review_card span{
+    font-size: 14px;
 
+    color:#E7B74C;
+}
 .review_card_bottom button {
     padding: 0.5em;
     background: transparent;
@@ -3349,7 +3430,7 @@ margin-bottom: 25px;
 
 .msg_founder button {
 
-    font-size: 40px;
+    font-size: 28px;
     color: #000000;
 }
 
@@ -3360,6 +3441,14 @@ margin-bottom: 25px;
 @media screen and (max-width:768px) {
     .msg_founder_container {
         gap: 5em;
+    }
+    .msg_founder button {
+        font-size: 25px;
+        max-width: 87vw;
+        color: #000000;
+    }
+    .review_card{
+        width: 100%;
     }
 }
 
@@ -3383,59 +3472,68 @@ margin-bottom: 25px;
 
 /* ----------------labour law------------------- */
 
-.labour_law_hero{
-background: #1D1D1D;
-background-image: url('/assets/vcfo/hero.png');
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-z-index: 2;
-background-color: var(--bg-box-color);
-color: #ffffff;
-padding-top: 76px;
-padding-bottom: 2.5em;
+.labour_law_hero {
+    background: #1D1D1D;
+    background-image: url('/assets/vcfo/labour-law-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    background-color: var(--bg-box-color);
+    color: #ffffff;
+    padding-top: 76px;
+    padding-bottom: 2.5em;
 
-height: 100vh;
-position: relative;
-margin: auto;
-display: flex;
-align-items: center;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
 
 }
+
 .labour_law_hero::after {
     content: '';
     display: block;
     position: absolute;
-    bottom: -40px; /* Adjust to position circles right below */
+    bottom: -40px;
+    /* Adjust to position circles right below */
     left: 50%;
     transform: translateX(-50%);
-    
-    width:100%;
+
+    width: 100%;
     height: 100px;
     background: transparent;
-    
+
     /* Create hollow circles */
-    background-image:url(./assets/vcfo/after-border.png);
+    background-image: url(./assets/vcfo/after-border.png);
     background-repeat: no-repeat;
-background-position: center;
-background-size: contain;
+    background-position: center;
+    background-size: contain;
     /* Adjust z-index to make sure the pseudo-element is above */
     z-index: 1;
 }
+
 @media screen and (max-width:1200px) {
-    .labour_law_hero{
+    .labour_law_hero {
         height: auto;
     }
+    .labour_law_hero::after {
+        background-size: contain;
+        bottom: -50px;
+    }
 }
+
 .labour_law_hero .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1; 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
+
 .hero_h1_text {
 
     padding: 0.2em 1em;
@@ -3449,45 +3547,59 @@ background-size: contain;
     font-weight: 700;
 }
 
+.swiper-slide{
 
-.labour_service_card{
-    width: 400px;
-    height: 322px;
+}
+.labour_service_card.swiper-slide {
+    width: 100%;
+
+    height: 280px !important;
     padding: 1em;
     border: 1px solid var(--text-color);
     border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    justify-content: space-around;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
     justify-content: center;
 }
-.labour_service_card p{
+.labour_service_card.swiper-slide .between{
+justify-content: space-between !important;
+}
+.labour_service_card p {
     font-size: 54px;
     color: grey;
     font-weight: 700;
 }
-.labour_service_card h3{
+@media  screen and ( max-width:768px) {
+    .labour_service_card.swiper-slide {
+        max-width: 87vw;
+    }
+}
+.labour_service_card h3 {
     margin: 0;
     font-weight: 600;
     max-width: 80%;
+    padding-bottom: 2.5em;
+    text-align: start;
 }
 
-.why_do{
+.why_do {
     position: relative;
     display: flex;
     gap: 2em;
     align-items: center;
     padding-bottom: 2.5em;
-    
+
 }
-.why_do .why_do_desc{
-   
+
+.why_do .why_do_desc {
+
     border: 1px solid var(--text-color);
     border-radius: 1em;
     padding: 1em;
     z-index: 2;
 }
+
 .why_do:nth-child(even) .why_do_no {
     background-image: url('/assets/vcfo/even.png');
     background-position: center;
@@ -3512,41 +3624,141 @@ background-size: contain;
     justify-content: center;
 }
 
-.why_do:nth-child(even) .why_do_desc{
+.why_do:nth-child(even) .why_do_desc {
     background-color: rgba(248, 219, 176, 0.356)
 }
 
 .why_do {
     display: flex;
-    align-items: center; /* Aligns both .why_do_no and .why_do_desc vertically */
-    position: relative; /* Ensure the parent is positioned for absolute children */
+    align-items: center;
+    position: relative;
 }
 
 .why_do_no {
-   
-    position: relative; /* For the pseudo-element positioning */
+
+    position: relative;
+
 }
 
 .why_do_no:nth-child(odd)::after {
     z-index: 1;
     content: '';
     position: absolute;
-    top: 50%; /* Align vertically center */
-    right: -30px; /* Adjust this to control spacing between the dot and line */
+    top: 50%;
+    right: -30px;
     transform: translateY(-50%);
-    width: 30px;/* Ensure the line extends past the element */
+    width: 30px;
     height: 2px;
-    border-top: 2px dotted var(--primary-bg); /* Creates the dotted border */
+    border-top: 2px dotted var(--primary-bg);
+
 }
-.why_do_no:nth-child(even)::after{
+
+.why_do_no:nth-child(even)::after {
     z-index: 1;
     content: '';
     position: absolute;
-    top: 50%; /* Align vertically center */
-    right: -2em; /* Adjust this to control spacing between the dot and line */
+    top: 50%;
+    /* Align vertically center */
+    right: -2em;
+    /* Adjust this to control spacing between the dot and line */
     transform: translateY(-50%);
-    width: 50px;/* Ensure the line extends past the element */
+    width: 50px;
+    /* Ensure the line extends past the element */
     height: 2px;
-    border-top: 2px dotted var(--primary-bg); /* Creates the dotted border */
+    border-top: 2px dotted var(--primary-bg);
+    /* Creates the dotted border */
 
+}
+
+/* logo-sliders */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide1 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 2em 0;
+    background-color: #F7F7F7;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+
+}
+.logos.labour-law-logos{
+    padding-top: 2em;
+    background-color: #ffffff;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #f5f5f5);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #f5f5f5);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    background-color: #F7F7F7;
+    display: flex;
+    gap: 1.5em;
+    margin-right: 1em;
+    animation: 80s slide infinite linear;
+}
+
+.logos-slide-right {
+    background-color: #F7F7F7;
+    display: flex;
+    gap: 1.5em;
+    margin-right: 1em;
+    animation: 80s slide1 infinite linear;
+}
+.labour-law-logos .logos-slide{
+    background-color: #ffffff;
+}
+.labour-law-logos .logos-slide-right{
+  
+        background-color: #ffffff;
+   
+}
+.logos.labour-law-logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.logos.labour-law-logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
 }
