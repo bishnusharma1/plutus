@@ -3341,12 +3341,13 @@ input[type="checkbox"]:checked::after {
 }
 
 .get-call-btn svg {
-    width: 40px;
+    width: 30px;
 }
 
 .get-call-btn p {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 20px;
+    color: #4F4328;
+    font-weight:700;
 }
 .service-sub-desc {
     margin-left: 1.2em;
@@ -3370,7 +3371,7 @@ input[type="checkbox"]:checked::after {
     position: relative;
     background: linear-gradient(180deg, rgba(230, 183, 79, 0.2) 100%, rgba(230, 183, 79, 0.1) 30%, rgba(200, 154, 55, 0.1) 30%, rgba(200, 154, 55, 0.1) 100%);
 }
-.why_us.why_us.labour_why_container,
+
 .why_us .right-law img {
     position: absolute;
     right: 0;
