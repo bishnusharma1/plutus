@@ -90,6 +90,8 @@
         </div>
     </nav>
 
+    
+
     <!-- ======= comman page banner Section ======= -->
     <section id="coman_bannere" class="coman_bannere">
         <img src="assets/privacy_banner3.webp" alt="img">
@@ -109,7 +111,76 @@
         </div>
     </section>
     <!-- ======= comman page banner Section ======= -->
+    <div class="logos labour-law-logos" style="padding-top: 3.5em;">
+        <div class="logos-slide">
 
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/1.png" alt="">
+            </div>
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/2.png" alt="">
+            </div>
+
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/3.png" alt="">
+            </div>
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/4.png" alt="">
+            </div>
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/5.png" alt="">
+            </div>
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/6.png" alt="">
+            </div>
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/7.png" alt="">
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="logos1 labour-law-logos">
+        <div class="logos-slide-right">
+
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/8.png" alt="">
+            </div>
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/9.png" alt="">
+            </div>
+
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/10.png" alt="">
+            </div>
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/11.png" alt="">
+            </div>
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/12.png" alt="">
+            </div>
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/13.png" alt="">
+            </div>
+            <div class="d-flex  align-items-center logo_slide_img">
+                <img src="/assets/logos/14.png" alt="">
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var copy = document.querySelector(".logos-slide").cloneNode(true);
+            document.querySelector(".logos").appendChild(copy);
+
+            var copySlideRight = document.querySelector(".logos-slide-right").cloneNode(true);
+            document.querySelector(".logos1").appendChild(copySlideRight);
+        });
+    </script>
     <!-- ======= div wrap start ======= -->
     <div class="main_wrap_about">
         <div class="container">
@@ -143,6 +214,11 @@
                     </div>
                 </div>
 
+                <style>
+                    .testimonials_box .slick-list{
+                        padding-right: 0;
+                    }
+                </style>
                 <!-- Testionials -->
                 <section class="  d-flex flex-column gap-4 overflow-hidden">
                     <div class="d-flex flex-column gap-4  align-items-center   overflow-hidden">
@@ -371,7 +447,7 @@
                                             </h2>
                                             <div id="flush-collapseOne" class="accordion-collapse collapse"
                                                 data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Choosing Plutus provides you with: Access to
+                                                <div class="accordion-body text-start">Choosing Plutus provides you with: Access to
                                                     experienced
                                                     financial expert solutions without the high costs of a full-time
                                                     CFO.
@@ -395,7 +471,7 @@
                                             </h2>
                                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                                 data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Plutus’s VCFO services are ideal for:
+                                                <div class="accordion-body text-start">Plutus’s VCFO services are ideal for:
 
                                                     <ul>
                                                         <li>Startups needing strategic financial guidance.</li>
@@ -422,7 +498,7 @@
                                             </h2>
                                             <div id="flush-collapseThree" class="accordion-collapse collapse"
                                                 data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Benefits include:
+                                                <div class="accordion-body text-start">Benefits include:
                                                     <ul>
                                                         <li>Access to top financial and legal solutions without the cost
                                                             of full-time
@@ -723,7 +799,7 @@
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 1,
-                            centerPadding: '0%'
+                         
                         }
                     },
                     {
