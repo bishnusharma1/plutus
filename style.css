@@ -3317,14 +3317,21 @@ input[type="checkbox"]:checked::after {
 }
 
 .service_card.swiper-slide {
-    width: 388px !important;
-    height: calc(700px - 2em) !important;
+    min-height: calc(700px - 2em);
+    max-height: calc(700px - 2em);
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 1em;
     background-color: rgba(255, 253, 165, 0.2) !important;
+    padding-bottom: 20px;
+    justify-content: flex-start;
 }
+
+.service_card .service_box::-webkit-scrollbar {
+    display: none;
+}
+
 
 .service_card .service_box {
     padding: 0 2em;
@@ -3332,6 +3339,7 @@ input[type="checkbox"]:checked::after {
     flex-direction: column;
     gap: 1em;
     align-self: start;
+        overflow: auto;
 
 }
 
@@ -3360,12 +3368,10 @@ input[type="checkbox"]:checked::after {
     .get-call-btn {
         max-width: 87vw;
     }
-    .service_card.swiper-slide {
-        width: 100% !important;
-        height: auto !important;
-    
+
+    .service_card.swiper-slide{
+        display:block !important;
     }
-    
 }
 
 .why_us {
@@ -3445,6 +3451,8 @@ font-size: 20px ;
     }
 }
 
+
+
 .testimonials_box{
     display: flex;
     align-items: center;
@@ -3453,21 +3461,35 @@ font-size: 20px ;
 }
 
 .review_card {
-
     padding: 2em;
-
-    height: 400px;
+    height: 350px;
     border-radius: 0.5em;
     position: relative;
     display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    gap: 1em;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0;
     border: 1px solid var(--text-color);
     z-index: 2;
     text-decoration: start;
-
 }
+.review_card   h2 {
+    margin: 0px 0px 0px 10px;
+    font-weight: 700;
+    color: #000;
+    position: relative;
+    max-width: 70%;
+    display: inline;
+    font-size: 32px;
+    line-height: 1.4;
+    background-image: linear-gradient(to right, #dabe91 0%, #dabe91 100%);
+    background-position: left bottom;
+    background-size: 100% 15px;
+    background-repeat: no-repeat;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
 .review_card.labour_review_card{
     background: #FED70033;
     backdrop-filter: blur(89.76551055908203px);
@@ -3475,10 +3497,19 @@ font-size: 20px ;
     text-align: center;
 }
 
-.review_card .review-semi {
-    position: absolute !important;
-    top: 25px;
+.testimonials_box {
+    max-width: 1700px;
+    margin-left: auto;
+    padding: 0px 0px 0px 0px;
+}
 
+.testimonials_box .slick-list {
+    padding-right: 140px;
+}
+
+.review_card .review-semi {
+    position: absolute;
+    top: 25px;
     left: 30px;
     z-index: -1;
     opacity: 0.3;
@@ -3544,9 +3575,6 @@ font-size: 20px ;
 }
 
 
-.testimonials_box .slick-list{
-    padding: 0;
-}
 .testimonials_box .slick-prev, .testimonials_box .slick-next {
     z-index: 2;
 }
@@ -3558,18 +3586,17 @@ font-size: 20px ;
 .testimonials_box .slick-next {
     right: 10px; 
 }
-.testimonials_box .slick-dots
-{
-    
-    right: 22%;
+.testimonials_box .slick-dots {
+    right: 220px;
     list-style: none;
     display: flex;
     align-items: center;
     gap: 0.5em;
     position: absolute;
-    bottom: -6em; 
-
+    bottom: -4em;
+    margin: 0;
 }
+
 /* Style for Slick dots container */
 
 /* Style for each dot */
@@ -3577,41 +3604,33 @@ font-size: 20px ;
 gap: 0.5em;
 
 }
-.slick-dots li button::before {
-    content: none !important; /* Ensure no content is displayed */
-}
 
-/* .slick-dots li button { 
-    font-size: 0; 
- }  */
 /* Style for dot buttons */
-.slick-dots li button {
+.slick-dots li {
     width: 14px;
     height: 10px;
     background-color: #ccc; 
     border-radius: 2em;
-
     opacity: 0.75; 
     padding: 0;
-
     transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease; /* Smooth transition for size and color */
 }
 
 
 /* Style for active dot */
-.slick-dots li.slick-active button {
-    width: 50px; 
-    height: 10px; 
-    background-color: #333; 
-    opacity: 1; 
-   
-    
-    
+.slick-dots li.slick-active {
+    width: 50px;
+    height: 10px;
+    opacity: 1;
+    background: linear-gradient(180deg, #E7B74C 0%, #C89A37 100%);
 }
 
-.testimonials_box  .slick-dots li button::before {
+.review_card_bottom {
+    margin-right: 20px;
+}
+
+.testimonials_box .slick-dots li button {
     display: none;
-    content: none; 
 }
 
 .review_card_bottom button {
@@ -3632,6 +3651,13 @@ gap: 0.5em;
 
 .msg_founder_container {
     gap: 1em;
+}
+
+@media(max-width:1500px)
+{
+    .testimonials_box {
+    padding: 0px 0px 0px 80px;
+}
 }
 
 @media screen and (max-width:768px) {
@@ -3670,7 +3696,24 @@ gap: 0.5em;
 
 }
 
-.service_link_card {
+@media(max-width:576px)
+{
+    .testimonials_box .slick-list {
+    padding-right: 0;
+}
+
+.testimonials_box {
+    padding: 0px 20px 20px !IMPORTANT;
+}
+
+.testimonials_box.testimonials_box_labourr .slick-list {
+    padding-right: 0 !IMPORTANT;
+}
+
+}
+
+
+a.service_link_card {
     width: 100%;
     padding: 1em;
     background: rgba(254, 215, 0, 0.2);
@@ -3681,12 +3724,16 @@ gap: 0.5em;
     cursor: pointer;
 }
 
-.service_link_card a {
+.service_link_card p {
     font-weight: 600;
     font-size: 18px;
     color: #000000;
 
 }
+.testimonials_box.testimonials_box_labourr .slick-list {
+    padding-right: 320px;
+}
+
 
 /* ----------------labour law------------------- */
 
@@ -4060,7 +4107,7 @@ padding: 1em;
     white-space: nowrap;
     position: relative;
     display: flex;
-
+flex-direction: row-reverse;
 
 }
 .logos1:before,
@@ -4128,4 +4175,17 @@ padding: 1em;
 .logos1.labour-law-logos:after {
     right: 0;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+}
+
+/* ----------our related service-- */
+#founder_img_service{
+    max-width: 60%;
+}
+@media  screen and (max-width:768px) {
+    #founder_img_service{
+        max-width: 100%;
+    }
+    #order_in_mobile{
+        order: 2;
+    }
 }

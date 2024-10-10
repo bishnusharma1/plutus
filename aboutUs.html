@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords"
-    content="Plutus Consulting, Chartered Accountancy, Advisory services, Consulting, Ethical leadership, Innovation, Technology, Client satisfaction, Service delivery, Team of experts, Chartered Accountants, Company Secretaries, Lawyers, Advocates, MBA graduates, Professionalism, Work culture">
+    content="Technology, about, us, mission, labour law, law, corporate, employee, plutus, save money, entrepreneur. ">
   <meta name="description"
-    content="Plutus Consulting, with a legacy since 1972, offers full-service chartered accountancy and innovative advisory services. Our mission emphasizes quality, client satisfaction, and ethical leadership. Meet our expert team and discover our commitment to integrity, professionalism, and a supportive work culture.">
+    content="Plutus is a cutting-edge technology platform designed to empower entrepreneurs and corporations by streamlining compliance with labor laws. Our mission is to simplify the complexities of corporate governance, ensuring that businesses can focus on growth while adhering to legal requirements. By leveraging our innovative solutions, companies can save money and enhance employee satisfaction, fostering a productive work environment. With Plutus, navigate the intricacies of labor law effortlessly and position your business for success.">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -20,7 +20,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <title> Plutus: Redefining Accounting for the Modern Era</title>
+  <title>  Plutus: Empowering Entrepreneurs Through Legal Knowledge</title>
 </head>
 
 <body>
@@ -636,7 +636,43 @@
       </div>
     </div>
   </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+
+<!-- WhatsApp and Call Button Script -->
+<script>
+  $(document).ready(function () {
+    // Create the WhatsApp button
+    var whatsappButton = `
+      <a href="#" id="whatsapp-btn" style="position:fixed;bottom:20px;right:20px;width:50px;z-index:1000;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" style="width:100%;">
+      </a>
+    `;
+    
+    // Create the Call button
+    var callButton = `
+      <a href="tel:8527516121" id="call-btn" style="position:fixed;bottom:80px;right:27px;width:40px;z-index:1000;">
+        <img src="https://i.pinimg.com/736x/c1/00/d4/c100d4c70bc17365a2a42ac22ef782da.jpg" alt="Call Icon" style="width:100%;border-radius:50%">
+      </a>
+    `;
+    
+    // Append the buttons to the body
+    $('body').append(whatsappButton);
+    $('body').append(callButton);
+
+    // Add click event listener to the WhatsApp button
+    $('#whatsapp-btn').on('click', function (e) {
+      e.preventDefault();
+      // Define WhatsApp number and message
+      var phoneNumber = '+919910200287'; // Add your WhatsApp number here
+      var message = 'Hello there!'; // Default message
+      var whatsappURL = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
+      
+      // Open WhatsApp in a new tab
+      window.open(whatsappURL, '_blank');
+    });
+  });
+</script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script src="script.js"></script>
