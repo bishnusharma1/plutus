@@ -4189,3 +4189,6 @@ flex-direction: row-reverse;
         order: 2;
     }
 }
+.logo_slide_img img{
+  width: 80px;
+}
