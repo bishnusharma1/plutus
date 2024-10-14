@@ -1046,6 +1046,8 @@ svg {
 @media(max-width:576px) {
     .top-section {
         padding-top: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .shadow_inncontact {
@@ -2988,6 +2990,7 @@ margin-bottom: 25px;
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 1;
+    display:none;
 }
 
 .vcfo-hero-left {
@@ -3019,6 +3022,20 @@ margin-bottom: 25px;
 
 
 }
+
+.vcfo-hero-right iframe {
+    height: 100% !IMPORTANT;
+    width: 636px !IMPORTANT;
+    max-width: 636px;
+    max-height: 583px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    filter: invert(1);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
 
 .vcfo-hero-right form h2 {
     text-align: center;
@@ -3096,6 +3113,12 @@ input[type="checkbox"]:checked::after {
     .hero-vcfo {
         height: auto;
     }
+    
+
+.vcfo-hero-right iframe {
+    position: relative;
+    height: 670px !IMPORTANT;
+}
 
 }
 
@@ -3139,6 +3162,17 @@ input[type="checkbox"]:checked::after {
         justify-content: center;
         width: 100%;
     }
+
+}
+
+@media(max-width:576px)
+{
+    .vcfo-hero-right iframe {
+    width: 340px !important;
+}
+#vcfo-section-container {
+    padding: 2em 1em;
+}
 
 }
 
@@ -3464,7 +3498,6 @@ font-size: 20px ;
 
 .review_card {
     padding: 2em;
-    height: 350px;
     border-radius: 0.5em;
     position: relative;
     display: flex !important;
@@ -3542,8 +3575,22 @@ font-size: 20px ;
 
 .review_card p {
     font-weight: 500;
+        margin-top: 20px;
     margin-bottom: 1em;
 }
+
+.testimonials_box .slick-slide {
+    height: auto;
+}
+
+.testimonials_box .slick-slide div {
+    height: 100%;
+}
+
+.testimonials_box  .slick-track {
+    display: flex;
+}
+
 .review_card.labour_review_card p{
     margin-top: 2.5em;
     margin-bottom: 0;
@@ -3553,7 +3600,7 @@ font-size: 20px ;
 
 }
 .review_card img {
-    width: 60px;
+    width: 80px;
 }
 
 .review_card h3 {
@@ -3678,7 +3725,6 @@ gap: 0.5em;
    
     .review_card{
         padding: 1em;
-        height: 350px;
         gap: 0.5em;
     }
     .review_card h2 {
@@ -4202,3 +4248,4 @@ font-weight: 600;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
 }
+
