@@ -235,3 +235,23 @@ position: relative;
         line-height: 1.2;
     }
 }
+@media screen and (max-width:412px) {
+    .hero_left{
+        padding: 1.5em;
+    }
+    .heading h1{
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+    .head_bg{
+        height: 60px;
+    }
+    .hero__btn{
+        gap: 1em;
+        padding-bottom: 1.5em;
+    }
+    .experience_box{
+        width: 75px;
+        height: 75px;
+    }
+}
