@@ -17,6 +17,27 @@
  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Plutus : advisory management consultancy services </title>
+    
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QXXBLDZ');</script>
+<!-- End Google Tag Manager -->
+
+
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16704975030"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16704975030');
+</script>
+
 </head>
 
 <body>
@@ -185,6 +206,69 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        
+        
+        <!-- WhatsApp and Call Button Script -->
+<script>
+$(document).ready(function () {
+    // Create the WhatsApp button
+    var whatsappButton = `
+      <a href="#" id="whatsapp-btn" style="position:fixed;bottom:20px;right:20px;width:50px;z-index:1000;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" style="width:100%;">
+      </a>
+    `;
+    
+    // Create the Call button
+    var callButton = `
+      <a href="tel:8527516121" id="call-btn" style="position:fixed;bottom:80px;right:27px;width:40px;z-index:1000;">
+        <img src="https://i.pinimg.com/736x/c1/00/d4/c100d4c70bc17365a2a42ac22ef782da.jpg" alt="Call Icon" style="width:100%;border-radius:50%">
+      </a>
+    `;
+    
+    // // Append the buttons to the body
+    $('body').append(callButton);
+  });
+  
+                  var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?10372';
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = url;
+                var options = {
+                "enabled":true,
+                "chatButtonSetting":{
+
+                    "backgroundColor":"#d7a942",
+                    "ctaText":"Chat with us",
+                    "borderRadius":"25",
+                    "marginLeft": "0",
+                    "marginRight": "20",
+                    "marginBottom": "20",
+                    "ctaIconWATI":false,
+                    "position":"right"
+                },
+                "brandSetting":{
+
+                    "brandName":"Plutus Consulting",
+                    "brandSubTitle":"undefined",
+                    "brandImg":"https://milliondox.com/New%20Project%20(60).png",
+                    "welcomeText":"Hi there!\nHow can I help you?",
+                    "messageText":"Hello, %0A I have a question about {{page_title}}.",
+                    "backgroundColor":"#d7a942",
+                    "ctaText":"Chat with us",
+                    "borderRadius":"25",
+                    "autoShow":false,
+                    "phoneNumber":"918527516121"
+                }
+                };
+                s.onload = function() {
+                    CreateWhatsappChatWidget(options);
+                };
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+                
+</script>
+
 </body>
 
 </html>
