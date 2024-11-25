@@ -42,19 +42,22 @@ a button:hover{
 }
 
 .hero_container {
-    padding-top: 80px;
+    padding-top: 100px;
     width: calc(100% - 1em);
-    height:calc(100vh + 280px);
+   
 position: relative;
 }
 
 .hero_left {
     padding: 2em;
     background: #FFFFFF;
+    padding-left: 0;
+  
+}
+.hero_upper{
     max-width: 565px;
     margin: auto;
 }
-
 .heading {
     position: relative;
 }
@@ -91,6 +94,7 @@ position: relative;
     color: #424241;
     max-width: 519px;
 }
+
 .hero__btn {
     gap: 32px;
     padding-bottom: 49px;
@@ -99,10 +103,9 @@ position: relative;
     margin-bottom: 54px;
 }
 .experience_boxes {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    margin-top: 37px;
+    /* position: absolute; */
+  
+
     display: flex;
     align-items: center;
     gap: 32px;
@@ -185,7 +188,7 @@ position: relative;
         margin-bottom: 25px;
     }
     .experience_boxes{
-        position: relative;
+  
         gap: 1em;
         margin-left: -1.5em;
         padding: 0.5em;
@@ -228,5 +231,8 @@ position: relative;
     .experience_box{
         width: 75px;
         height: 75px;
+    }
+    .company_logo{
+        margin-bottom: 34px;
     }
 }
