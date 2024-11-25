@@ -34,9 +34,11 @@ button.white {
     font-weight: 400;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-a button:hover{
+
+a button:hover {
     scale: 1.02;
 }
+
 .navbar {
     padding: 1.25em;
 }
@@ -44,20 +46,23 @@ a button:hover{
 .hero_container {
     padding-top: 100px;
     width: calc(100% - 1em);
-   
-position: relative;
+
+
+    position: relative;
 }
 
 .hero_left {
     padding: 2em;
     background: #FFFFFF;
     padding-left: 0;
-  
+
 }
-.hero_upper{
+
+.hero_upper {
     max-width: 565px;
     margin: auto;
 }
+
 .heading {
     position: relative;
 }
@@ -99,12 +104,14 @@ position: relative;
     gap: 32px;
     padding-bottom: 49px;
 }
-.company_logo{
+
+.company_logo {
     margin-bottom: 54px;
 }
+
 .experience_boxes {
     /* position: absolute; */
-  
+
 
     display: flex;
     align-items: center;
@@ -165,9 +172,11 @@ position: relative;
     .hero_container {
         height: auto;
     }
-    .hero_left{
+
+    .hero_left {
         padding: 1.5em;
     }
+
     .hero_right {
         padding: 1.5em;
         padding-right: 0.5em;
@@ -182,61 +191,126 @@ position: relative;
         width: auto;
         margin: auto;
     }
+
     .heading h1 {
         font-size: 40px;
         margin-bottom: 20px;
     }
+
     .hero_sub_text {
         margin-bottom: 25px;
     }
-    .experience_boxes{
-  
+
+    .experience_boxes {
+
         gap: 1em;
         margin-left: -1.5em;
         padding: 0.5em;
         margin-top: 0;
     }
-    .experience_box{
+
+    .experience_box {
         width: 100px;
         height: 100px;
-        
-    }
-    .experience_box p {
-        font-size: 30px ;
 
     }
+
+    .experience_box p {
+        font-size: 30px;
+
+    }
+
     .experience_box p span {
         font-size: 16px;
         margin-left: 0px;
     }
+
     .experience_box span {
         font-size: 8px;
         margin-top: -10px;
         line-height: 1.2;
     }
 }
+
 @media screen and (max-width:412px) {
-   
-    .heading h1{
+
+    .heading h1 {
         font-size: 38px;
         margin-bottom: 10px;
     }
-    .head_bg{
+
+    .head_bg {
         height: 60px;
     }
-    .hero__btn{
+
+    .hero__btn {
         gap: 1em;
         padding-bottom: 2.5em;
     }
-    .experience_box{
+
+    .experience_box {
         width: 75px;
         height: 75px;
     }
+
     .experience_box p {
-        font-size: 20px  !important;
+        font-size: 20px !important;
 
     }
-    .company_logo{
+
+    .company_logo {
         margin-bottom: 34px;
     }
+}
+
+.what_we_do_card{
+    padding: 2em;
+    border-radius: 0.5em;
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0;
+    border: 1px solid var(--text-color);
+    z-index: 2;
+    text-decoration: start;
+        height: 100%;
+        transition: transform 0.3s ease-in-out;
+}
+
+.what_we_do_card:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+.what_we_do_card .overlay_why {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Full overlay coverage */
+    background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%);
+    pointer-events: none; /* Ensures the overlay doesn't block interactions */
+
+}
+.why_title{
+    z-index: 2;
+    color: #ffffff;
+    margin-bottom: 184px;
+}
+.why_title .title_why{
+   
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    text-align: left;
+  margin-bottom: 18px;
+    
+}
+.why_title .why_sub{
+  
+font-size: 16px;
+font-weight: 500;
+line-height: 22px;
+
+
 }
