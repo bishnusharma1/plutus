@@ -263,7 +263,57 @@ a button:hover {
     }
 }
 
-.what_we_do_card{
+.why_we_do_box {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    max-width: 1700px;
+    margin-left: auto;
+    padding: 0px 0px 0px 0px;
+}
+
+.why_we_do_box .slick-list {
+
+    padding-right: 140px;
+
+}
+
+.why_we_do_box .slick-slide {
+    height: auto;
+}
+
+.why_we_do_box .slick-slide>div {
+    height: 100%;
+}
+
+.why_we_do_box .slick-track {
+    display: flex;
+}
+
+.why_we_do_box {
+    position: relative;
+
+}
+
+.why_we_do_box .slick-slide {
+    padding: 0 10px;
+}
+
+@media(max-width:1500px) {
+    .why_we_do_box {
+        padding-right: 0;
+    }
+
+    .why_we_do_box {
+        padding: 0px 20px 20px !IMPORTANT;
+    }
+
+    .why_we_do_box.why_we_do_box .slick-list {
+        padding-right: 0 !IMPORTANT;
+    }
+}
+
+.what_we_do_card {
     padding: 2em;
     border-radius: 0.5em;
     position: relative;
@@ -274,12 +324,16 @@ a button:hover {
     border: 1px solid var(--text-color);
     z-index: 2;
     text-decoration: start;
-        height: 100%;
-        transition: transform 0.3s ease-in-out;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    min-height: 300px;
+    cursor: pointer;
+
 }
 
 .what_we_do_card:hover {
-    transform: scale(1.05); /* Slightly increase the size on hover */
+    transform: scale(1.05);
+    /* Slightly increase the size on hover */
 }
 
 .what_we_do_card .overlay_why {
@@ -287,30 +341,78 @@ a button:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Full overlay coverage */
+    height: 100%;
+    /* Full overlay coverage */
     background: linear-gradient(180deg, #131313 -6.32%, rgba(19, 19, 19, 0) 100%);
-    pointer-events: none; /* Ensures the overlay doesn't block interactions */
+    pointer-events: none;
+    /* Ensures the overlay doesn't block interactions */
 
 }
-.why_title{
+
+.why_title {
     z-index: 2;
     color: #ffffff;
     margin-bottom: 184px;
 }
-.why_title .title_why{
-   
+
+.why_title .title_why {
+
     font-size: 24px;
     font-weight: 700;
     line-height: 31px;
     text-align: left;
-  margin-bottom: 18px;
-    
+    margin-bottom: 18px;
+
 }
-.why_title .why_sub{
-  
-font-size: 16px;
-font-weight: 500;
-line-height: 22px;
+
+.why_title .why_sub {
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
 
 
+}
+.about_left{
+    max-width: 680px;
+}
+ .text-1 {
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    letter-spacing: 0.075em;
+    color: #B59B4E;
+    margin-bottom: 24px;
+}
+
+.text-2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #AF8E2F;
+
+}
+
+.about_left p {
+margin-top: 47px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #373642;
+    max-width: 590px;
+
+}
+
+@media screen and (max-width:768px) {
+   .text-1 {
+        margin-bottom: 0.8em;
+    }
+   .text-2 {
+        font-size: 22px;
+        line-height: 1.2;
+    } 
+    .about_left p {
+        margin-top: 1.5em;
+    }
 }
