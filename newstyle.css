@@ -10,8 +10,6 @@
 :root {
     --gradient-bg: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
     --bg-color: #ffffff;
-
-
 }
 
 a button,
@@ -26,6 +24,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    transition: 0.3s all ease-in-out;
 }
 
 a button.white,
@@ -35,19 +34,18 @@ button.white {
     font-weight: 400;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
+a button:hover{
+    scale: 1.02;
+}
 .navbar {
     padding: 1.25em;
 }
 
 .hero_container {
     padding-top: 80px;
-
     width: calc(100% - 1em);
     height:calc(100vh + 280px);
 position: relative;
-
-
 }
 
 .hero_left {
@@ -55,7 +53,6 @@ position: relative;
     background: #FFFFFF;
     max-width: 565px;
     margin: auto;
- 
 }
 
 .heading {
@@ -70,7 +67,6 @@ position: relative;
     opacity: 25%;
     left: -50px;
     top: -20px;
-
 }
 
 .heading h1 {
@@ -98,43 +94,27 @@ position: relative;
 .hero__btn {
     gap: 32px;
     padding-bottom: 49px;
-    
 }
 .company_logo{
     margin-bottom: 54px;
 }
 .experience_boxes {
-   
     position: absolute;
     bottom: 20px;
     left: 0;
-
     margin-top: 37px;
     display: flex;
     align-items: center;
     gap: 32px;
-
-
     border-top: 1px dotted #DABC68;
-
     border-right: 1px dotted #DABC68;
- 
     border-radius: 0px 100px 100px 0;
-
     border-left: none;
-
     border-bottom: 1px dotted #DABC68;
- 
     padding: 1em;
-    
- 
-
 }
 
-
-
 .experience_box {
-
     width: 120px;
     height: 120px;
     background: #F5F6F9;
@@ -143,8 +123,6 @@ position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
 }
 
 .experience_box p {
@@ -171,9 +149,6 @@ position: relative;
     line-height: 14.4px;
     color: #747474E5;
     text-align: center;
-
-
-
 }
 
 .hero_right img {
