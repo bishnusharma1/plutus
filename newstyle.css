@@ -165,7 +165,9 @@ position: relative;
     .hero_container {
         height: auto;
     }
-
+    .hero_left{
+        padding: 1.5em;
+    }
     .hero_right {
         padding: 1.5em;
         padding-right: 0.5em;
@@ -214,9 +216,7 @@ position: relative;
     }
 }
 @media screen and (max-width:412px) {
-    .hero_left{
-        padding: 1.5em;
-    }
+   
     .heading h1{
         font-size: 38px;
         margin-bottom: 10px;
