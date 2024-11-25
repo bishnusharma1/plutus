@@ -197,12 +197,12 @@ position: relative;
         margin-top: 0;
     }
     .experience_box{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         
     }
     .experience_box p {
-        font-size: 24px;
+        font-size: 30px ;
 
     }
     .experience_box p span {
@@ -231,6 +231,10 @@ position: relative;
     .experience_box{
         width: 75px;
         height: 75px;
+    }
+    .experience_box p {
+        font-size: 20px  !important;
+
     }
     .company_logo{
         margin-bottom: 34px;
