@@ -34,6 +34,13 @@ button.white {
     font-weight: 400;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+button.outline {
+    border: 1px solid #B59B4E;
+    background: transparent;
+    color: #cca93e;
+    
+}
+
 
 a button:hover {
     scale: 1.02;
@@ -52,6 +59,7 @@ a button:hover {
 }
 
 .hero_left {
+    margin-top: 50px;
     padding: 2em;
     background: #FFFFFF;
     padding-left: 0;
@@ -174,6 +182,7 @@ a button:hover {
     }
 
     .hero_left {
+        margin-top: 0;
         padding: 1.5em;
     }
 
@@ -270,6 +279,8 @@ a button:hover {
     max-width: 1700px;
     margin-left: auto;
     padding: 0px 0px 0px 0px;
+    padding-left: 5.5em;
+    
 }
 
 .why_we_do_box .slick-list {
@@ -280,6 +291,7 @@ a button:hover {
 
 .why_we_do_box .slick-slide {
     height: auto;
+    
 }
 
 .why_we_do_box .slick-slide>div {
@@ -328,11 +340,13 @@ a button:hover {
     transition: transform 0.3s ease-in-out;
     min-height: 300px;
     cursor: pointer;
+    overflow: hidden;
 
 }
 
 .what_we_do_card:hover {
     transform: scale(1.05);
+    background-size: 110%;
     /* Slightly increase the size on hover */
 }
 
@@ -418,6 +432,7 @@ margin-top: 47px;
 }
 .accordion-items{
     padding: 16px 24px;
+    cursor: pointer;
     background-color: #ffffff;
 }
 .accordion-items h2{
@@ -477,7 +492,7 @@ color: #18191F;
 
 
 }
-#answerDisplay{
+.question_right_div #answerDisplay{
   
 font-size: 16px;
 font-weight: 400;
@@ -486,3 +501,106 @@ letter-spacing: 0.02em;
 
 
 }
+.accordion-items svg{
+    min-width: 24px;
+    color: #BBCAFF;
+}
+.accordion-items.actives svg{
+    color:  #3E65F0;
+    
+}
+.collaborate_left{
+    max-width: 438px;
+    color: #ffffff;
+    padding-left: 2.5em;
+}
+.collaborate_left .text-2{
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.collaborate_left p{
+    color: #E2DEDC;
+    margin-bottom: 48px;
+
+    
+line-height: 30px;
+
+
+}
+
+@media  (max-width:1170px) {
+    .collaborate_container{
+        flex-direction: column;
+        
+    }
+    .collaborate_left{
+        padding-left: 0;
+        padding: 2em;
+        text-align: center;
+    }
+    .collaborate_left p{
+        text-align: center;
+    }
+    .collaborate_left button{
+      margin: auto;
+    }
+
+}
+
+.new_testimonials{
+    padding-left: 5.5em;
+}
+
+.new_testimonial_card{
+    display: flex;
+    flex-direction: column;
+}
+.new_testimonial_card .head_part{
+    padding: 40px;
+    color: #000000;
+    
+}
+.new_testimonial_card .down_part{
+    padding: 2em;
+    background: #CBAF67;
+    color: #FFFFFF;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+.new_testimonial_card .down_part .user_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+.new_testimonial_card .down_part .user_img img{
+    border-radius: 50%;
+    width: 104px;
+    height: 104px;
+   
+
+}
+
+.new_blog_card{
+
+    border-radius: 1em;
+    box-shadow: 0px 1px 15px 0px #0000001A;
+    overflow: hidden;
+
+}
+.new_blog_card .new_blog_head{
+    height:253px ;
+    
+}
+.new_blog_card .new_blog_bottom{
+    background: #ffffff;
+    padding: 2em;
+    height: 197px;
+}
+.new_blog_card .new_blog_bottom a{
+    color: #B59B4E;
+}
+
+
