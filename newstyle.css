@@ -212,6 +212,7 @@ a button:hover {
     .hero_left {
         margin-top: 0;
         padding: 1.5em;
+        padding-top: 0;
     }
 
     .hero_right {
@@ -278,6 +279,7 @@ a button:hover {
 
     .head_bg {
         height: 60px;
+        top: -5px;
     }
 
     .hero__btn {
@@ -489,12 +491,15 @@ a button:hover {
     }
 
     .text-2 {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.2;
+        margin-bottom: 1.5em;
     }
-
+    .about_left,.about_right{
+        padding: 0 1em;
+    }
     .about_left p {
-        margin-top: 1.5em;
+        margin-top: 0.5em;
     }
 }
 
@@ -614,7 +619,12 @@ a button:hover {
 .mobile_accordian {
     padding: 0em 1em;
 }
-
+.mobile_accordian .accordion-button{
+    font-size: 14px;
+}
+.mobile_accordian .accordion-body{
+    font-size: 14px;
+}
 .mobile_accordian .accordion-header .accordion-button::before {
     content: "";
     display: inline-block;
@@ -659,6 +669,8 @@ a button:hover {
     box-shadow: 0px 1px 15px 0px #0000001A;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
+    z-index: 10;
+    
 }
 
 .new_testimonial_card .head_part {
@@ -739,7 +751,7 @@ a button:hover {
     font-weight: 400;
     line-height: 30px;
     color: #373642;
-
+    text-align: left;
 
 }
 
@@ -804,7 +816,7 @@ a button:hover {
     }
 
     .new_blog_card .new_blog_bottom p {
-        text-align: left;
+       
         justify-items: left;
     }
 
@@ -864,5 +876,33 @@ a button:hover {
     .btn_external button{
         padding: 0.5em;
        
+    }
+    .btn_outer{
+        width: 100%;
+        margin-top: 1em;
+    }
+}
+
+.read_blogs,.see_what_box{
+    position: relative;
+    z-index: 2;
+}
+.left_img_blog{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.see_what_box .see_what_img{
+    position: absolute;
+    left: -7em;
+    top: 40%;
+    z-index: -1;
+}
+@media screen and (max-width:768px) {
+    .left_img_blog{
+        max-width: 50%;
+    }
+    .see_what_box .see_what_img{
+        max-width: 40%;
     }
 }
