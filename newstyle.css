@@ -279,17 +279,22 @@ a button:hover {
 
     .head_bg {
         height: 60px;
-        top: -5px;
+        top: 0px;
     }
 
     .hero__btn {
         gap: 1em;
         padding-bottom: 2.5em;
     }
-
+    .hero_upper{
+        align-items: center;
+    }
     .experience_box {
         width: 75px;
         height: 75px;
+    }
+    .hero_sub_text{
+        text-align: center;
     }
 
     .experience_box p {
@@ -299,6 +304,13 @@ a button:hover {
 
     .company_logo {
         margin-bottom: 34px;
+        display: flex;
+        justify-content: center;
+      
+    }
+    .company_logo img{
+        max-width: 80%;
+        margin: auto;
     }
 }
 
@@ -488,18 +500,22 @@ a button:hover {
 @media screen and (max-width:768px) {
     .text-1 {
         margin-bottom: 0.8em;
+        text-align: center;
     }
 
     .text-2 {
-        font-size: 20px;
+        font-size: 22px;
         line-height: 1.2;
-        margin-bottom: 1.5em;
+        margin-bottom: 2em;
+        text-align: center;
     }
     .about_left,.about_right{
         padding: 0 1em;
     }
     .about_left p {
-        margin-top: 0.5em;
+        margin-top: 0em;
+        text-align: center;
+        
     }
 }
 
