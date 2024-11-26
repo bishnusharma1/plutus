@@ -35,18 +35,7 @@ button.white {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-button.outline {
-    border: 1px solid #B59B4E;
-    border-radius: 0.5em;
-    background: transparent;
-    background: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
-    -webkit-background-clip: text;
-    /* Ensures the gradient is clipped to the text */
-    -webkit-text-fill-color: transparent;
-    /* Makes the text transparent to reveal the gradient */
 
-
-}
 
 @media screen and (max-width:412px) {
 
@@ -59,7 +48,18 @@ button.outline {
         font-size: 14px;
     }
 }
+button.outline {
+    border: 1px solid #B59B4E;
+    border-radius: 0.5em;
+    background: transparent;
+    background: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
+    -webkit-background-clip: text;
+    /* Ensures the gradient is clipped to the text */
+    -webkit-text-fill-color: transparent;
+    /* Makes the text transparent to reveal the gradient */
 
+
+}
 a button:hover {
     scale: 1.02;
 }
@@ -839,5 +839,30 @@ a button:hover {
     .btn_external {
         margin-top: 1.5em;
         width: 100%;
+    }
+}
+.btn_external button,     .review_card_bottom button{
+    border-radius: 0.5em;
+    border-color: #AF8E2F;
+    background: transparent;
+    padding: 1em;
+}
+.btn_external svg,.review_card_bottom svg{
+    color: #B59B4E;
+    width: 25px;
+    height: 25px;
+}
+@media screen and (max-width:412px) {
+    .review_card_bottom button{
+        padding: 0.5em;
+    
+    }
+    .btn_external svg,.review_card_bottom svg{
+        width: 20px;
+        height: 20px;
+    }
+    .btn_external button{
+        padding: 0.5em;
+       
     }
 }
