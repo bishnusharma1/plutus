@@ -142,7 +142,14 @@ a button:hover {
     align-items: center;
     justify-content: center;
 }
-
+.experience_box1{
+margin-left: 5.5em;
+}
+@media screen and (max-width:768px) {
+    .experience_box1{
+        margin-left: 1em;
+        }
+}
 .experience_box p {
     font-size: 42px;
     font-weight: 700;
@@ -407,7 +414,29 @@ a button:hover {
     color: #AF8E2F;
 
 }
+.why_text_2{
+    max-width: 1009px;
+    margin-bottom: 1.5em;
+}
+.why_choose_mobile{
+    display: none;
+}
 
+
+@media  screen and (max-width:1000px) {
+    #why_choose_desktop{
+        display: none;
+    }
+    .why_choose_mobile{
+        display: block;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .why_text_2{
+        max-width: none;
+    }
+}
 .about_left p {
 margin-top: 47px;
     font-size: 18px;
@@ -483,7 +512,7 @@ background: #3E65F0;
     border-radius: 1em;
     
 }
-#questionDisplay{
+#questionDisplay h4{
 font-size: 18px;
 font-weight: 700;
 line-height: 28px;
@@ -492,7 +521,7 @@ color: #18191F;
 
 
 }
-.question_right_div #answerDisplay{
+.question_right_div #answerDisplay p{
   
 font-size: 16px;
 font-weight: 400;
@@ -527,6 +556,20 @@ line-height: 30px;
 
 
 }
+.mobile_accordian{
+    padding: 0em 1em;
+}
+
+.mobile_accordian .accordion-header .accordion-button::before {
+    content: ""; 
+    display: inline-block; 
+    min-width: 24px; 
+    height: 24px; 
+    background-color: #BBCAFF; 
+    border-radius: 50%; 
+    margin-right: 8px; 
+    vertical-align: middle; 
+}
 
 @media  (max-width:1170px) {
     .collaborate_container{
@@ -552,8 +595,12 @@ line-height: 30px;
 }
 
 .new_testimonial_card{
+  margin-top: 0.2em;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 1px 15px 0px #0000001A;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 .new_testimonial_card .head_part{
     padding: 40px;
@@ -604,3 +651,35 @@ line-height: 30px;
 }
 
 
+
+
+ .logos1.remove_before.labour-law-logos:after,.logos1.remove_before.labour-law-logos:before{
+    display: none;
+}
+
+.logos.remove_before.labour-law-logos:after,.logos.remove_before.labour-law-logos:before{
+    display: none;
+}
+.min-width{
+    min-width: 250px
+}
+.section-sub-title{
+    max-width: 590px;
+}
+@media screen and (max-width:1000px) {
+    .section-title{
+        text-align: center;
+    }
+    .section-sub-title{
+        text-align: center;
+    }
+    .top_header{
+        width: 100%;
+        align-items: center;
+      
+    }
+    .btn_external{
+        margin-top: 1.5em;
+        width: 100%;
+    }
+}
