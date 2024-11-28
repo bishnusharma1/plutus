@@ -709,21 +709,7 @@ a button:hover {
     padding-bottom: 20px;
     color: #000000;
 }
-@media screen and (max-width:768px) {
-    .new_testimonial_card {
-        
-        height: auto;
-    }
-    .new_testimonial_card .head_part p{
-        font-size: 14px !important;
-    }
-    .new_testimonial_card .head_part {
-        flex: none;
-    }
-    .new_testimonial_card .down_part{
-        padding: 1em;
-    }
-}
+
 .new_testimonial_card .down_part {
    
     padding: 2em;
@@ -746,7 +732,9 @@ a button:hover {
 
 
 }
-
+.new_testimonial_card .down_part span {
+    text-align: left;
+}
 .new_testimonial_card .down_part .user_img img {
 
     width: 104px;
@@ -846,6 +834,20 @@ a button:hover {
 }
 
 @media screen and (max-width:768px) {
+    .new_testimonial_card {
+        
+        height: auto;
+    }
+    .new_testimonial_card .head_part p{
+        font-size: 14px !important;
+        margin-bottom: 0;
+    }
+    .new_testimonial_card .head_part {
+        flex: none;
+    }
+    .new_testimonial_card .down_part{
+        padding: 1em;
+    }
     .new_testimonial_card .down_part .user_img img {
         border-radius: 50%;
         width: 60px;
@@ -854,7 +856,7 @@ a button:hover {
     }
 
     .new_testimonial_card .head_part {
-        padding: 25px;
+        padding: 1.5em;
     }
 
     .new_testimonial_card .down_part h4 {
