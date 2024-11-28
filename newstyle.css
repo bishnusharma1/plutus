@@ -834,6 +834,9 @@ a button:hover {
 }
 
 @media screen and (max-width:768px) {
+     .testimonials_box.new_testimonials{
+        margin-top: -1.5em !important;
+    }
     .new_testimonial_card {
         
         height: auto;
