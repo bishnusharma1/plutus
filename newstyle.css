@@ -679,44 +679,76 @@ a button:hover {
 
 .new_testimonials {
     padding-left: 5.5em;
+   
+    
 }
 
 .new_testimonial_card {
     margin-top: 0.2em;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
+    height: 100%;
     box-shadow: 0px 1px 15px 0px #0000001A;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+    /* border-top-left-radius: 1em;
+    border-top-right-radius: 1em; */
+    border-radius: 1em;
+  
     z-index: 10;
+
+
+    
+   
+
+
     
 }
 
 .new_testimonial_card .head_part {
+    flex: 1;
     padding: 40px;
+    padding-bottom: 20px;
     color: #000000;
-
 }
-
+@media screen and (max-width:768px) {
+    .new_testimonial_card {
+        
+        height: auto;
+    }
+    .new_testimonial_card .head_part p{
+        font-size: 14px !important;
+    }
+    .new_testimonial_card .head_part {
+        flex: none;
+    }
+    .new_testimonial_card .down_part{
+        padding: 1em;
+    }
+}
 .new_testimonial_card .down_part {
+   
     padding: 2em;
+    
     background: #CBAF67;
     color: #FFFFFF;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
+   
 }
-
+.testimonials_box.new_testimonials .slick-slide > div{
+    padding-bottom: 1.5em;
+}
 .new_testimonial_card .down_part .user_img {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 
 
 
 }
 
 .new_testimonial_card .down_part .user_img img {
-    border-radius: 50%;
+
     width: 104px;
     height: 104px;
 
@@ -826,7 +858,8 @@ a button:hover {
     }
 
     .new_testimonial_card .down_part h4 {
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 0.2em;
     }
 
     .new_blog_card .new_blog_bottom h4 {
@@ -840,7 +873,7 @@ a button:hover {
     }
 
     .new_testimonial_card .down_part span {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .new_blog_card .new_blog_bottom a {
