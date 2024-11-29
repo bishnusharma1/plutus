@@ -1299,6 +1299,7 @@ a button:hover {
 }
 
 .head_mission.contact_top .mission_left .mission_left_inner {
+    margin-top: 2.5em;
     max-width: 673px;
     padding-left: 6em;
 }
@@ -1307,7 +1308,6 @@ a button:hover {
     .contact_right {
         justify-content: center;
         min-width: 100%;
-
     }
 
     .contact_right img {
@@ -1326,11 +1326,13 @@ a button:hover {
     .head_mission.contact_top .mission_left .mission_left_inner {
         padding-left: none;
     }
+
     .head_mission .mission_left .mission_left_inner.contact_left h1 {
-    font-size: 28px;
-    line-height: 1.5;
-    text-align: center;
+        font-size: 28px;
+        line-height: 1.5;
+        text-align: center;
     }
+
     .head_mission .mission_left .mission_left_inner.contact_left p {
         text-align: center;
         line-height: 1.5;
@@ -1370,7 +1372,7 @@ a button:hover {
     border: 2px solid #007DFC;
 }
 
-.location_left .img_border {
+.location_left .img_border:nth-child(odd) {
     width: 54px;
     min-width: 30px;
     height: 100%;
@@ -1379,6 +1381,16 @@ a button:hover {
     justify-content: center;
     border-radius: 26px 0px 0px 26px;
 }
+.location_box:nth-child(odd) .img_border{
+    background: #BEBEBE;
+}
+.location_box:nth-child(even) .img_border{
+    background: #818181;
+}
+.location_box.active:nth-child(even) .img_border,.location_box.active:nth-child(odd) .img_border{
+    background: #5596D8;
+}
+
 
 .location_left .loc_img {
     background: #ffffff;
