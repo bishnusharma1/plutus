@@ -1212,11 +1212,27 @@ a button:hover {
 
 }
 
+.head_mission .mission_left .mission_left_inner.contact_left h1 {
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 68.2px;
+    text-align: left;
+    margin-bottom: 0.4em;
+}
 
-.contact_right{
+.head_mission .mission_left .mission_left_inner.contact_left p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32.78px;
+    text-align: left;
+}
+
+.contact_right {
+    margin-top: 2.5em;
     justify-content: flex-end;
     min-width: 600px
 }
+
 .contact_right img {
 
     max-width: 70%;
@@ -1286,28 +1302,40 @@ a button:hover {
     max-width: 673px;
     padding-left: 6em;
 }
+
 @media screen and (max-width:815px) {
-    .contact_right{
+    .contact_right {
         justify-content: center;
         min-width: 100%;
-        
+
     }
-    .contact_right img{
+
+    .contact_right img {
         border-radius: none;
         max-width: 100%;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
     }
 }
+
 @media screen and (max-width:768px) {
     .contact_left form .input_s input {
         width: 100%;
     }
-  
+
     .head_mission.contact_top .mission_left .mission_left_inner {
         padding-left: none;
     }
-    
+    .head_mission .mission_left .mission_left_inner.contact_left h1 {
+    font-size: 28px;
+    line-height: 1.5;
+    text-align: center;
+    }
+    .head_mission .mission_left .mission_left_inner.contact_left p {
+        text-align: center;
+        line-height: 1.5;
+    }
+
 
 }
 
@@ -1413,51 +1441,59 @@ a button:hover {
     width: auto;
     margin-bottom: 1.5em;
 }
-.location_left .location_box .loc_img{
+
+.location_left .location_box .loc_img {
     min-width: 195px;
 }
+
 @media screen and (max-width:1300px) {
-    .location_right{
-        
+    .location_right {
+
         width: 100%;
         height: 50vh;
         align-items: center;
         justify-content: center;
     }
-    .location_right iframe{
+
+    .location_right iframe {
         width: 100%;
-        
+
     }
+
     .location_left {
         width: 100%;
         padding: 1em;
-     
+
     }
 }
+
 @media screen and (max-width:768px) {
-   
-    .location_box{
+
+    .location_box {
         width: auto;
         height: auto;
     }
-    .head_mission.contact_top .mission_left .mission_left_inner{
+
+    .head_mission.contact_top .mission_left .mission_left_inner {
         padding-left: 0;
     }
- 
-    .location_right h1{
+
+    .location_right h1 {
         font-size: 28px;
     }
+
     .location_left .location_box .loc_detail span {
         font-size: 12px;
         line-height: 1.2;
     }
-   
-    .location_left .location_box .loc_detail{
+
+    .location_left .location_box .loc_detail {
         padding: 0.5em;
     }
-    .location_left .location_box .loc_detail h3{
+
+    .location_left .location_box .loc_detail h3 {
         font-size: 16px;
         line-height: 1.2;
     }
-    
+
 }
