@@ -1216,6 +1216,7 @@ a button:hover {
     margin-top: 7em;
     margin-bottom: 2em;
     max-width: 550px;
+    justify-content: end;
 
 }
 
@@ -1297,6 +1298,16 @@ a button:hover {
     .head_mission.contact_top .mission_left .mission_left_inner {
         padding-left: none;
     }
+    .contact_right{
+        justify-content: center;
+        
+    }
+    .contact_right img{
+        border-radius: none;
+        max-width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
 
 }
 
@@ -1333,6 +1344,7 @@ a button:hover {
 
 .location_left .img_border {
     width: 54px;
+    min-width: 30px;
     height: 100%;
     background: #BEBEBE;
     display: flex;
@@ -1401,13 +1413,29 @@ a button:hover {
     width: auto;
     margin-bottom: 1.5em;
 }
-
-@media screen and (max-width:768px) {
+.location_left .location_box .loc_img{
+    min-width: 195px;
+}
+@media screen and (max-width:1300px) {
+    .location_right{
+        
+        width: 100%;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .location_right iframe{
+        width: 100%;
+        
+    }
     .location_left {
         width: 100%;
         padding: 1em;
      
     }
+}
+@media screen and (max-width:768px) {
+   
     .location_box{
         width: auto;
         height: auto;
@@ -1415,12 +1443,21 @@ a button:hover {
     .head_mission.contact_top .mission_left .mission_left_inner{
         padding-left: 0;
     }
-    .location_right{
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
+ 
     .location_right h1{
         font-size: 28px;
     }
+    .location_left .location_box .loc_detail span {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+   
+    .location_left .location_box .loc_detail{
+        padding: 0.5em;
+    }
+    .location_left .location_box .loc_detail h3{
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    
 }
