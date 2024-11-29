@@ -1212,14 +1212,11 @@ a button:hover {
 
 }
 
-.contact_left .contact_right {
-    margin-top: 7em;
-    margin-bottom: 2em;
-    max-width: 550px;
-    justify-content: end;
 
+.contact_right{
+    justify-content: flex-end;
+    min-width: 600px
 }
-
 .contact_right img {
 
     max-width: 70%;
@@ -1289,17 +1286,10 @@ a button:hover {
     max-width: 673px;
     padding-left: 6em;
 }
-
-@media screen and (max-width:768px) {
-    .contact_left form .input_s input {
-        width: 100%;
-    }
-
-    .head_mission.contact_top .mission_left .mission_left_inner {
-        padding-left: none;
-    }
+@media screen and (max-width:815px) {
     .contact_right{
         justify-content: center;
+        min-width: 100%;
         
     }
     .contact_right img{
@@ -1308,6 +1298,16 @@ a button:hover {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
     }
+}
+@media screen and (max-width:768px) {
+    .contact_left form .input_s input {
+        width: 100%;
+    }
+  
+    .head_mission.contact_top .mission_left .mission_left_inner {
+        padding-left: none;
+    }
+    
 
 }
 
