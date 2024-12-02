@@ -1,9 +1,4 @@
 
-
-
-
-
-
 AOS.init({
   duration: 600
  });
@@ -179,3 +174,25 @@ swiper.on('slideChange', function () {
  
 
            
+ $('.slider_content').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+  verticalSwiping: true,
+  vertical: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        vertical: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});

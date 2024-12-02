@@ -160,7 +160,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     <li class="nav-item">
                         <a href="aboutUs.html" style="color: #fff;">About us</a>
                     </li>
-                    <li class="nav-item dropdown" id="myDropdown">
+                    <li class="nav-item dropdown active-nav" id="myDropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Services </a>
                         <ul class="dropdown-menu">
                             <li> <a class="dropdown-item" href="vcfo.html"
@@ -173,7 +173,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     <li class="nav-item">
                         <a class="nav-link" href="https://plutusco.com/blogs/" style="color: #fff;">Our Blogs</a>
                     </li>
-                    <li class="nav-item active-nav">
+                    <li class="nav-item ">
                         <a href="contact.html" class="nav-link" style="color: #fff;"
                             onclick="return gtag_report_conversion('https://plutusco.com/contact.html');">Contact</a>
                     </li>
@@ -193,119 +193,398 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </div>
     </nav>
 
+    <div class="d-flex  flex-wrap head_mission services_hero" style="    background: #101010;">
 
-    <div class="d-flex  align-items-start flex-wrap head_mission contact_top">
         <div class="mission_left min-width" style="flex: 1;">
-            <div class=" mission_left_inner d-flex flex-column g-1 contact_left">
-                <h1 style="font-weight: 400;">Interested? <br> <span style="font-weight: 600;"> Let’s talk!</span></h1>
-                <p>Just fill this form and we will contact you promptly to discuss your requirements.</p>
-                <p>Alternatively, drop us a message at <span style="color: #BC962C;"> info@plutusco.com</span> or
-                    <span style="color: #BC962C;"> +91 99999 99999 </span></p>
-
-                <form action="">
-                    <div class="input_s">
-                        <input type="text" placeholder="Name">
-                    </div>
-                    <div class="input_s">
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="input_s">
-                        <input type="phone" placeholder="Phone">
-                    </div>
-                    <div class="input_s">
-                        <input type="text" placeholder="Website">
-                    </div>
-                    <div class="input_s">
-                        <input type="text" placeholder="Tell Us About Your Project">
-                    </div>
-                    <div class="file-upload">
-
-                        <input type="file" id="fileInput" class="file-input" />
-                        <img src="assets/newhome/attach.png" alt="">
-                    </div>
-                    <button>Submit
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                            class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+            <div class="mission_left_inner services_left_inner">
+                <div class="d-flex align-items-center head_services" style="gap: 1em;">
+                    <h1 style="color:  #FFFFFF;">Services</h1>
+                    <img src="/assets/newhome/service_icon_hero.png" alt="">
+                </div>
+                <p style="color: #E2DEDC;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <div class="d-flex align-items-center btn_services" style="gap: 1em;">
+                    <button>Contact Us<svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2139_2168)">
+                                <path
+                                    d="M18.4999 7.05C18.4999 6.78478 18.3946 6.53043 18.207 6.34289C18.0195 6.15536 17.7652 6.05 17.4999 6.05L9.49994 6C9.23472 6 8.98037 6.10536 8.79283 6.29289C8.6053 6.48043 8.49994 6.73478 8.49994 7C8.49994 7.26522 8.6053 7.51957 8.79283 7.70711C8.98037 7.89464 9.23472 8 9.49994 8H15.0599L6.78994 16.29C6.69621 16.383 6.62182 16.4936 6.57105 16.6154C6.52028 16.7373 6.49414 16.868 6.49414 17C6.49414 17.132 6.52028 17.2627 6.57105 17.3846C6.62182 17.5064 6.69621 17.617 6.78994 17.71C6.8829 17.8037 6.9935 17.8781 7.11536 17.9289C7.23722 17.9797 7.36793 18.0058 7.49994 18.0058C7.63195 18.0058 7.76266 17.9797 7.88452 17.9289C8.00638 17.8781 8.11698 17.8037 8.20994 17.71L16.4999 9.42V15C16.4999 15.2652 16.6053 15.5196 16.7928 15.7071C16.9804 15.8946 17.2347 16 17.4999 16C17.7652 16 18.0195 15.8946 18.207 15.7071C18.3946 15.5196 18.4999 15.2652 18.4999 15V7.05Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2139_2168">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
                         </svg>
                     </button>
-                </form>
+                    <button>Submit RFP<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0002 12C15.0009 12.1316 14.9757 12.2621 14.926 12.3839C14.8762 12.5057 14.8029 12.6166 14.7102 12.71L10.7102 16.71C10.5219 16.8983 10.2665 17.0041 10.0002 17.0041C9.73388 17.0041 9.47849 16.8983 9.29018 16.71C9.10188 16.5217 8.99609 16.2663 8.99609 16C8.99609 15.7337 9.10188 15.4783 9.29018 15.29L12.5902 12L9.30018 8.71C9.13636 8.5187 9.05075 8.27262 9.06047 8.02095C9.07019 7.76927 9.17453 7.53053 9.35262 7.35244C9.53072 7.17434 9.76945 7.07001 10.0211 7.06029C10.2728 7.05057 10.5189 7.13617 10.7102 7.3L14.7102 11.3C14.8949 11.4863 14.9991 11.7377 15.0002 12Z"
+                                fill="#D9BA65" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mission_right min-width service_right_hero" style="flex: 1;">
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="assets/newhome/service_hero.png" alt="">
             </div>
         </div>
 
-        <div class="d-flex  align-items-center min-width   contact_right" style="flex: 1;">
-            <img src="assets/newhome/contact.jpg" alt="" class="img-fluid">
+    </div>
+
+
+    <!-- Swiper -->
+    <div class="section-wrapper main_what_do services_tabs_section">
+        <div class="custom-container">
+            <!-- Tabs -->
+            <div class="container d-flex flex-column gap-3 text-center custom_tabs_nt">
+                <h2 class="container text-center">What We Do?</h2>
+                <div class="d-flex">
+                    <div
+                        class="d-flex justify-content-center align-items-center justify-content-evenly mb-0 tab-items service_tabs">
+                        <p class="mb-0 btn-tab active-btn-tab" data-tab="accounting">Accounting & Assurance</p>
+                        <p class="mb-0 btn-tab" data-tab="payroll">Payroll & labour laws</p>
+                        <p class="mb-0 btn-tab" data-tab="investment">Investment support</p>
+                        <p class="mb-0 btn-tab" data-tab="compliance">Compliance & regulatory</p>
+                        <p class="mb-0 btn-tab" data-tab="advisory">Advisory services</p>
+                        <p class="mb-0 btn-tab" data-tab="accounting">Accounting & Assurance</p>
+                        <p class="mb-0 btn-tab" data-tab="payroll">Payroll & labour laws</p>
+                        <p class="mb-0 btn-tab" data-tab="investment">Investment support</p>
+                        <p class="mb-0 btn-tab" data-tab="compliance">Compliance & regulatory</p>
+                        <p class="mb-0 btn-tab" data-tab="advisory">Advisory services</p>
+                    </div>
+                    <div class="d-flex">
+                        <button class="prev-btn">Prev</button>
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+
+            </div>
+            <script>
+                // Select the container and buttons
+                const tabContainer = document.querySelector('.tab-items.service_tabs');
+                const prevButton = document.querySelector('.prev-btn'); // Select the "prev" button
+                const nextButton = document.querySelector('.next-btn'); // Select the "next" button
+
+                // Set the scroll step (adjust this for smoother or faster scrolling)
+                const scrollStep = 150;
+
+                // Scroll to the left when clicking "prev"
+                prevButton.addEventListener('click', () => {
+                    tabContainer.scrollBy({
+                        left: -scrollStep, // Scroll left
+                        behavior: 'smooth' // Smooth scrolling
+                    });
+                });
+
+                // Scroll to the right when clicking "next"
+                nextButton.addEventListener('click', () => {
+                    tabContainer.scrollBy({
+                        left: scrollStep, // Scroll right
+                        behavior: 'smooth' // Smooth scrolling
+                    });
+                });
+
+            </script>
+            <!-- Swiper for image and bottom part -->
+
+            <div class="swiper-container" style="overflow: hidden;margin-top: 2.5em;">
+                <div class="swiper-wrapper" id="tax-slide">
+                    <div class="swiper-slide   d-flex flex-wrap  justify-content-around" data-part="accounting"
+                        style="background: transparent;">
+                        <div class="active-image min-width" style="flex:1">
+                            <img src="assets/account.svg" alt="accountings" style="max-width: 80%;">
+                        </div>
+                        <div class="bottom-part active part min-width" data-part="accounting" style="flex:1">
+                            <h2>Accounting & Assurance</h2>
+                            <p style=" color:var(--heading-color)">We provide accurate accounting and reliable assurance
+                                services,
+                                ensuring your financial statements are compliant and transparent, helping you make
+                                informed decisions.
+                            </p>
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="d-flex align-items-center gap-2"
+                                    style="color: rgba(0, 87, 255, 1); font-size:16px; white-space: nowrap;">
+                                    Learn more
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
+                                            fill="#0057FF" />
+                                    </svg>
+                                </div>
+                                <a href="contact.html"
+                                    onclick="return gtag_report_conversion('https://plutusco.com/contact.html');"><button>Explore
+                                        all services</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex  flex-wrap  justify-content-around" data-part="payroll"
+                        style="background: transparent;">
+                        <div class="active-image min-width" style="flex:1">
+                            <img src="assets/payroll.svg" alt="payroll" style="max-width: 80%;">
+                        </div>
+                        <div class="bottom-part active part min-width" data-part="payroll" style="flex:1">
+                            <h2>Payroll & Labour Laws</h2>
+                            <p style=" color:var(--heading-color)">Our payroll and labour law services ensure seamless
+                                payroll
+                                processing and compliance with legal requirements, simplifying workforce management for
+                                your business.
+                            </p>
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="d-flex align-items-center gap-2"
+                                    style="color: rgba(0, 87, 255, 1); font-size:16px; white-space: nowrap;">
+                                    Learn more
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
+                                            fill="#0057FF" />
+                                    </svg>
+                                </div>
+                                <a href="contact.html"
+                                    onclick="return gtag_report_conversion('https://plutusco.com/contact.html');"><button>Explore
+                                        all services</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex  flex-wrap  justify-content-around" data-part="investment"
+                        style="background: transparent;">
+                        <div class="active-image min-width" style="flex:1">
+                            <img src="assets/investment.svg" alt="investment" style="max-width: 80%;">
+                        </div>
+                        <div class="bottom-part active part min-width" data-part="investment" style="flex:1">
+                            <h2>Investment Support</h2>
+                            <p style=" color:var(--heading-color)">We offer expert guidance in investment strategies,
+                                helping you
+                                maximise returns and make informed financial decisions for sustainable growth.</p>
+                            <div class="d-flex  gap-3 align-items-center">
+                                <div class="d-flex align-items-center gap-2"
+                                    style="color: rgba(0, 87, 255, 1); font-size:16px; white-space: nowrap;">
+                                    Learn more
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
+                                            fill="#0057FF" />
+                                    </svg>
+                                </div>
+                                <a href="contact.html"
+                                    onclick="return gtag_report_conversion('https://plutusco.com/contact.html');"><button>Explore
+                                        all services</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex  flex-wrap justify-content-around" data-part="advisory"
+                        style="background: transparent;">
+                        <div class="active-image min-width" style="flex:1">
+                            <img src="assets/Compliance.svg" alt="tab" style="max-width:80%">
+                        </div>
+                        <div class="bottom-part active part min-width" data-part="compliance" style="flex:1">
+                            <h2>Compliance & Regulatory</h2>
+                            <p style=" color:var(--heading-color)">Stay on top of regulatory obligations with our
+                                compliance services,
+                                ensuring your business meets all statutory requirements with ease.</p>
+                            <div class="d-flex  gap-3 align-items-center">
+                                <div class="d-flex align-items-center gap-2"
+                                    style="color: rgba(0, 87, 255, 1); font-size:16px; white-space: nowrap;">
+                                    Learn more
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
+                                            fill="#0057FF" />
+                                    </svg>
+                                </div>
+                                <a href="contact.html"
+                                    onclick="return gtag_report_conversion('https://plutusco.com/contact.html');"><button>Explore
+                                        all services</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex  flex-wrap  justify-content-around" data-part="advisory"
+                        style="background: transparent;">
+                        <div class="active-image min-width" style="flex:1">
+                            <img src="assets/Advisory.svg" alt="tab" style="max-width: 80%;">
+                        </div>
+                        <div class="bottom-part active part min-width" data-part="advisory" style="flex:1">
+                            <h2>Advisory Services</h2>
+                            <p style=" color:var(--heading-color)">Our advisory services provide strategic insights and
+                                practical
+                                solutions to help your business thrive in a competitive market.</p>
+                            <div class="d-flex  gap-3 align-items-center">
+                                <div class="d-flex align-items-center gap-2"
+                                    style="color: rgba(0, 87, 255, 1); font-size:16px; white-space: nowrap;">
+                                    Learn more
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
+                                            fill="#0057FF" />
+                                    </svg>
+                                </div>
+                                <a href="contact.html"
+                                    onclick="return gtag_report_conversion('https://plutusco.com/contact.html');"><button>Explore
+                                        all services</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="d-flex g-3 flex-wrap  justify-content-between">
-        <div class="d-flex flex-column g-1 location_left" >
-         
-                <div class="location_box active" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.071590797274!2d77.2246807749566!3d28.62761638430494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd32431fd353%3A0xdc1b117c1e755bc3!2sNilgiri%20Apartments!5e0!3m2!1sen!2sin!4v1732810015085!5m2!1sen!2sin">
-                    <div class="img_border"></div>
-                    <div class="loc_img"><img src="assets/newhome/loca1.png" alt=""></div>
-                    <div class="d-flex flex-column justify-content-center align-items-start gap-1 loc_detail">
-                        <h3>Corporate Office</h3>
-                        <span>503, Nilgiri Apartments, 9, Barakhamba Road, New Delhi 110001</span>
-                    </div>
-                </div>
-                <div class="location_box" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.8861476748793!2d77.27571207928321!3d28.63317417132488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfca969b34b59%3A0x19717f42650874be!2sBlock%20H%2C%20Guru%20Nanak%20Pura%2C%20Laxmi%20Nagar%2C%20Delhi%2C%20110092!5e0!3m2!1sen!2sin!4v1732810871306!5m2!1sen!2sin">
-                    <div class="img_border"></div>
-                    <div class="loc_img"><img src="assets/newhome/loca1.png" alt=""></div>
-                    <div class="d-flex flex-column justify-content-center align-items-start gap-1 loc_detail">
-                        <h3>State Office</h3>
-                        <span>Office 101-102, Building no. A-9, Amrit Bhawan, Street 3, Guru Nanakpura, Laxmi Nagar, Delhi 110092</span>
-                    </div>
-                </div>
-                <div class="location_box" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.404963604104!2d91.76652267486783!3d26.118335893777708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5eb6b03d0e61%3A0x92ebca976ac505e0!2sMaulana%20Md.%20Tayabullah%20Hockey%20Stadium!5e0!3m2!1sen!2sin!4v1732810961844!5m2!1sen!2sin">
-                    <div class="img_border"></div>
-                    <div class="loc_img"><img src="assets/newhome/loc3.png" alt=""></div>
-                    <div class="d-flex flex-column justify-content-center align-items-start gap-1 loc_detail">
-                        <h3>Guwahati Office</h3>
-                        <span>2nd Floor, House no. 41, Lake View, Tayebulla complex, Md. Tayebulla road Dighalipukhuri Par (East), Guwahati-781001 Assam</span>
-                    </div>
-                </div>
-                <div class="location_box" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.3074021286684!2d77.40454057495191!3d28.500397690069782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce856f847b8c1%3A0x9cfac8756dec96da!2sNoida-Greater%20Noida%20Expy%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1732811016746!5m2!1sen!2sin">
-                    <div class="img_border"></div>
-                    <div class="loc_img"><img src="assets/newhome/loc4.png" alt=""></div>
-                    <div class="d-flex flex-column justify-content-center align-items-start gap-1 loc_detail">
-                        <h3>Noida Office</h3>
-                        <span>Nukleus Co-working Tower I.T. Tower, Plot no. 29, Sector 142, Noida, Uttar Pradesh - 201301</span>
-                    </div>
-                </div>
-     
-            
+
+
+    <div class="container-fluid py-5" style="background: linear-gradient(180deg, #FFFFFF 52.4%, #F4EEDD 100%);">
+        <div class="container">
+            <div class="section-title" style="color: #007DFC; font-weight: 400;">Clients</div>
         </div>
-        <div class="location_right  d-flex flex-column col-lg-6  justify-content-end" >
-                <!-- <img src="assets/newhome/about_1.png" alt=""> -->
-                 <h1>Presence across 4 Offices</h1>
-            <iframe id="locationMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.071590797274!2d77.2246807749566!3d28.62761638430494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd32431fd353%3A0xdc1b117c1e755bc3!2sNilgiri%20Apartments!5e0!3m2!1sen!2sin!4v1732810015085!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
+        <div class="logos remove_before labour-law-logos " style="padding-top: 3.5em; background-color: transparent;">
+            <div class="logos-slide" style="background-color: transparent;">
+
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/1.png" alt="">
+                </div>
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/2.png" alt="">
+                </div>
+
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/3.png" alt="">
+                </div>
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/4.png" alt="">
+                </div>
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/5.png" alt="">
+                </div>
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/6.png" alt="">
+                </div>
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/7.png" alt="">
+                </div>
+            </div>
+
         </div>
+        <div class="logos1 remove_before  labour-law-logos" style="background-color: transparent;">
+            <div class="logos-slide-right" style="background-color: transparent;">
+
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/8.png" alt="">
+                </div>
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/9.png" alt="">
+                </div>
+
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/10.png" alt="">
+                </div>
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/11.png" alt="">
+                </div>
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/12.png" alt="">
+                </div>
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/13.png" alt="">
+                </div>
+                <div class="d-flex  align-items-center logo_slide_img">
+                    <img src="assets/logos/14.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var copy = document.querySelector(".logos-slide").cloneNode(true);
+                document.querySelector(".logos").appendChild(copy);
+
+                var copySlideRight = document.querySelector(".logos-slide-right").cloneNode(true);
+                document.querySelector(".logos1").appendChild(copySlideRight);
+            });
+        </script>
     </div>
+
+
+
+    <div class="container-fluid mb-5 read_blogs" style="background: #ffffff; ">
     
-    <script>
-        // Select all location boxes and the iframe
-const locationBoxes = document.querySelectorAll('.location_box');
-const iframe = document.getElementById('locationMap');
+        <div class="container py-5 pb-0">
+            <div class="d-flex justify-content-between flex-wrap align-items-center px-0 top_header">
+                <div class="d-flex flex-column min-width">
+                    <div class="section-title" style="color: #100F1B;margin-bottom: 0.5em;">Our Clients Results
+                    </div>
+                 
+                </div>
+              
+            </div>
 
-// Function to handle clicks on location boxes
-locationBoxes.forEach(box => {
-    box.addEventListener('click', () => {
-        // Remove active class from all boxes
-        locationBoxes.forEach(box => box.classList.remove('active'));
+            <div class="row justify-content-between py-5 g-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="new_blog_card d-flex flex-column ">
+                        <div class="new_blog_head">
+                            <img src="assets/newhome/blog.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="new_blog_bottom">
+                            <h4 class="truncate-h4">Latest Insights into Modern Marketing</h4>
+                            <p class="truncate-p">Discover the dynamic realm of modern marketing through our latest
+                                insights. In an era
+                                marked by technological evolution, our comprehensive analysis delves into groundbreaking
+                                strategies shaping the industry.</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span>December 18th, 2023</span>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="new_blog_card d-flex flex-column ">
+                        <div class="new_blog_head">
+                            <img src="assets/newhome/blog-2.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="new_blog_bottom">
+                            <h4 class="truncate-h4">Tech Innovations Redefining the Business Landscape</h4>
+                            <p class="truncate-p">In the ever-evolving business landscape, groundbreaking tech
+                                innovations are reshaping the way enterprises operate. From artificial intelligence
+                                optimizing processes to blockchain securing transactions,</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span>December 18th, 2023</span>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="new_blog_card d-flex flex-column ">
+                        <div class="new_blog_head">
+                            <img src="assets/newhome/blog-2.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="new_blog_bottom">
+                            <h4 class="truncate-h4">Tech Innovations Redefining the Business Landscape</h4>
+                            <p class="truncate-p">In the ever-evolving business landscape, groundbreaking tech
+                                innovations are reshaping the way enterprises operate. From artificial intelligence
+                                optimizing processes to blockchain securing transactions,</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span>December 18th, 2023</span>
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        // Add active class to the clicked box
-        box.classList.add('active');
+        </div>
+    </div>
 
-        // Update iframe src
-        const newSrc = box.getAttribute('data-src');
-        iframe.setAttribute('src', newSrc);
-    });
-});
 
-    </script>
 
 
     <footer style="padding:0;">
