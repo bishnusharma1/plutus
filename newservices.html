@@ -239,31 +239,35 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
 
     <!-- Swiper -->
-    <div class="section-wrapper main_what_do services_tabs_section">
-        <div class="custom-container">
+
+    <div class="section-wrapper main_what_do services_tabs_section" style="background: linear-gradient(180deg, #FFFFFF 0%, #E5E5E5 100%);
+">
+        <div class="custom-container" style="padding-top: 24px;">
             <!-- Tabs -->
-            <div class="container d-flex flex-column gap-3 text-center custom_tabs_nt">
-                <h2 class="container text-center">What We Do?</h2>
-                <div class="d-flex">
+            <div class="container-fluid d-flex flex-column gap-3 text-center custom_tabs_ns"
+                style="page-break-inside: 1em;">
+
+                <div class="d-flex align-items-center main_tab">
+                    <!-- tab links -->
                     <div
                         class="d-flex justify-content-center align-items-center justify-content-evenly mb-0 tab-items service_tabs">
-                        <p class="mb-0 btn-tab active-btn-tab" data-tab="accounting">Accounting & Assurance</p>
-                        <p class="mb-0 btn-tab" data-tab="payroll">Payroll & labour laws</p>
-                        <p class="mb-0 btn-tab" data-tab="investment">Investment support</p>
-                        <p class="mb-0 btn-tab" data-tab="compliance">Compliance & regulatory</p>
-                        <p class="mb-0 btn-tab" data-tab="advisory">Advisory services</p>
-                        <p class="mb-0 btn-tab" data-tab="accounting">Accounting & Assurance</p>
-                        <p class="mb-0 btn-tab" data-tab="payroll">Payroll & labour laws</p>
-                        <p class="mb-0 btn-tab" data-tab="investment">Investment support</p>
-                        <p class="mb-0 btn-tab" data-tab="compliance">Compliance & regulatory</p>
-                        <p class="mb-0 btn-tab" data-tab="advisory">Advisory services</p>
+                        <p class="mb-0 btn-tab active-btn-tab" data-tab="service1">Investment Support</p>
+                        <p class="mb-0 btn-tab" data-tab="service2">Service 2</p>
+                        <p class="mb-0 btn-tab" data-tab="service3">Investment support</p>
+                        <p class="mb-0 btn-tab" data-tab="service4">Compliance & regulatory</p>
+                        <p class="mb-0 btn-tab" data-tab="service5">Advisory services</p>
+                        <p class="mb-0 btn-tab" data-tab="service6">Accounting & Assurance</p>
+                        <p class="mb-0 btn-tab" data-tab="service7">Payroll & labour laws</p>
+                        <p class="mb-0 btn-tab" data-tab="service8">service 8</p>
+                        <p class="mb-0 btn-tab" data-tab="service9">service 9</p>
+                        <p class="mb-0 btn-tab" data-tab="service10">service 10</p>
+                        <!-- add here more service -->
                     </div>
-                    <div class="d-flex">
-                        <button class="prev-btn">Prev</button>
-                        <button class="next-btn">Next</button>
+                    <div class="d-flex " style="gap: 0.5em; padding-bottom: 10px;">
+                        <div class="prev-btn" style="cursor: pointer;"><img src="assets/newhome/left.png" alt=""></div>
+                        <div class="next-btn" style="cursor: pointer;"><img src="assets/newhome/right.png" alt=""></div>
                     </div>
                 </div>
-
             </div>
             <script>
                 // Select the container and buttons
@@ -272,7 +276,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 const nextButton = document.querySelector('.next-btn'); // Select the "next" button
 
                 // Set the scroll step (adjust this for smoother or faster scrolling)
-                const scrollStep = 150;
+                const scrollStep = 250;
 
                 // Scroll to the left when clicking "prev"
                 prevButton.addEventListener('click', () => {
@@ -295,142 +299,790 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
             <div class="swiper-container" style="overflow: hidden;margin-top: 2.5em;">
                 <div class="swiper-wrapper" id="tax-slide">
-                    <div class="swiper-slide   d-flex flex-wrap  justify-content-around" data-part="accounting"
+                    <div class="swiper-slide   d-flex flex-wrap  justify-content-around" data-part="service1"
                         style="background: transparent;">
-                        <div class="active-image min-width" style="flex:1">
-                            <img src="assets/account.svg" alt="accountings" style="max-width: 80%;">
+                        <div class="active-image tab_s d-flex justify-content-start" style="flex:1">
+                            <img src="assets/newhome/investement_.png" alt="accountings" style="max-width: 100%;">
                         </div>
-                        <div class="bottom-part active part min-width" data-part="accounting" style="flex:1">
-                            <h2>Accounting & Assurance</h2>
-                            <p style=" color:var(--heading-color)">We provide accurate accounting and reliable assurance
-                                services,
-                                ensuring your financial statements are compliant and transparent, helping you make
-                                informed decisions.
-                            </p>
-                            <div class="d-flex gap-3 align-items-center">
-                                <div class="d-flex align-items-center gap-2"
-                                    style="color: rgba(0, 87, 255, 1); font-size:16px; white-space: nowrap;">
-                                    Learn more
-                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
-                                            fill="#0057FF" />
-                                    </svg>
-                                </div>
-                                <a href="contact.html"
-                                    onclick="return gtag_report_conversion('https://plutusco.com/contact.html');"><button>Explore
-                                        all services</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex  flex-wrap  justify-content-around" data-part="payroll"
-                        style="background: transparent;">
-                        <div class="active-image min-width" style="flex:1">
-                            <img src="assets/payroll.svg" alt="payroll" style="max-width: 80%;">
-                        </div>
-                        <div class="bottom-part active part min-width" data-part="payroll" style="flex:1">
-                            <h2>Payroll & Labour Laws</h2>
-                            <p style=" color:var(--heading-color)">Our payroll and labour law services ensure seamless
-                                payroll
-                                processing and compliance with legal requirements, simplifying workforce management for
-                                your business.
-                            </p>
-                            <div class="d-flex gap-3 align-items-center">
-                                <div class="d-flex align-items-center gap-2"
-                                    style="color: rgba(0, 87, 255, 1); font-size:16px; white-space: nowrap;">
-                                    Learn more
-                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
-                                            fill="#0057FF" />
-                                    </svg>
-                                </div>
-                                <a href="contact.html"
-                                    onclick="return gtag_report_conversion('https://plutusco.com/contact.html');"><button>Explore
-                                        all services</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide d-flex  flex-wrap  justify-content-around" data-part="investment"
-                        style="background: transparent;">
-                        <div class="active-image min-width" style="flex:1">
-                            <img src="assets/investment.svg" alt="investment" style="max-width: 80%;">
-                        </div>
-                        <div class="bottom-part active part min-width" data-part="investment" style="flex:1">
+                        <div class="tab_right_part active part d-flex flex-column gap-2 align-items-start"
+                            data-part="accounting" style="flex:1">
                             <h2>Investment Support</h2>
-                            <p style=" color:var(--heading-color)">We offer expert guidance in investment strategies,
-                                helping you
-                                maximise returns and make informed financial decisions for sustainable growth.</p>
-                            <div class="d-flex  gap-3 align-items-center">
-                                <div class="d-flex align-items-center gap-2"
-                                    style="color: rgba(0, 87, 255, 1); font-size:16px; white-space: nowrap;">
-                                    Learn more
-                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                            <p style=" color:var(--heading-color);">Investment support covers a range of services
+                                designed to assist the investor or businessman in making well-informed financial
+                                decisions. In order to maximize investment through the assessment of investment
+                                possibilities, their risks, and their strategic alignment, it entails due diligence,
+                                pre-investment review, portfolio management, and transaction structuring.
+                            </p>
+                            <div class="d-flex flex-column service_links " style="gap: 1em;">
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
-                                            fill="#0057FF" />
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
-                                </div>
-                                <a href="contact.html"
-                                    onclick="return gtag_report_conversion('https://plutusco.com/contact.html');"><button>Explore
-                                        all services</button></a>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex  flex-wrap justify-content-around" data-part="advisory"
+                    <div class="swiper-slide   d-flex flex-wrap  justify-content-around" data-part="service2"
                         style="background: transparent;">
-                        <div class="active-image min-width" style="flex:1">
-                            <img src="assets/Compliance.svg" alt="tab" style="max-width:80%">
+                        <div class="active-image tab_s d-flex justify-content-start" style="flex:1">
+                            <img src="assets/newhome/investement_.png" alt="accountings" style="max-width: 100%;">
                         </div>
-                        <div class="bottom-part active part min-width" data-part="compliance" style="flex:1">
-                            <h2>Compliance & Regulatory</h2>
-                            <p style=" color:var(--heading-color)">Stay on top of regulatory obligations with our
-                                compliance services,
-                                ensuring your business meets all statutory requirements with ease.</p>
-                            <div class="d-flex  gap-3 align-items-center">
-                                <div class="d-flex align-items-center gap-2"
-                                    style="color: rgba(0, 87, 255, 1); font-size:16px; white-space: nowrap;">
-                                    Learn more
-                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                        <div class="tab_right_part active part d-flex flex-column gap-2 align-items-start"
+                            data-part="accounting" style="flex:1">
+                            <h2>Service 2</h2>
+                            <p style=" color:var(--heading-color);">Investment support covers a range of services
+                                designed to assist the investor or businessman in making well-informed financial
+                                decisions. In order to maximize investment through the assessment of investment
+                                possibilities, their risks, and their strategic alignment, it entails due diligence,
+                                pre-investment review, portfolio management, and transaction structuring.
+                            </p>
+                            <div class="d-flex flex-column service_links " style="gap: 1em;">
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
-                                            fill="#0057FF" />
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
-                                </div>
-                                <a href="contact.html"
-                                    onclick="return gtag_report_conversion('https://plutusco.com/contact.html');"><button>Explore
-                                        all services</button></a>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide d-flex  flex-wrap  justify-content-around" data-part="advisory"
+                    <div class="swiper-slide   d-flex flex-wrap  justify-content-around" data-part="service3"
                         style="background: transparent;">
-                        <div class="active-image min-width" style="flex:1">
-                            <img src="assets/Advisory.svg" alt="tab" style="max-width: 80%;">
+                        <div class="active-image tab_s d-flex justify-content-start" style="flex:1">
+                            <img src="assets/newhome/investement_.png" alt="accountings" style="max-width: 100%;">
                         </div>
-                        <div class="bottom-part active part min-width" data-part="advisory" style="flex:1">
-                            <h2>Advisory Services</h2>
-                            <p style=" color:var(--heading-color)">Our advisory services provide strategic insights and
-                                practical
-                                solutions to help your business thrive in a competitive market.</p>
-                            <div class="d-flex  gap-3 align-items-center">
-                                <div class="d-flex align-items-center gap-2"
-                                    style="color: rgba(0, 87, 255, 1); font-size:16px; white-space: nowrap;">
-                                    Learn more
-                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                        <div class="tab_right_part active part d-flex flex-column gap-2 align-items-start"
+                            data-part="accounting" style="flex:1">
+                            <h2>Service 3</h2>
+                            <p style=" color:var(--heading-color);">Investment support covers a range of services
+                                designed to assist the investor or businessman in making well-informed financial
+                                decisions. In order to maximize investment through the assessment of investment
+                                possibilities, their risks, and their strategic alignment, it entails due diligence,
+                                pre-investment review, portfolio management, and transaction structuring.
+                            </p>
+                            <div class="d-flex flex-column service_links " style="gap: 1em;">
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M1.77917 1.15509C1.48628 0.862202 1.0114 0.862202 0.71851 1.15509C0.425617 1.44799 0.425617 1.92286 0.71851 2.21575L4.81532 6.31256L0.71851 10.4094C0.425617 10.7023 0.425617 11.1771 0.71851 11.47C1.0114 11.7629 1.48628 11.7629 1.77917 11.47L6.39426 6.85494C6.54377 6.70543 6.61696 6.5085 6.61383 6.31256C6.61696 6.11663 6.54377 5.9197 6.39426 5.77018L1.77917 1.15509Z"
-                                            fill="#0057FF" />
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
-                                </div>
-                                <a href="contact.html"
-                                    onclick="return gtag_report_conversion('https://plutusco.com/contact.html');"><button>Explore
-                                        all services</button></a>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide   d-flex flex-wrap  justify-content-around" data-part="service4"
+                        style="background: transparent;">
+                        <div class="active-image tab_s d-flex justify-content-start" style="flex:1">
+                            <img src="assets/newhome/investement_.png" alt="accountings" style="max-width: 100%;">
+                        </div>
+                        <div class="tab_right_part active part d-flex flex-column gap-2 align-items-start"
+                            data-part="accounting" style="flex:1">
+                            <h2>Service 4</h2>
+                            <p style=" color:var(--heading-color);">Investment support covers a range of services
+                                designed to assist the investor or businessman in making well-informed financial
+                                decisions. In order to maximize investment through the assessment of investment
+                                possibilities, their risks, and their strategic alignment, it entails due diligence,
+                                pre-investment review, portfolio management, and transaction structuring.
+                            </p>
+                            <div class="d-flex flex-column service_links " style="gap: 1em;">
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide   d-flex flex-wrap  justify-content-around" data-part="service5"
+                        style="background: transparent;">
+                        <div class="active-image tab_s d-flex justify-content-start" style="flex:1">
+                            <img src="assets/newhome/investement_.png" alt="accountings" style="max-width: 100%;">
+                        </div>
+                        <div class="tab_right_part active part d-flex flex-column gap-2 align-items-start"
+                            data-part="accounting" style="flex:1">
+                            <h2>Service 5</h2>
+                            <p style=" color:var(--heading-color);">Investment support covers a range of services
+                                designed to assist the investor or businessman in making well-informed financial
+                                decisions. In order to maximize investment through the assessment of investment
+                                possibilities, their risks, and their strategic alignment, it entails due diligence,
+                                pre-investment review, portfolio management, and transaction structuring.
+                            </p>
+                            <div class="d-flex flex-column service_links " style="gap: 1em;">
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide   d-flex flex-wrap  justify-content-around" data-part="service6"
+                        style="background: transparent;">
+                        <div class="active-image tab_s d-flex justify-content-start" style="flex:1">
+                            <img src="assets/newhome/investement_.png" alt="accountings" style="max-width: 100%;">
+                        </div>
+                        <div class="tab_right_part active part d-flex flex-column gap-2 align-items-start"
+                            data-part="accounting" style="flex:1">
+                            <h2>Service 6</h2>
+                            <p style=" color:var(--heading-color);">Investment support covers a range of services
+                                designed to assist the investor or businessman in making well-informed financial
+                                decisions. In order to maximize investment through the assessment of investment
+                                possibilities, their risks, and their strategic alignment, it entails due diligence,
+                                pre-investment review, portfolio management, and transaction structuring.
+                            </p>
+                            <div class="d-flex flex-column service_links " style="gap: 1em;">
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide   d-flex flex-wrap  justify-content-around" data-part="service7"
+                        style="background: transparent;">
+                        <div class="active-image tab_s d-flex justify-content-start" style="flex:1">
+                            <img src="assets/newhome/investement_.png" alt="accountings" style="max-width: 100%;">
+                        </div>
+                        <div class="tab_right_part active part d-flex flex-column gap-2 align-items-start"
+                            data-part="accounting" style="flex:1">
+                            <h2>Service 7</h2>
+                            <p style=" color:var(--heading-color);">Investment support covers a range of services
+                                designed to assist the investor or businessman in making well-informed financial
+                                decisions. In order to maximize investment through the assessment of investment
+                                possibilities, their risks, and their strategic alignment, it entails due diligence,
+                                pre-investment review, portfolio management, and transaction structuring.
+                            </p>
+                            <div class="d-flex flex-column service_links " style="gap: 1em;">
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide   d-flex flex-wrap  justify-content-around" data-part="service8"
+                        style="background: transparent;">
+                        <div class="active-image tab_s d-flex justify-content-start" style="flex:1">
+                            <img src="assets/newhome/investement_.png" alt="accountings" style="max-width: 100%;">
+                        </div>
+                        <div class="tab_right_part active part d-flex flex-column gap-2 align-items-start"
+                            data-part="accounting" style="flex:1">
+                            <h2>Service 8</h2>
+                            <p style=" color:var(--heading-color);">Investment support covers a range of services
+                                designed to assist the investor or businessman in making well-informed financial
+                                decisions. In order to maximize investment through the assessment of investment
+                                possibilities, their risks, and their strategic alignment, it entails due diligence,
+                                pre-investment review, portfolio management, and transaction structuring.
+                            </p>
+                            <div class="d-flex flex-column service_links " style="gap: 1em;">
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide   d-flex flex-wrap  justify-content-around" data-part="service9"
+                        style="background: transparent;">
+                        <div class="active-image tab_s d-flex justify-content-start" style="flex:1">
+                            <img src="assets/newhome/investement_.png" alt="accountings" style="max-width: 100%;">
+                        </div>
+                        <div class="tab_right_part active part d-flex flex-column gap-2 align-items-start"
+                            data-part="accounting" style="flex:1">
+                            <h2>Service 9</h2>
+                            <p style=" color:var(--heading-color);">Investment support covers a range of services
+                                designed to assist the investor or businessman in making well-informed financial
+                                decisions. In order to maximize investment through the assessment of investment
+                                possibilities, their risks, and their strategic alignment, it entails due diligence,
+                                pre-investment review, portfolio management, and transaction structuring.
+                            </p>
+                            <div class="d-flex flex-column service_links " style="gap: 1em;">
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide   d-flex flex-wrap  justify-content-around" data-part="service10"
+                        style="background: transparent;">
+                        <div class="active-image tab_s d-flex justify-content-start" style="flex:1">
+                            <img src="assets/newhome/investement_.png" alt="accountings" style="max-width: 100%;">
+                        </div>
+                        <div class="tab_right_part active part d-flex flex-column gap-2 align-items-start"
+                            data-part="accounting" style="flex:1">
+                            <h2>Service 10</h2>
+                            <p style=" color:var(--heading-color);">Investment support covers a range of services
+                                designed to assist the investor or businessman in making well-informed financial
+                                decisions. In order to maximize investment through the assessment of investment
+                                possibilities, their risks, and their strategic alignment, it entails due diligence,
+                                pre-investment review, portfolio management, and transaction structuring.
+                            </p>
+                            <div class="d-flex flex-column service_links " style="gap: 1em;">
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="d-flex align-items-center " >
+                                    Investor Relations Management
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.19385 6L14.1797 6M14.1797 6L8.9945 11M14.1797 6L8.9945 1"
+                                            stroke="#BC962C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -440,8 +1092,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     </div>
 
 
-
-    <div class="container-fluid py-5" style="background: linear-gradient(180deg, #FFFFFF 52.4%, #F4EEDD 100%);">
+    <div class="container-fluid py-5" style="background: linear-gradient(90deg, #FFFFFF 0%, #F0F0FF 50.49%, #FFFFFF 100%);
+">
         <div class="container">
             <div class="section-title" style="color: #007DFC; font-weight: 400;">Clients</div>
         </div>
@@ -515,15 +1167,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
 
     <div class="container-fluid mb-5 read_blogs" style="background: #ffffff; ">
-    
+
         <div class="container py-5 pb-0">
             <div class="d-flex justify-content-between flex-wrap align-items-center px-0 top_header">
                 <div class="d-flex flex-column min-width">
                     <div class="section-title" style="color: #100F1B;margin-bottom: 0.5em;">Our Clients Results
                     </div>
-                 
+
                 </div>
-              
+
             </div>
 
             <div class="row justify-content-between py-5 g-4">
@@ -584,6 +1236,23 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </div>
     </div>
 
+    <div class="container-fluid img_bg">
+        <div class="container  contact_last">
+         
+          <form action="">
+            <h1>Get in Touch</h1>
+            <p>Leave your details for our team to reach out to you</p>
+            <div class="contact_input">
+                <input type="text" name="" id="" placeholder="Company Name">
+            </div>
+            <div class="contact_input">
+                <input type="email" placeholder="Email">
+            </div>
+            <button style="border-radius: 8px;background: linear-gradient(180deg, #E7B74C 0%, #C89A37 100%);
+">Submit</button>
+           </form>
+        </div>
+    </div>
 
 
 
