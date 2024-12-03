@@ -1779,8 +1779,7 @@ a button:hover {
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-
-
+    text-align: left;
 }
 
 .active-image.tab_s {
@@ -1792,8 +1791,6 @@ a button:hover {
     font-size: 28px;
     font-weight: 500;
     line-height: 36.4px;
-
-
 }
 
 .service_links {
@@ -1801,7 +1798,6 @@ a button:hover {
 }
 
 .service_links a {
-
     font-family: Manrope;
     font-size: 18px;
     font-weight: 700;
@@ -1810,9 +1806,11 @@ a button:hover {
     gap: 0.5em;
     text-decoration-line: underline;
     text-decoration-style: solid;
-    text-decoration-thickness: 0.5px; /* Sets the thickness of the underline */
-    text-underline-offset: 0.5px; /* Adjusts the distance between the text and underline */
- text-decoration-color: #303030;
+    text-decoration-thickness: 0.5px;
+    /* Sets the thickness of the underline */
+    text-underline-offset: 0.5px;
+    /* Adjusts the distance between the text and underline */
+    text-decoration-color: #303030;
     text-decoration-skip-ink: auto;
     color: #303030;
 
@@ -1854,9 +1852,9 @@ a button:hover {
 
 .contact_last {
     height: 100%;
-display: flex;
-justify-content: end;
-align-items: center;    
+    display: flex;
+    justify-content: end;
+    align-items: center;
 
 }
 
@@ -1869,24 +1867,29 @@ align-items: center;
     flex-direction: column;
     gap: 1em;
 }
-.contact_last form h1{
-font-size: 48px;
-margin: 0;;
-font-weight: 500;
-line-height: 65.57px;
-text-align: left;
+
+.contact_last form h1 {
+    font-size: 48px;
+    margin: 0;
+    ;
+    font-weight: 500;
+    line-height: 65.57px;
+    text-align: left;
 
 }
-.contact_last form p{
-    margin-top: -1em;max-width: 80%;
-font-size: 16px;
-font-weight: 300;
-line-height: 20.8px;
-text-align: left;
 
-color: #303030;
+.contact_last form p {
+    margin-top: -1em;
+    max-width: 80%;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20.8px;
+    text-align: left;
+
+    color: #303030;
 }
-.contact_last .contact_input input{
+
+.contact_last .contact_input input {
     border: none;
     padding: 0.5em;
     width: 100%;
@@ -1895,55 +1898,61 @@ color: #303030;
 
 }
 
-.contact_last .contact_input input:focus-within{
-outline: none;
+.contact_last .contact_input input:focus-within {
+    outline: none;
 }
 
 @media screen and (max-width:768px) {
-    .img_bg{
+    .img_bg {
         margin-top: -8em;
 
     }
-    .contact_last form h1{
+
+    .contact_last form h1 {
         font-size: 28px;
     }
-    .contact_last form p{
+
+    .contact_last form p {
         font-size: 16px;
     }
 }
-.new_blog_card.client_card{
+
+.new_blog_card.client_card {
     background-color: #EEEEEE;
     border-radius: 0;
 }
-.new_blog_head.client_head{
 
-}
-.new_blog_bottom.client_bottom{
+.new_blog_head.client_head {}
+
+.new_blog_bottom.client_bottom {
     background-color: #EEEEEE;
     height: 150px;
 }
-.new_blog_bottom.client_bottom h4{
-font-size: 18px;
+
+.new_blog_bottom.client_bottom h4 {
+    font-size: 18px;
     font-weight: 700;
     line-height: 23.4px;
     text-align: left;
-    
-    
+
+
 }
 
-.new_blog_bottom.client_bottom p{
-   
+.new_blog_bottom.client_bottom p {
+
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-   
+
 }
-button.services_btn1{
+
+button.services_btn1 {
     padding: ;
     background: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
-color: #000000;
+    color: #000000;
 }
-button.services_btn2{
+
+button.services_btn2 {
     border: 1px solid #6A6A6A;
     color: #D9BA65;
     background: transparent;
