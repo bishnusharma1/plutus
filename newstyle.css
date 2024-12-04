@@ -69,6 +69,12 @@ a button:hover {
 .navbar {
     padding: 1.25em;
 }
+.active-nav{
+    background: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
+    -webkit-background-clip: text;
+    /* Ensures the gradient is clipped to the text */
+    -webkit-text-fill-color: transparent;
+}
 
 .hero_container {
     padding-top: 100px;
@@ -1857,7 +1863,27 @@ a button:hover {
     align-items: center;
 
 }
+.img_bg.contact_service_bg{
+   
+    height: 60vh;
+    background: linear-gradient(rgba(116, 92, 26, 0.3), rgba(116, 92, 26, 0.3)),
+    url('assets/newhome/common_service.png') no-repeat center center;
+background-size: cover;
 
+
+}
+.contact_last.service_contactss form{
+    
+    margin-bottom: 15em;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+@media screen and (max-width:768px) {
+    .contact_last.service_contactss form{
+        margin-bottom: 0;
+    }
+}
 .contact_last form {
     background-color: #ffffff;
     padding: 1em;
@@ -1901,13 +1927,20 @@ a button:hover {
 .contact_last .contact_input input:focus-within {
     outline: none;
 }
-
+.client_servicess{
+    margin-bottom: 8.5em;
+}
 @media screen and (max-width:768px) {
     .img_bg {
         margin-top: -8em;
 
     }
-
+    .img_bg.contact_service_bg{
+        margin-top: 0;
+    }
+    .client_servicess{
+        margin-bottom: 2em;
+    }
     .contact_last form h1 {
         font-size: 28px;
     }
@@ -1922,7 +1955,6 @@ a button:hover {
     border-radius: 0;
 }
 
-.new_blog_head.client_head {}
 
 .new_blog_bottom.client_bottom {
     background-color: #EEEEEE;
@@ -1956,4 +1988,112 @@ button.services_btn2 {
     border: 1px solid #6A6A6A;
     color: #D9BA65;
     background: transparent;
+}
+.common_service_banner {
+    padding-top: 100px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%), 
+                url('assets/newhome/common_service.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh; /* Adjust height as per your requirement */
+    position: relative; /* Ensure child elements position correctly */
+    color: #fff; /* Optional: Set text color for better contrast */
+
+    z-index: 1;
+    padding-left: 0;
+}
+
+.common_head{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    
+    
+    
+
+}
+.common_head_content{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(30px);
+    padding: 2.5em;
+    width: 630px;
+    padding-left: 6.5em;
+}
+@media screen and (max-width:768px) {
+    .common_head_content{
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+        backdrop-filter: blur(30px);
+        padding: 2.5em;
+        width: auto;
+        padding-left: 1em;
+    }
+}
+.common_links_service{
+    gap: 0.5em;
+}
+.common_links_service a,.common_links_service p{
+    color: #939393;
+    white-space: nowrap;
+}
+.common_links_service p{
+    margin-bottom: 0;
+}
+.common_links_service a.actives{
+    color: #D0D0D0
+}
+.common_service_contents{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: start;
+    margin-top: 60px;
+    padding: 1em;
+}
+
+.common_service_contents h2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: #303030;
+  
+    
+}
+.common_left_service img{
+    min-width: 250px;
+}
+.common_service_contents p,.common_service_contents li{
+    margin-bottom: 0;
+font-size: 16px;
+font-weight: 300;
+line-height: 24px;
+text-align: left;
+
+
+
+}
+.common_service_main_head{
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    gap: 2em;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+.common_service_contents ul{
+    display: flex;
+    flex-direction: column;
+
+}
+.common_service_contents li{
+
+}
+.common_service_contents strong{
+font-weight: 700;
+}
+.content_heading{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
 }
