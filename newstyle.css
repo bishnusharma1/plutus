@@ -2104,12 +2104,15 @@ font-weight: 700;
 
 @media screen and (max-width:768px) {
     .common_service_contents{
-        margin-top: 0;
+        margin-top: -4em;
     }
     .common_links_service{
         justify-content: center;
     }
     .common_links_service a, .common_links_service p{
         font-size: 10px;
+    }
+    .service_links a{
+        font-size: 16px;
     }
 }
