@@ -2002,12 +2002,10 @@ button.services_btn2 {
     height: 100vh; /* Adjust height as per your requirement */
     position: relative; /* Ensure child elements position correctly */
     color: #fff; /* Optional: Set text color for better contrast */
-
     z-index: 1;
     padding-left: 0;
     padding-right: 0;
     max-height: 800px;
-    
 }
 
 .common_head{
@@ -2015,11 +2013,53 @@ button.services_btn2 {
     justify-content: start;
     align-items: center;
     height: 100%;
-    
-    
-    
+}
+
+/* border before */
+
+.common_service_main_head {
+    position: relative;
+}
+
+.common_left_service {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 44px; /* 40px offset + 4px border */
+}
+.common_left_service img{
+    z-index: 5;
+    margin-top: 2.5em;
+}
+.common_left_service::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 100vh;
+    background: rgba(58, 59, 123, 1);
+}
+
+
+
+.common_left_service::after {
+    content: '';
+    position: absolute;
+    right: 50px;
+    top: 0;
+    width: 50%;
+    height: 50px;
+     background: rgba(58, 59, 123, 1);
 
 }
+
+
+/* end border before img */
+
+
 .common_head_content{
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
     backdrop-filter: blur(30px);
@@ -2037,6 +2077,13 @@ button.services_btn2 {
         justify-content: center;
         
     
+    }.common_left_service::before ,.common_left_service::after{
+        display: none;
+    }
+    .common_left_service {
+        padding-left: 0;
+        margin-left: -1em;
+        margin-bottom: 3em;
     }
 }
 .common_links_service{
