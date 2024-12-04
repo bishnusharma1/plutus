@@ -2016,7 +2016,7 @@ button.services_btn2 {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
     backdrop-filter: blur(30px);
     padding: 2.5em;
-    width: 630px;
+    width: 700px;
     padding-left: 6.5em;
 }
 @media screen and (max-width:768px) {
@@ -2057,6 +2057,7 @@ button.services_btn2 {
     line-height: 26px;
     text-align: left;
     color: #303030;
+    margin-bottom: 0;
   
     
 }
