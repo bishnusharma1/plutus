@@ -1979,7 +1979,6 @@ background-size: cover;
 }
 
 button.services_btn1 {
-    padding: ;
     background: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
     color: #000000;
 }
@@ -2000,6 +1999,7 @@ button.services_btn2 {
 
     z-index: 1;
     padding-left: 0;
+    padding-right: 0;
 }
 
 .common_head{
@@ -2026,6 +2026,7 @@ button.services_btn2 {
         padding: 2.5em;
         width: auto;
         padding-left: 1em;
+    
     }
 }
 .common_links_service{
@@ -2033,7 +2034,7 @@ button.services_btn2 {
 }
 .common_links_service a,.common_links_service p{
     color: #939393;
-    white-space: nowrap;
+    
 }
 .common_links_service p{
     margin-bottom: 0;
@@ -2096,4 +2097,13 @@ font-weight: 700;
     display: flex;
     align-items: center;
     gap: 0.5em;
+}
+
+@media screen and (max-width:768px) {
+    .common_service_contents{
+        margin-top: 0;
+    }
+    .common_links_service a, .common_links_service p{
+        font-size: 12px;
+    }
 }
