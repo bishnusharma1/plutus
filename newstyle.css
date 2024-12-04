@@ -2023,9 +2023,9 @@ button.services_btn2 {
     .common_head_content{
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
         backdrop-filter: blur(30px);
-        padding: 2.5em;
-        width: auto;
-        padding-left: 1em;
+        padding: 1em;
+        width: 100%;
+        
     
     }
 }
@@ -2104,7 +2104,10 @@ font-weight: 700;
     .common_service_contents{
         margin-top: 0;
     }
+    .common_links_service{
+        justify-content: center;
+    }
     .common_links_service a, .common_links_service p{
-        font-size: 12px;
+        font-size: 10px;
     }
 }
