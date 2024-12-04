@@ -11,7 +11,10 @@
     --gradient-bg: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
     --bg-color: #ffffff;
 }
-
+body{
+    max-width: 1920px;
+    margin: auto;
+}
 a button,
 button {
     background: var(--gradient-bg);
@@ -1853,7 +1856,7 @@ a button:hover {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 550px;
 }
 
 .contact_last {
@@ -1865,7 +1868,7 @@ a button:hover {
 }
 .img_bg.contact_service_bg{
    
-    height: 60vh;
+    height: 357px;
     background: linear-gradient(rgba(116, 92, 26, 0.3), rgba(116, 92, 26, 0.3)),
     url('assets/newhome/common_service.png') no-repeat center center;
 background-size: cover;
@@ -1882,6 +1885,9 @@ background-size: cover;
 @media screen and (max-width:768px) {
     .contact_last.service_contactss form{
         margin-bottom: 0;
+    }
+    .img_bg {
+        height: 90vh;
     }
 }
 .contact_last form {
@@ -2000,6 +2006,8 @@ button.services_btn2 {
     z-index: 1;
     padding-left: 0;
     padding-right: 0;
+    max-height: 800px;
+    
 }
 
 .common_head{
@@ -2015,8 +2023,8 @@ button.services_btn2 {
 .common_head_content{
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
     backdrop-filter: blur(30px);
-    padding: 2.5em;
-    width: 700px;
+    padding: 3.5em;
+    width: auto;
     padding-left: 6.5em;
 }
 @media screen and (max-width:768px) {
@@ -2101,7 +2109,13 @@ font-weight: 700;
     align-items: center;
     gap: 0.5em;
 }
-
+.show_mobile_btn,.show_mobile_btn1{
+    display: none;
+}
+.custom_containers{
+    max-width: 1920px;
+    margin: auto;
+}
 @media screen and (max-width:768px) {
     .common_service_contents{
         margin-top: -4em;
@@ -2114,5 +2128,8 @@ font-weight: 700;
     }
     .service_links a{
         font-size: 16px;
+    }
+    .show_mobile_btn,.show_mobile_btn1{
+        display: block;
     }
 }
