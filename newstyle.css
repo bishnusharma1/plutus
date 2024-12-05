@@ -11,10 +11,7 @@
     --gradient-bg: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
     --bg-color: #ffffff;
 }
-body{
-    max-width: 1920px;
-    margin: auto;
-}
+
 a button,
 button {
     background: var(--gradient-bg);
