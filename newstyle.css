@@ -2022,7 +2022,7 @@ button.services_btn2 {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding-left: 44px; /* 40px offset + 4px border */
 }
 .common_left_service img{
@@ -2033,10 +2033,10 @@ button.services_btn2 {
     content: '';
     position: absolute;
     left: 0;
-    top: 60%;
-    transform: translateY(-50%);
+    top: 0;
+   
     width: 50%;
-    height: 100vh;
+    height: 100%;
     background: rgba(58, 59, 123, 1);
 }
 
@@ -2133,7 +2133,7 @@ text-align: left;
     padding-right: 0;
     display: flex;
     gap: 2em;
-    align-items: start;
+    /* align-items: start; */
     flex-wrap: wrap;
     margin-bottom: 2em;
 }
