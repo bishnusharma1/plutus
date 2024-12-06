@@ -18,6 +18,8 @@
     --bg-grey-color: #fafafa;
     --bg-grey: #EFEFEF;
     --bg-box-color: #1d1d1d;
+    --gradient-bg: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
+
 }
 
 .dark {
@@ -4439,3 +4441,66 @@ a#call-btn img {
         margin-left: 0;
     }
 }
+
+a button,
+button {
+    background: var(--gradient-bg);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s all ease-in-out;
+}
+
+a button.white,
+button.white {
+    background: #FFFFFF;
+    color: #000000;
+    font-weight: 400;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
+@media screen and (max-width:412px) {
+
+    a button,
+    button,
+    a button.white,
+    button.white,
+    button.outline {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+}
+
+button.outline {
+    border: 1px solid #B59B4E;
+    border-radius: 0.5em;
+    background: transparent;
+    background: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
+    -webkit-background-clip: text;
+    /* Ensures the gradient is clipped to the text */
+    -webkit-text-fill-color: transparent;
+    /* Makes the text transparent to reveal the gradient */
+
+
+}
+
+a button:hover {
+    scale: 1.02;
+}
+
+.navbar {
+    padding: 1.25em;
+}
+.active-nav{
+    background: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
+    -webkit-background-clip: text;
+    /* Ensures the gradient is clipped to the text */
+    

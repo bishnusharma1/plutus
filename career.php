@@ -52,168 +52,156 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div>
     
     <!-- Google tag (gtag.js) --> <amp-analytics type="gtag" data-credentials="include"> <script type="application/json"> { "vars": { "gtag_id": "AW-16704975030", "config": { "AW-16704975030": { "groups": "default" } } }, "triggers": { } } </script> </amp-analytics>
-  <nav class="navbar fixed-top  navbar-expand-lg " style="background:var(--bg-box-color)">
-    <div class="container col-lg-6">
-      <a href="index.html" class="navbar-brand"  style="max-width: 60%;margin-right:3.5em" >
-        <img src="assets/logo.webp" alt="logo" style="width: 120px;">
-      </a>
+  
+    <nav class="navbar fixed-top  navbar-expand-lg " style="background:var(--bg-box-color)">
+      <div class="container  d-flex justify-content-center justify-content-between align-items-center ">
+          <a href="#" class="navbar-brand" style="max-width: 60%;margin-right:3.5em">
+              <img src="assets/logo.webp" alt="logo" style="width: 120px;">
+          </a>
 
-      <button class="navbar-toggler" style="background-color: #fff;" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
+          <div class="navbar-toggler" style="background-color: transparent;border:none" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="d-flex align-items-center justify-content-between">
+                  <svg style="color: #fff;" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                      fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                  </svg>
+              </span>
+          </div>
 
-        <span class="d-flex align-items-center justify-content-between">
-          <svg style="color: #fff;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-            class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-          </svg>
-        </span>
-      </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow: 0;">
+              <ul class="navbar-nav me-auto mb-2  d-flex  align-items-center " style="gap: 2.5em;">
+                  <li class="nav-item">
+                      <a href="/" class="nav-link " aria-current="page" style="color: #fff;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="aboutus.html" style="color: #fff;">About us</a>
+                  </li>
+                   <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Services
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="vcfo.html">VCFO Service</a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="labour-law.html">Labour Law Service</a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li class="dropdown dropend">
+                              <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  Accounting & Assurance
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="shared-cfo-services.html">  Shared CFO services</a></li>
+                                  <li><a class="dropdown-item" href="Audit-support-and-audit-procedures.html"> Audit support and audit procedures</a></li>
+                                  <li><a class="dropdown-item" href="Limited-Reviews.html"> Limited Reviews</a></li>
+                                  <li><a class="dropdown-item" href="Technology-implementation.html">Technology implementation</a></li>
+                                  <li><a class="dropdown-item" href="Sop-and-best-practices.html">SOP’s and best practices</a></li>
+                                 
+                              </ul>
+                          </li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li class="dropdown dropend">
+                              <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  Payroll & labour laws
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="implementation-processing.html"> Implementation & processing</a></li>
+                                  <li><a class="dropdown-item" href="litigation-support.html"> Litigation support</a></li>
+                                  <li><a class="dropdown-item" href="labour-laws-compliance.html"> Labour laws & compliance</a></li>
+                                  <li><a class="dropdown-item" href="function-outsource.html"> Function outsource</a></li>
+                                  <li><a class="dropdown-item" href="employee-engagement.html"> Employee engagement</a></li>
+                                  
+                              </ul>
+                          </li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li class="dropdown dropend">
+                              <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  Investment support
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="due-diligence.html"> Due diligence</a></li>
+                                  <li><a class="dropdown-item" href="investor-relations-management.html">Investor relations management</a></li>
+                                  <li><a class="dropdown-item" href="portfolio-management-services.html">Portfolio management services</a></li>
+                                  <li><a class="dropdown-item" href="startup-consulting.html"> Startup consulting</a></li>
+                                  <li><a class="dropdown-item" href="pre-investment-reviews.html"> Pre-investment reviews</a></li>
+                                  <li><a class="dropdown-item" href="transaction-structuring.html"> Transaction structuring</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li class="dropdown dropend">
+                              <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  Compliance & regulatory
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="taxation-services.html">Taxation services</a></li>
+                                  <li><a class="dropdown-item" href="litigation-and-assessment.html">  Litigation and assessment</a></li>
+                                  <li><a class="dropdown-item" href="corporate-legal-matters.html">Corporate legal matters</a></li>
+                                  <li><a class="dropdown-item" href="compliance-regulatory-filings.html"> Compliance & regulatory filings</a></li>
+                                  <li><a class="dropdown-item" href="liquidation-winding-up.html"> Liquidation and winding up</a></li>
+                                  <li><a class="dropdown-item" href="compliance-audits.html"> Compliance audits</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li class="dropdown dropend">
+                              <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  Advisory services
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="Management-reporting-procedure.html"> Management reporting procedures</a></li>
+                                  <li><a class="dropdown-item" href="cxo-services.html">CXO services</a></li>
+                                  <li><a class="dropdown-item" href="Strategic-consulting-business-advisory.html">Strategic consulting & business advisory</a></li>
+                                  <li><a class="dropdown-item" href="Financial-legal-health-inspection.html"> Financial & legal health inspection</a></li>
+                                  <li><a class="dropdown-item" href="India-entry-services.html"> India entry services</a></li>
+                                  <li><a class="dropdown-item" href="process-outsourcing.html">Process outsourcing</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://plutusco.com/blogs/" style="color: #fff;">Our Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="contact.html" class="nav-link" style="color: #fff;">Contact</a>
+                  </li>
+                  <li class="nav-item active-nav">
+                      <a class="nav-link" href="career.php" style="color: #fff;">Career</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#">
+                          <button>
+                              Book an Appointment
+                          </button>
+                      </a>
+                  </li>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-5">
-          <li class="nav-item "> 
-            <a href="index.html" class="nav-link " aria-current="page" style="color: #fff;" >Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="aboutus.html" class="nav-link " style="color: #fff;">About us</a>
-          </li>
-         
-          <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="services.html">All Services</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="vcfo.html">VCFO Service</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="labour-law.html">Labour Law Service</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li class="dropdown dropend">
-                                <a class="dropdown-item dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Accounting & Assurance
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="shared-cfo-services.html">  Shared CFO services</a></li>
-                                    <li><a class="dropdown-item" href="Audit-support-and-audit-procedures.html"> Audit support and audit procedures</a></li>
-                                    <li><a class="dropdown-item" href="Limited-Reviews.html"> Limited Reviews</a></li>
-                                    <li><a class="dropdown-item" href="Technology-implementation.html">Technology implementation</a></li>
-                                    <li><a class="dropdown-item" href="Sop-and-best-practices.html">SOP’s and best practices</a></li>
-                                   
-                                </ul>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li class="dropdown dropend">
-                                <a class="dropdown-item dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Payroll & labour laws
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="implementation-processing.html"> Implementation & processing</a></li>
-                                    <li><a class="dropdown-item" href="litigation-support.html"> Litigation support</a></li>
-                                    <li><a class="dropdown-item" href="labour-laws-compliance.html"> Labour laws & compliance</a></li>
-                                    <li><a class="dropdown-item" href="function-outsource.html"> Function outsource</a></li>
-                                    <li><a class="dropdown-item" href="employee-engagement.html"> Employee engagement</a></li>
-                                    
-                                </ul>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li class="dropdown dropend">
-                                <a class="dropdown-item dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Investment support
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="due-diligence.html"> Due diligence</a></li>
-                                    <li><a class="dropdown-item" href="investor-relations-management.html">Investor relations management</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-management-services.html">Portfolio management services</a></li>
-                                    <li><a class="dropdown-item" href="startup-consulting.html"> Startup consulting</a></li>
-                                    <li><a class="dropdown-item" href="pre-investment-reviews.html"> Pre-investment reviews</a></li>
-                                    <li><a class="dropdown-item" href="transaction-structuring.html"> Transaction structuring</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li class="dropdown dropend">
-                                <a class="dropdown-item dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Compliance & regulatory
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="taxation-services.html">Taxation services</a></li>
-                                    <li><a class="dropdown-item" href="litigation-and-assessment.html">  Litigation and assessment</a></li>
-                                    <li><a class="dropdown-item" href="corporate-legal-matters.html">Corporate legal matters</a></li>
-                                    <li><a class="dropdown-item" href="compliance-regulatory-filings.html"> Compliance & regulatory filings</a></li>
-                                    <li><a class="dropdown-item" href="liquidation-winding-up.html"> Liquidation and winding up</a></li>
-                                    <li><a class="dropdown-item" href="compliance-audits.html"> Compliance audits</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li class="dropdown dropend">
-                                <a class="dropdown-item dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Advisory services
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="Management-reporting-procedure.html"> Management reporting procedures</a></li>
-                                    <li><a class="dropdown-item" href="cxo-services.html">CXO services</a></li>
-                                    <li><a class="dropdown-item" href="Strategic-consulting-business-advisory.html">Strategic consulting & business advisory</a></li>
-                                    <li><a class="dropdown-item" href="Financial-legal-health-inspection.html"> Financial & legal health inspection</a></li>
-                                    <li><a class="dropdown-item" href="India-entry-services.html"> India entry services</a></li>
-                                    <li><a class="dropdown-item" href="process-outsourcing.html">Process outsourcing</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="https://plutusco.com/blogs/" style="color: #fff;">Our Blogs</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link" style="color: #fff;" >Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active-nav" href="career.php" style="color: #fff;">Career</a>
-            
-            
-          </li>
-          <!-- <li class="nav-link d-lg-block d-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M12.6651 14.4328C11.3491 15.3901 9.72919 15.9548 7.97738 15.9548C3.57159 15.9548 0 12.3832 0 7.97738C0 3.57159 3.57159 0 7.97738 0C12.3832 0 15.9548 3.57159 15.9548 7.97738C15.9548 9.72919 15.3901 11.3491 14.4328 12.6651L19.8839 18.1161C20.372 18.6043 20.372 19.3957 19.8839 19.8839C19.3957 20.372 18.6043 20.372 18.1161 19.8839L12.6651 14.4328ZM13.5785 7.97739C13.5785 11.0708 11.0708 13.5785 7.97737 13.5785C4.88395 13.5785 2.37623 11.0708 2.37623 7.97739C2.37623 4.88397 4.88395 2.37625 7.97737 2.37625C11.0708 2.37625 13.5785 4.88397 13.5785 7.97739Z"
-                fill="url(#paint0_linear_0_6)" />
-              <defs>
-                <linearGradient id="paint0_linear_0_6" x1="10.125" y1="0" x2="10.125" y2="20.25"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#BC9F5F" />
-                  <stop offset="1" stop-color="#AB7A10" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </li> -->
-        </ul>
-
+              </ul>
+          </div>
       </div>
-    </div>
   </nav>
-
 
     
   <!-- ======= hero Main Section ======= -->
