@@ -1775,7 +1775,7 @@ a button:hover {
 }
 
 .tab_right_part {
-    margin-left: -5em;
+    margin-left: -12em;
     min-width: 700px
 }
 
@@ -1889,7 +1889,7 @@ background-size: cover;
 }
 .contact_last form {
     background-color: #ffffff;
-    padding: 1em;
+    padding: 30px;
     border-radius: 15px;
     width: 407px;
     display: flex;
@@ -1917,22 +1917,27 @@ background-size: cover;
 
     color: #303030;
 }
-
+.contact_last form button {
+    margin-top: 1em;
+}
 .contact_last .contact_input input {
     border: none;
-    padding: 0.5em;
+    padding: 15px 17px;
     width: 100%;
     border-radius: 8px;
-    background: #98989814;
+    background: rgba(152, 152, 152, 0.08);
+
 
 }
 
 .contact_last .contact_input input:focus-within {
     outline: none;
 }
+
 .client_servicess{
-    margin-bottom: 8.5em;
+    margin-bottom: 13em;
 }
+
 @media screen and (max-width:768px) {
     .img_bg {
         margin-top: -8em;
@@ -1956,6 +1961,7 @@ background-size: cover;
 .new_blog_card.client_card {
     background-color: #EEEEEE;
     border-radius: 0;
+    box-shadow: none;
 }
 
 
@@ -1965,6 +1971,7 @@ background-size: cover;
 }
 
 .new_blog_bottom.client_bottom h4 {
+    margin-top: 1em;
     font-size: 18px;
     font-weight: 700;
     line-height: 23.4px;
@@ -2082,6 +2089,10 @@ button.services_btn2 {
         margin-left: -1em;
         margin-bottom: 3em;
     }
+    .common_service_banner{
+        max-height: 550px;
+    }
+    
 }
 .common_links_service{
     gap: 0.5em;
@@ -2132,7 +2143,7 @@ text-align: left;
     padding-left: 0;
     padding-right: 0;
     display: flex;
-    gap: 2em;
+    gap: 0.5em;
     /* align-items: start; */
     flex-wrap: wrap;
     margin-bottom: 2em;
@@ -2175,5 +2186,56 @@ font-weight: 700;
     }
     .show_mobile_btn,.show_mobile_btn1{
         display: block;
+    }
+}
+
+
+/* dropdown with submenu */
+
+   /* Base styles */
+   .nav-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+
+    padding: 0.5rem 0;
+}
+
+/* Show dropdown on hover or focus */
+.nav-item.dropdown:hover>.dropdown-menu,
+.nav-item.dropdown:focus-within>.dropdown-menu {
+    display: block;
+}
+
+/* Submenu styles */
+.nav-item .dropdown-menu .dropdown-menu  li{
+    padding: 0.5em;
+    border-bottom: 1px solid #000000;
+}
+.nav-item .dropdown-menu .dropdown-menu  li:last-child{
+    border-bottom: none;
+}
+.nav-item .dropdown-menu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: 0.1rem;
+    display: none;
+}
+
+/* Show submenu on hover or focus */
+.nav-item .dropdown-menu .dropdown:hover>.dropdown-menu,
+.nav-item .dropdown-menu .dropdown:focus-within>.dropdown-menu {
+    display: block;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .nav-item .dropdown-menu .dropdown-menu {
+        left: 0;
+        /* Submenu stacks below */
+        top: 100%;
+        margin-left: 0;
     }
 }
