@@ -4051,6 +4051,12 @@ padding: 1em;
     }
     .hero-vcfo h1, .labour_law_hero h1{
         font-size: 26px;
+        text-align: center;
+       
+    }
+    .vcfo_header_content{
+        text-align: center;
+        justify-content: center;
     }
     .labour_law_hero form h2, .hero-vcfo form h2
     {
@@ -4507,4 +4513,4 @@ a button:hover {
     background: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
     -webkit-background-clip: text;
     /* Ensures the gradient is clipped to the text */
-    
+}
