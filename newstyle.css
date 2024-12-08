@@ -26,7 +26,9 @@ button {
     gap: 10px;
     transition: 0.3s all ease-in-out;
 }
-
+p{
+    margin-bottom: 0;
+}
 a button.white,
 button.white {
     background: #FFFFFF;
@@ -2060,7 +2062,14 @@ button.services_btn2 {
      background: rgba(58, 59, 123, 1);
 
 }
+.common_left_service.vcfo_left_service::before,.common_left_service.vcfo_left_service::after {
+   background: rgba(26, 33, 21, 1);
+    
+}
+.common_left_service.labour_law_left_service::before,.common_left_service.labour_law_left_service::after {
+    background: rgba(36, 52, 67, 1);
 
+}
 
 /* end border before img */
 
@@ -2239,4 +2248,47 @@ font-weight: 700;
         top: 100%;
         margin-left: 0;
     }
+}
+
+.vcfo_title_main{
+   
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+    color: rgba(65, 77, 118, 1);
+ 
+    
+}
+
+@media (max-width: 768px) {
+    .vcfo_title_main{
+   
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 48px;
+        text-align: center;
+     
+        
+    }
+    .links_tag{
+        margin-top: 1.5em;
+    }
+    
+}
+
+.msg_founder_container p{
+    font-family: Manrope;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+
+
+}
+
+.hero-vcfo{
+    background-image: url('assets/newhome/vcfo_hero.png'); /* Replace with your image path */
+    background-size: cover;        /* Makes sure the image covers the entire area */
+    background-position: center;   /* Centers the image */
+    background-repeat: no-repeat;
 }
