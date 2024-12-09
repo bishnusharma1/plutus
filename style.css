@@ -3009,20 +3009,29 @@ margin-bottom: 25px;
     position: relative;
     z-index: 2;
     width: 480px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1.5em;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    background: rgba(255, 255, 255, 0.6);
+
+    padding: 46px 46px 16px 46px;
     color: #000000;
     display: flex;
     flex-direction: column;
     gap: 1em;
     border-radius: 1em;
     padding-bottom: 2em;
+
+    border: 1px solid rgba(198, 198, 198, 1);
+    backdrop-filter: blur(30px);
+    color: #ffffff;
+
+
 }
 
 .vcfo-hero-right form input {
     background: transparent;
     border: none;
     outline: none;
+   
 
 
 }
@@ -3051,31 +3060,36 @@ margin-bottom: 25px;
 }
 
 .vcfo-hero-right form .input-box label {
-    color: var(--sub-text-color);
+    color:rgba(102, 102, 102, 1);
+
     font-size: 12px;
     font-weight: 500;
 }
 
 .vcfo-hero-right form input::placeholder {
-    color: var(--text-color);
+    color: rgba(102, 102, 102, 1);
+
     font-weight: 500;
 }
 
 .vcfo-hero-right form .input-box {
-    border: 1px solid var(--text-color);
+    /* border: 1px solid var(--text-color); */
     padding: 0.5em;
-    border-radius: 1em;
+    background: rgba(255, 255, 255, 0.3);
+
+    border-radius: 8px;
+    border: 1px solid rgba(155, 155, 155, 1);
 }
 
 .vcfo-hero-right form button {
-    width: calc(100% - 3em);
+    width: calc(100% - 92px);
     position: absolute;
     bottom: -1em;
     color: #000000;
     font-weight: 600;
     height: 50px;
     border-radius: 1em;
-    background: linear-gradient(180deg, #E7B74C 0%, #C89A37 100%);
+    background: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
 
 
 }
