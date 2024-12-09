@@ -2287,8 +2287,12 @@ line-height: 30px;
 }
 
 .hero-vcfo{
-    background-image: url('assets/newhome/vcfo_hero.png'); /* Replace with your image path */
-    background-size: cover;        /* Makes sure the image covers the entire area */
-    background-position: center;   /* Centers the image */
+    background-image: url('assets/newhome/vcfo_hero.png'); 
+    background-size: cover;        
+    background-position: center;   
     background-repeat: no-repeat;
+}
+.hero-vcfo.labour_hero_main{
+    background-image: url('assets/newhome/labour_heo.png'); 
+
 }
