@@ -2055,9 +2055,9 @@ button.services_btn2 {
 .common_left_service::after {
     content: '';
     position: absolute;
-    right: 50px;
+    right: 120px;
     top: 0;
-    width: 50%;
+    width: 30%;
     height: 50px;
      background: rgba(58, 59, 123, 1);
 
