@@ -2031,9 +2031,9 @@ button.services_btn2 {
 .common_left_service {
     position: relative;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: flex-start;
-    padding-left: 44px; /* 40px offset + 4px border */
+    /* padding-left: 44px;  */
 }
 .common_left_service img{
     z-index: 5;
@@ -2098,6 +2098,7 @@ button.services_btn2 {
         padding-left: 0;
         margin-left: -1em;
         margin-bottom: 3em;
+        justify-content: center;
     }
     .common_service_banner{
         max-height: 550px;
