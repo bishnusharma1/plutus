@@ -848,6 +848,7 @@ footer {
 .address {
     font-size: 14px;
     color: RGB(200, 200, 200);
+    font-weight: 400;
 }
 
 svg {
