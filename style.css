@@ -3171,7 +3171,7 @@ input[type="checkbox"]:checked::after {
 
     .icon-s-container p {
         text-align: center;
-        font-size: 12px;
+        font-size: 12px !important;
     }
 
     .icon-s-container .icon-s {
@@ -3192,7 +3192,7 @@ input[type="checkbox"]:checked::after {
     width: 340px !important;
 }
 #vcfo-section-container {
-    padding: 2em 1em;
+    padding: 1em;
 }
 
 }
@@ -3743,9 +3743,7 @@ gap: 0.5em;
         max-width: 87vw;
         color: #000000;
     }
-    .msg_founder_container img{
-        width: 30px;
-    }
+   
    
     .review_card{
         padding: 1em;
@@ -4074,6 +4072,7 @@ padding: 1em;
     .vcfo_header_content{
         text-align: center;
         justify-content: center;
+        font-size: 12px;
     }
     .labour_law_hero form h2, .hero-vcfo form h2
     {

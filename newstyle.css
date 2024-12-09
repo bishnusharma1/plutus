@@ -383,7 +383,7 @@ a button:hover {
     }
 
     .navbar {
-        padding: 1em;
+        padding: 0.9em;
     }
 }
 
@@ -436,6 +436,7 @@ a button:hover {
     }
 
     .hero_upper {
+        padding: 0;
         align-items: center;
     }
 
@@ -463,6 +464,10 @@ a button:hover {
     .company_logo img {
         max-width: 80%;
         margin: auto;
+    }
+
+    .hero_left{
+        padding: 1em;
     }
 }
 
@@ -2102,6 +2107,7 @@ button.services_btn2 {
         margin-left: -1em;
         margin-bottom: 3em;
         justify-content: center;
+        width: 100%;
     }
     .common_service_banner{
         max-height: 550px;
@@ -2187,7 +2193,7 @@ font-weight: 700;
 }
 @media screen and (max-width:768px) {
     .common_service_contents{
-        margin-top: -4em;
+        margin-top: -2em;
     }
     .common_links_service{
         justify-content: center;
@@ -2299,4 +2305,30 @@ line-height: 30px;
 .hero-vcfo.labour_hero_main{
     background-image: url('assets/newhome/labour_heo.png'); 
 
+}
+.founder_img img{ 
+    max-width: 100%;
+    
+}
+@media screen and (max-width:768px) {
+    .msg_founder_container{
+        flex-direction: column;
+    }
+    .founder_img img{ 
+        width: 60%;
+    }
+   .msg_founder_container .comma_img img{
+        width: 30px;
+    }
+    .head_mission.contact_top .mission_left .mission_left_inner{
+        margin-top: 0;
+    }
+    .head_mission .mission_left{
+        padding-top: 0;
+    }
+}
+@media screen and (max-width:576px) {
+    .founder_img img{ 
+        min-width: 100%;
+    }
 }
