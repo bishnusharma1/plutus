@@ -2327,6 +2327,9 @@ line-height: 30px;
     .head_mission .mission_left{
         padding-top: 0;
     }
+    .main_what_do .custom-container{
+        padding-bottom: 20px;
+    }
 }
 @media screen and (max-width:576px) {
     .founder_img img{ 
