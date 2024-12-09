@@ -3127,7 +3127,8 @@ input[type="checkbox"]:checked::after {
 }
 
 .icon-s-container p {
-    color: #ffffff;
+    color: rgba(175, 175, 175, 1);
+
     font-size: 16px;text-align: left;
     font-weight: 500;
 }
@@ -3140,7 +3141,9 @@ input[type="checkbox"]:checked::after {
     align-items: center;
     border-radius: 50%;
 }
-
+.icon-s svg{
+    color: rgba(175, 175, 175, 1);
+}
 @media screen and (max-width:768px) {
 
     .vcfo-hero-right form {
