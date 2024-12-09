@@ -1099,7 +1099,7 @@ a button:hover {
     height: 25px;
 }
 
-@media screen and (max-width:412px) {
+@media screen and (max-width:768px) {
     .review_card_bottom button {
         padding: 0.5em;
 
@@ -2254,7 +2254,7 @@ font-weight: 700;
 /* Responsive adjustment */
 @media (max-width: 768px) {
     .nav-item .dropdown-menu .dropdown-menu {
-        left: 0;
+        left: -50%;
         /* Submenu stacks below */
         top: 100%;
         margin-left: 0;
