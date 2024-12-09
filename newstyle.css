@@ -1956,6 +1956,7 @@ background-size: cover;
     }
     .img_bg.contact_service_bg{
         margin-top: 0;
+        height: 550px;
     }
     .client_servicess{
         margin-bottom: 2em;
