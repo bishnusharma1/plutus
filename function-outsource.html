@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="newstyle.css">
  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <link rel="stylesheet" href="slick.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title></title>
@@ -789,37 +790,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             });
         });
     </script>
-    <script>
-        $(document).ready(function () {
-            $('.testimonials_box').slick({
-                infinite: true,
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                prevArrow: '.prev-btn1',
-                nextArrow: '.next-btn1',
-                centerMode: false,
 
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            centerPadding: '0%'
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
     <script>
         function showCookieConsentPopup() {
             var consentPopup = document.getElementById("onetrust-consent-sdk");
