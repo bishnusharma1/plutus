@@ -3163,6 +3163,7 @@ input[type="checkbox"]:checked::after {
 
     .vcfo-hero-right form {
         width: auto;
+        padding: 1em;
     }
 
     .icon-s-container {
