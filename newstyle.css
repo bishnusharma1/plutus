@@ -2366,6 +2366,11 @@ line-height: 30px;
         margin-top: 1em;
         align-items: start !important;
     }
+    .inner_service_contents_part{
+        padding-top: 0 !important;
+    }
+    
+    
 }
 @media screen and (max-width:576px) {
     .founder_img img{ 
