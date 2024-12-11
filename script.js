@@ -75,36 +75,36 @@ document.addEventListener('DOMContentLoaded', function() {
   //   tabs[activeIndex].classList.add('active-nav');
   // });
 
-  var tabs = document.querySelectorAll('.btn-tab');
-tabs.forEach(function(tab, index) {
-  tab.addEventListener('click', function() {
-    var tabData = this.dataset.tab;
-    var slideIndex = index; // Use the index of the clicked tab
-    swiper.slideTo(slideIndex);
-    updateActive(tabData);
+//   var tabs = document.querySelectorAll('.btn-tab');
+// tabs.forEach(function(tab, index) {
+//   tab.addEventListener('click', function() {
+//     var tabData = this.dataset.tab;
+//     var slideIndex = index; // Use the index of the clicked tab
+//     swiper.slideTo(slideIndex);
+//     updateActive(tabData);
     
-    // Remove 'active-nav' class from all tabs
-    tabs.forEach(function(tab) {
-      tab.classList.remove('active-btn-tab');
-    });
+//     // Remove 'active-nav' class from all tabs
+//     tabs.forEach(function(tab) {
+//       tab.classList.remove('active-btn-tab');
+//     });
     
-    // Add 'active-nav' class to the clicked tab
-    this.classList.add('active-btn-tab');
-  });
-});
+//     // Add 'active-nav' class to the clicked tab
+//     this.classList.add('active-btn-tab');
+//   });
+// });
 
-swiper.on('slideChange', function () {
-  var activeIndex = swiper.realIndex;
-  var tabs = document.querySelectorAll('.btn-tab');
+// swiper.on('slideChange', function () {
+//   var activeIndex = swiper.realIndex;
+//   var tabs = document.querySelectorAll('.btn-tab');
   
-  // Remove 'active-nav' class from all tabs
-  tabs.forEach(function(tab) {
-    tab.classList.remove('active-btn-tab');
-  });
+//   // Remove 'active-nav' class from all tabs
+//   tabs.forEach(function(tab) {
+//     tab.classList.remove('active-btn-tab');
+//   });
 
-  // Add 'active-nav' class to the tab corresponding to the active slide
-  tabs[activeIndex].classList.add('active-btn-tab');
-});
+//   // Add 'active-nav' class to the tab corresponding to the active slide
+//   tabs[activeIndex].classList.add('active-btn-tab');
+// });
 
 
  document.addEventListener('DOMContentLoaded', function () {
