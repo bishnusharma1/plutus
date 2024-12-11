@@ -77,7 +77,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       <a href="/" class="nav-link " aria-current="page" style="color: #fff;">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a href="aboutus.html" style="color: #fff;">About us</a>
+                      <a href="aboutUs.html" style="color: #fff;">About us</a>
                   </li>
                    <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"

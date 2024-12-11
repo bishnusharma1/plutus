@@ -54,7 +54,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <nav class="navbar fixed-top  navbar-expand-lg " style="background:var(--bg-box-color)">
         <div class="container  d-flex justify-content-center justify-content-between align-items-center ">
-            <a href="#" class="navbar-brand" style="max-width: 60%;margin-right:3.5em">
+            <a href="/" class="navbar-brand" style="max-width: 60%;margin-right:3.5em">
                 <img src="assets/logo.webp" alt="logo" style="width: 120px;">
             </a>
 
@@ -76,7 +76,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <a href="/" class="nav-link " aria-current="page" style="color: #fff;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="aboutus.html" style="color: #fff;">About us</a>
+                        <a href="aboutUs.html" style="color: #fff;">About us</a>
                     </li>
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -222,7 +222,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </h1>
                 </div>
                 <div class="d-flex align-items-center btn_services" style="gap: 1em;">
-                    <button class="services_btn1">Contact Us<svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                       <a href="contact.html"><button class="services_btn1">Contact Us<svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_2139_2168)">
                                 <path
@@ -236,6 +236,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </defs>
                         </svg>
                     </button>
+                </a>
                     <button class="services_btn2">Submit RFP<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -610,18 +611,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="container-fluid img_bg contact_service_bg">
         <div class="container  contact_last service_contactss">
 
-            <form action="">
-                <h1>Get in Touch</h1>
-                <p>Leave your details for our team to reach out to you</p>
-                <div class="contact_input">
-                    <input type="text" name="" id="" placeholder="Company Name">
-                </div>
-                <div class="contact_input">
-                    <input type="email" placeholder="Email">
-                </div>
-                <button style="border-radius: 8px;background: linear-gradient(180deg, #E7B74C 0%, #C89A37 100%);
+                <form action="https://milliondox.com/job-assign-panel/store_get_in_touch_form_plutus.php" method="post">
+            <h1>Get in Touch</h1>
+            <p>Leave your details for our team to reach out to you</p>
+            <div class="contact_input">
+                <input type="text" name="company_name" id="company_name" placeholder="Company Name" required>
+            </div>
+            <div class="contact_input">
+                <input type="email" placeholder="Email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" 
+                               title="Please enter a valid email address (e.g., example@domain.com)" required>
+                <input type="hidden" name="page_url" id="pageUrl" value="">
+            </div>
+            <button style="border-radius: 8px;background: linear-gradient(180deg, #E7B74C 0%, #C89A37 100%);
 ">Submit</button>
-            </form>
+           </form>
+        <script>
+    // Function to fetch and update the current URL in the hidden input field every second
+    function fetchPageURL() {
+        const currentURL = window.location.href;
+
+        // Update the hidden input field
+        document.getElementById('pageUrl').value = currentURL;
+    }
+
+    // Fetch and update the URL every second
+    setInterval(fetchPageURL, 1000);
+
+    // Initial call to set the URL on page load
+    fetchPageURL();
+</script>
         </div>
     </div>
 

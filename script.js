@@ -196,3 +196,5 @@ swiper.on('slideChange', function () {
     // instead of a settings object
   ]
 });
+
+

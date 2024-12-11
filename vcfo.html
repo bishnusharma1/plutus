@@ -102,7 +102,7 @@ function gtag_report_conversion(url) {
 
     <nav class="navbar fixed-top  navbar-expand-lg " style="background:var(--bg-box-color)">
         <div class="container  d-flex justify-content-center justify-content-between align-items-center ">
-            <a href="#" class="navbar-brand" style="max-width: 60%;margin-right:3.5em">
+            <a href="/" class="navbar-brand" style="max-width: 60%;margin-right:3.5em">
                 <img src="assets/logo.webp" alt="logo" style="width: 120px;">
             </a>
 
@@ -124,7 +124,7 @@ function gtag_report_conversion(url) {
                         <a href="/" class="nav-link " aria-current="page" style="color: #fff;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="aboutus.html" style="color: #fff;">About us</a>
+                        <a href="aboutUs.html" style="color: #fff;">About us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active-nav" href="#" role="button" data-bs-toggle="dropdown"
@@ -361,7 +361,7 @@ function gtag_report_conversion(url) {
                     </div>
                 </div>
                 <div class="d-flex align-items-center btn_services" style="gap: 1em;">
-                    <button class="services_btn1">Contact Us<svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                    <a href="contact.html"><button class="services_btn1">Contact Us<svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_2139_2168)">
                                 <path
@@ -375,6 +375,7 @@ function gtag_report_conversion(url) {
                             </defs>
                         </svg>
                     </button>
+                </a>
                     <button class="services_btn2">Submit RFP<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -387,26 +388,28 @@ function gtag_report_conversion(url) {
 
             <div class="vcfo-hero-right d-flex align-items-center min-width" style="flex: 1;">
 
-                <form action="">
+                 <form action="https://milliondox.com/job-assign-panel/store_vcfo_form_plutus.php" method="post">
                    <h2>Consult with an expert</h2>
                    <div class="d-flex flex-column gap-1 input-box">
                        <label for="Name">Name*</label>
-                       <input type="text" name="" id="" placeholder="e.g. John Doe">
+                       <input type="text" name="name" id="name" placeholder="e.g. John Doe" required>
                    </div>
                    <div class="d-flex flex-column gap-1 input-box">
                        <label for="Name">Mobile*</label>
-                       <input type="tel" name="" id="" placeholder="e.g. 873586833">
+                       <input type="tel" name="tel" id="tel" placeholder="e.g. 873586833" pattern="^\+?[0-9]{1,4}?[-.\s]?[0-9]{1,15}$" 
+                               title="Please enter a valid phone number, e.g., +1-123-456-7890" required>
                    </div>
                    <div class="d-flex flex-column gap-1 input-box">
                        <label for="Name">Email*</label>
-                       <input type="email" name="" id="" placeholder="e.g. fahu@gmail.com">
+                       <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" 
+                               title="Please enter a valid email address (e.g., example@domain.com)" placeholder="e.g. fahu@gmail.com" required>
                    </div>
                    <div class="d-flex flex-column gap-1 input-box">
                        <label for="Name">Service required</label>
-                       <input type="text" name="" id="" placeholder="e.g. taxation, Payroll">
+                       <input type="text" name="service" id="service" placeholder="e.g. taxation, Payroll" required>
                    </div>
                    <div class="d-flex align-items-center gap-2 " style="margin-top: 1em;margin-bottom:2em;">
-                       <input type="checkbox" id="yellow-checkbox">
+                       <input type="checkbox" id="yellow-checkbox" name="agree" required>
                        <p style="font-size: 14px;color:var(--sub-text-color)">I Agree to receive notifications &
                            brochure on whatsapp</p>
                    </div>
@@ -495,7 +498,7 @@ function gtag_report_conversion(url) {
 
 
 
-    <div class="container-fluid py-2 " style=" background: linear-gradient(90deg, #FFFFFF 0%, #FFFBF2 50.49%, #FFFFFF 100%);
+    <div class="container-fluid py-2 main_logo_container" style=" background: linear-gradient(90deg, #FFFFFF 0%, #FFFBF2 50.49%, #FFFFFF 100%);
     ">
 
         <div class="logos remove_before labour-law-logos " style="padding-top: 3.5em; background-color: transparent;">
@@ -569,7 +572,7 @@ function gtag_report_conversion(url) {
 
     <div class="container-fluid  read_blogs" style="background: #ffffff; ">
 
-        <div class="container py-5 pb-0">
+        <div class="container  py-5 pb-0">
             <div class="d-flex justify-content-between flex-wrap align-items-center px-0 top_header">
                 <div class="d-flex flex-column min-width">
                     <div class="section-title" style="color: #000000;margin-bottom: 0.5em;font-weight: 400;">Our Clients

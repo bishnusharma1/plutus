@@ -2946,17 +2946,14 @@ margin-bottom: 25px;
 .hero-vcfo {
     background-color: var(--bg-box-color);
     color: #ffffff;
-    padding-top: 76px;
+    padding-top: 0;
     padding-bottom: 1em;
-
-    height: 100vh;
+    height: calc(100vh - 100px);
     position: relative;
     margin: auto;
     display: flex;
     align-items: center;
-
-
-
+    margin-top: 100px;
 }
 
 .hero-vcfo::after {
@@ -3012,7 +3009,6 @@ margin-bottom: 25px;
     width: 480px;
     /* background-color: rgba(255, 255, 255, 0.9); */
     background: rgba(255, 255, 255, 0.6);
-
     padding: 46px 46px 16px 46px;
     color: #000000;
     display: flex;
@@ -3020,12 +3016,10 @@ margin-bottom: 25px;
     gap: 1em;
     border-radius: 1em;
     padding-bottom: 2em;
-
     border: 1px solid rgba(198, 198, 198, 1);
     backdrop-filter: blur(30px);
     color: #ffffff;
-
-
+    top: 100px;
 }
 
 .vcfo-hero-right form input {
@@ -3083,16 +3077,18 @@ margin-bottom: 25px;
 }
 
 .vcfo-hero-right form button {
-    width: calc(100% - 92px);
-    position: absolute;
-    bottom: -1em;
-    color: #000000;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    color: #FFF;
     font-weight: 600;
     height: 50px;
-    border-radius: 1em;
+    border-radius: 8px;
     background: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
+}
 
-
+.vcfo-hero-right .d-flex.align-items-center.gap-2 {
+    margin: 0 !IMPORTANT;
 }
 
 input[type="checkbox"] {
@@ -3128,9 +3124,11 @@ input[type="checkbox"]:checked::after {
     .hero-vcfo .bg-right-vcfo {
         display: none;
     }
+    
 
     .hero-vcfo {
         height: auto;
+        margin-top:75px;
     }
     
 
@@ -3164,6 +3162,7 @@ input[type="checkbox"]:checked::after {
     .vcfo-hero-right form {
         width: auto;
         padding: 1em;
+        top:0;
     }
 
     .icon-s-container {
@@ -4322,76 +4321,99 @@ font-weight: 600;
 # our blogs
 --------------------------------------------------------------*/
 
-.blog {
-    display: block;
+.blog-container {
+    margin: 40px 0px 0px;
 }
 
-.blog .blog-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px 10px;
+.blog-container .blog-post {
+    box-shadow: 0px 1px 15px 0px #0000001A;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.blog .blog-container .blog-post {
-    padding: 40px 20px;
-    background: #f2ebde;
+.blog-container .blog-post .post-image-wrapper {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.blog .blog-container .blog-post span {
-    font-size: 13px;
-    color: #666666;
+.blog-container .blog-post .post-image-wrapper .post-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.blog .blog-container .blog-post h2 {
+.blog-container .blog-post .post-content-wrapper {
+    background: #ffffff;
+    padding: 15px 15px 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.blog-container .blog-post .post-content-wrapper h2 {
     font-size: 22px;
-    font-weight: 500;
-    text-shadow: 0 0 black;
-    margin: 10px 0px 10px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #100F1B;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+    max-width: 600px;
+    margin: 0;
 }
 
-.blog .blog-container .blog-post p {
-    font-size: 16px;
-    margin: 0px 0px 20px;
+.blog-container .blog-post .post-content-wrapper p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #373642;
+    text-align: left;
     overflow: hidden;
-    text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    margin: 10px 0px 13px;
 }
 
-.blog .blog-container .blog-post p:empty {
+.blog-container .blog-post .post-content-wrapper p:empty {
     display: none;
 }
 
-
-.blog .blog-container .blog-post a {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 7px 30px;
-    border: 1.5px solid #CBAF65;
-    border-radius: 40px;
-    color: #FFF;
-    background: #cbaf66;
-    transition: all .25s ease-out;
+.blog-container .blog-post .post-content-wrapper .post-footer {
+    display: flex;
+    justify-content: space-between;
 }
 
-.blog .blog-container .blog-post a:hover {
-    opacity: 0.7;
+.blog-container .blog-post .post-content-wrapper .post-footer span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.12px;
+    color: #9CA2A5;
 }
 
-@media(max-width:768px)
-{
-.blog .blog-container {
-    grid-template-columns: inherit;
-} 
-
+.blog-container .blog-post .post-content-wrapper .post-footer a {
+    color: #B59B4E;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.59px;
+    background: linear-gradient(90deg, #DABC68 0%, #BC962C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.blog-container .slick-slide {
+    padding: 0px 10px;
+}
+
+.blog-container .slick-list {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
 
 @media(max-width:576px)
 {
@@ -4405,7 +4427,26 @@ font-weight: 600;
 .blog .blog-container .blog-post h2 {
     font-size: 18px;
 }
+
+.blog-container .blog-post .post-image-wrapper {
+    height: 150px;
 }
+
+.blog-container .blog-post .post-content-wrapper h2 {
+    font-size: 14px;
+}
+
+.blog-container .blog-post .post-content-wrapper p {
+    margin: 5px 0px 10px;
+}
+
+.blog-container .blog-post .post-content-wrapper .post-footer a {
+    line-height: normal;
+    font-size: 15px;
+}
+
+}
+
 
 a#call-btn {
     bottom: 20px !IMPORTANT;

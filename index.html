@@ -134,7 +134,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
     <nav class="navbar fixed-top  navbar-expand-lg " style="background:var(--bg-box-color)">
         <div class="container  d-flex justify-content-center justify-content-between align-items-center ">
-            <a href="#" class="navbar-brand" style="max-width: 60%;margin-right:3.5em">
+            <a href="/" class="navbar-brand" style="max-width: 60%;margin-right:3.5em">
                 <img src="assets/logo.webp" alt="logo" style="width: 120px;">
             </a>
 
@@ -156,7 +156,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                         <a href="/" class="nav-link " aria-current="page" style="color: #fff;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="aboutus.html" style="color: #fff;">About us</a>
+                        <a href="aboutUs.html" style="color: #fff;">About us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -299,12 +299,12 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     </div>
                     <p class="hero_sub_text">Plutus Consulting has been a trusted advisor to its clients for more than a decade. Passion and the excellence of its strong, visionary leadership have driven this firm to achieve remarkable growth in just a short span of time. Plutus now caters to the diverse needs of industries and businesses of all scales with the expansion of its suite of services.</p>
                     <div class="d-flex align-items-center hero__btn">
-                        <a href="">
+                        <a href="contact.html">
                             <button>Contact Us
                                 <img src="assets/newhome/contact_btn_arrow.png" alt="">
                             </button>
                         </a>
-                        <a href="">
+                        <a href="assets/newhome/Plutus_Consulting.pdf" download="Plutus_Consulting.pdf">
                             <button class="white">Learn More
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -575,7 +575,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </div>
     </div>
 
-    <div class="container-fluid py-5" style="background: linear-gradient(180deg, #FFFFFF 52.4%, #F4EEDD 100%);">
+    <div class="container-fluid py-5 main_logo_container" style="background: linear-gradient(180deg, #FFFFFF 52.4%, #F4EEDD 100%);">
         <div class="container">
             <div class="section-title" style="color: #007DFC; font-weight: 400;">Our Clients</div>
         </div>
@@ -1329,43 +1329,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 </div>
             </div>
 
-            <div class="row justify-content-between py-5 g-4">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="new_blog_card d-flex flex-column ">
-                        <div class="new_blog_head">
-                            <img src="assets/newhome/blog.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="new_blog_bottom">
-                            <h4 class="truncate-h4">Latest Insights into Modern Marketing</h4>
-                            <p class="truncate-p">Discover the dynamic realm of modern marketing through our latest
-                                insights. In an era
-                                marked by technological evolution, our comprehensive analysis delves into groundbreaking
-                                strategies shaping the industry.</p>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <span>December 18th, 2023</span>
-                                <a href="">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="new_blog_card d-flex flex-column ">
-                        <div class="new_blog_head">
-                            <img src="assets/newhome/blog-2.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="new_blog_bottom">
-                            <h4 class="truncate-h4">Tech Innovations Redefining the Business Landscape</h4>
-                            <p class="truncate-p">In the ever-evolving business landscape, groundbreaking tech
-                                innovations are reshaping the way enterprises operate. From artificial intelligence
-                                optimizing processes to blockchain securing transactions,</p>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <span>December 18th, 2023</span>
-                                <a href="">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+ <div id="blog-container" class="blog-container">
+            <!-- Blog posts will be inserted here by JavaScript -->
+</div> 
 
         </div>
     </div>
@@ -1620,32 +1586,67 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
-    <script>
-        // Fetch and display the latest blog posts from plutus WordPress
-        fetch('https://plutusco.com/blogs/wp-json/wp/v2/posts?per_page=4')
-            .then(response => response.json())
-            .then(posts => {
-                const container = document.getElementById('blog-container');
-                posts.forEach(post => {
-                    const postDate = new Date(post.date).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric'
-                    });
 
-                    const postElement = document.createElement('div');
-                    postElement.classList.add('blog-post');
-                    postElement.innerHTML = `
-                    <span><em>Posted on: ${postDate}</em></span>
-                    <h2>${post.title.rendered}</h2>
-                    <p>${post.excerpt.rendered}</p>
-                    <a href="${post.link}" target="_blank">Read More</a>
-                `;
-                    container.appendChild(postElement);
+<script>
+    fetch('https://plutusco.com/blogs/wp-json/wp/v2/posts?per_page=4&_embed')
+        .then(response => response.json())
+        .then(posts => {
+            const container = document.getElementById('blog-container');
+            posts.forEach(post => {
+                const postDate = new Date(post.date).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
                 });
-            })
-            .catch(error => console.error('Error fetching posts:', error));
-    </script>
+
+                // Retrieve the featured image
+                const postImage = post._embedded && post._embedded['wp:featuredmedia']
+                    ? post._embedded['wp:featuredmedia'][0].source_url
+                    : 'https://via.placeholder.com/150';
+
+                const postElement = document.createElement('div');
+                postElement.classList.add('blog-post');
+                postElement.innerHTML = `
+                    <div class="post-image-wrapper">
+                        <img src="${postImage}" alt="${post.title.rendered}" class="post-image">
+                    </div>
+                    <div class="post-content-wrapper">
+                        <h2>${post.title.rendered}</h2>
+                        <p>${post.excerpt.rendered}</p>
+                        <div class="post-footer">
+                            <span>${postDate}</span>
+                            <a href="${post.link}" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(postElement);
+            });
+
+            // Initialize Slick Slider after posts are loaded
+            $('.blog-container').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: false,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        })
+        .catch(error => console.error('Error fetching posts:', error));
+</script>
+
+
+
+
 
     <!-- WhatsApp and Call Button Script -->
     <script>
