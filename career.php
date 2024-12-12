@@ -14,6 +14,7 @@
   <link href="assets/favicon-icon.png" rel="apple-touch-icon">
   
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="newstyle.css">
  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title> Plutusco - Explore Careers at PlutusCo Today

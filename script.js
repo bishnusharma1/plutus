@@ -75,6 +75,8 @@ document.addEventListener('DOMContentLoaded', function() {
   //   tabs[activeIndex].classList.add('active-nav');
   // });
 
+
+
 //   var tabs = document.querySelectorAll('.btn-tab');
 // tabs.forEach(function(tab, index) {
 //   tab.addEventListener('click', function() {
@@ -107,6 +109,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // });
 
 
+
+// end of tab
  document.addEventListener('DOMContentLoaded', function () {
       var reviewSwiper = new Swiper('.review-swiper', {
         slidesPerView: 1,

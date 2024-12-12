@@ -1556,13 +1556,18 @@ a {
     }
 
     .fotter_comman ul {
+        align-items: start;
         flex-wrap: wrap;
         padding: 11px 0px 11px;
+        flex-direction: column;
+        text-align: left;
+        padding: 1em;
+        margin-left: 0.5em;
     }
 
     .fotter_comman ul li {
         width: 50%;
-        text-align: center;
+        text-align: left;
         padding: 3px 10px;
     }
 

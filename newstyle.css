@@ -344,8 +344,8 @@ a button:hover {
     }
 
     .experience_box {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
 
     }
 
@@ -531,7 +531,7 @@ a button:hover {
     }
 
     .why_we_do_box {
-        padding: 0px 20px 20px !IMPORTANT;
+        padding: 0px 0px 20px !IMPORTANT;
     }
 
     .why_we_do_box.why_we_do_box .slick-list {
@@ -891,7 +891,8 @@ text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
-
+background: #ffffff;
+    border-radius: 0.5em;
 
 
 
@@ -1071,7 +1072,7 @@ text-align: left;
     }
 
     .top_header {
-        width: 100%;
+        /* width: 100%; */
         align-items: center;
 
     }
@@ -1149,6 +1150,7 @@ text-align: left;
     .see_what_box .see_what_img {
         max-width: 40%;
     }
+    
 }
 
 /* ----about us------ */
@@ -1342,6 +1344,7 @@ text-align: left;
 
     .head_mission .mission_left .mission_left_inner {
         max-width: none;
+        padding:0em;
     }
 
     
