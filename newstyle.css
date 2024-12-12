@@ -2421,3 +2421,16 @@ line-height: 30px;
     height: auto; 
 }
 
+@media screen and (max-width:768px) {
+    .common_inner_img {
+      
+        width: 350px;
+         
+        height: 250px;
+    }
+    .common_inner_img::after {
+      
+        bottom: -50%;
+
+    }
+}
