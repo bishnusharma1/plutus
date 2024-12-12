@@ -625,29 +625,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 
     <script>
-        // Select the container and buttons
-        const tabContainer = document.querySelector('.tab-items.service_tabs');
-        const prevButton = document.querySelector('.prev-btn');
-        const nextButton = document.querySelector('.next-btn');
+       const tabContainer = document.querySelector('.tab-items.service_tabs');
+const prevButton = document.querySelector('.prev-btn');
+const nextButton = document.querySelector('.next-btn');
 
-        // Set the scroll step (adjust this for smoother or faster scrolling)
-        const scrollStep = 250;
+// Set the scroll step (adjust this for smoother or faster scrolling)
+const scrollStep = 250;
 
-        // Scroll to the left when clicking "prev"
-        prevButton.addEventListener('click', () => {
-            tabContainer.scrollBy({
-                left: -scrollStep, // Scroll left
-                behavior: 'smooth' // Smooth scrolling
-            });
-        });
+// Scroll to the left when clicking "prev"
+prevButton.addEventListener('click', () => {
+    tabContainer.scrollLeft -= scrollStep;
+});
 
-        // Scroll to the right when clicking "next"
-        nextButton.addEventListener('click', () => {
-            tabContainer.scrollBy({
-                left: scrollStep, // Scroll right
-                behavior: 'smooth' // Smooth scrolling
-            });
-        });
+// Scroll to the right when clicking "next"
+nextButton.addEventListener('click', () => {
+    tabContainer.scrollLeft += scrollStep;
+});
+
 
       // Select all the tab buttons and tab content sections
 const tabs = document.querySelectorAll('.btn-tab');
