@@ -2205,7 +2205,7 @@ font-weight: 700;
 }
 @media screen and (max-width:768px) {
     .common_service_contents{
-        margin-top: -2em;
+        margin-top: 6em;
     }
     .common_links_service{
         justify-content: center;
@@ -2398,3 +2398,25 @@ line-height: 30px;
    display: none;
 }
 
+.common_inner_img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 450px;
+    width: 500px;
+}
+
+.common_inner_img img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-left: 1em;
+}
+
+.common_inner_img::after {
+    content: url('assets/newhome/common_dots.png'); 
+    position: absolute;
+    bottom: -25%; 
+    left: 0; 
+    height: auto; 
+}
