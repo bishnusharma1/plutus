@@ -21,7 +21,37 @@
     <link rel="stylesheet" href="newstyle.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="slick.css">
+        <script>
+          // Disable right-click
+        document.addEventListener('contextmenu', function (event) {
+            event.preventDefault(); // Disable right-click
+            // alert('Right-click is disabled on this page.');
+        });
 
+        // Disable specific key functions (like F12, Ctrl+Shift+I, etc.)
+        document.addEventListener('keydown', function (event) {
+            // Disable F12
+            if (event.keyCode === 123) {
+                event.preventDefault();
+                // alert('F12 is disabled.');
+            }
+            // Disable Ctrl+Shift+I (Inspect Element in most browsers)
+            if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
+                event.preventDefault();
+                // alert('Inspect Element is disabled.');
+            }
+            // Disable Ctrl+U (View Source)
+            if (event.ctrlKey && event.keyCode === 85) {
+                event.preventDefault();
+                // alert('View Source is disabled.');
+            }
+            // Disable right-click key (Shift + F10)
+            if (event.shiftKey && event.keyCode === 121) {
+                event.preventDefault();
+                // alert('Right-click key is disabled.');
+            }
+        });
+        </script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -394,7 +424,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 style="position: relative; width: 100%; height: 100%;">
 
                 <!-- Add the image tag -->
-                <img src="assets/newhome/what_we_1.jpg" alt="What We Do"
+                <img src="assets/newhome/what_we_1.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -420,7 +450,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 style="position: relative; width: 100%; height: 100%;">
 
 
-                <img src="assets/newhome/payroll.jpg" alt="What We Do"
+                <img src="assets/newhome/payroll.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -445,7 +475,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 style="position: relative; width: 100%; height: 100%;">
 
 
-                <img src="assets/newhome/investement.jpg" alt="What We Do"
+                <img src="assets/newhome/investement.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -470,7 +500,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 style="position: relative; width: 100%; height: 100%;">
 
 
-                <img src="assets/newhome/compliance.jpg" alt="What We Do"
+                <img src="assets/newhome/compliance.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -495,7 +525,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 style="position: relative; width: 100%; height: 100%;">
 
 
-                <img src="assets/newhome/advisory.jpg" alt="What We Do"
+                <img src="assets/newhome/advisory.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -603,7 +633,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </div>
             <div class="col-lg-5 about_right">
                 <div class="d-flex justify-content-end">
-                    <img src="assets/newhome/about.png" alt="" class="img-fluid">
+                    <img src="assets/newhome/about.webp" alt="" class="img-fluid">
                 </div>
             </div>
 
@@ -900,7 +930,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </div>
             <div class=" p-0 d-flex justify-content-end ">
                 <div>
-                    <img class="img-fluid" src="assets/newhome/collaborate.png" alt="">
+                    <img class="img-fluid" src="assets/newhome/collaborate.webp" alt="">
                 </div>
             </div>
         </div>

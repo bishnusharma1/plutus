@@ -24,7 +24,37 @@
     max-width: 100%;
 }
   </style>
-  
+      <script>
+          // Disable right-click
+        document.addEventListener('contextmenu', function (event) {
+            event.preventDefault(); // Disable right-click
+            // alert('Right-click is disabled on this page.');
+        });
+
+        // Disable specific key functions (like F12, Ctrl+Shift+I, etc.)
+        document.addEventListener('keydown', function (event) {
+            // Disable F12
+            if (event.keyCode === 123) {
+                event.preventDefault();
+                // alert('F12 is disabled.');
+            }
+            // Disable Ctrl+Shift+I (Inspect Element in most browsers)
+            if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
+                event.preventDefault();
+                // alert('Inspect Element is disabled.');
+            }
+            // Disable Ctrl+U (View Source)
+            if (event.ctrlKey && event.keyCode === 85) {
+                event.preventDefault();
+                // alert('View Source is disabled.');
+            }
+            // Disable right-click key (Shift + F10)
+            if (event.shiftKey && event.keyCode === 121) {
+                event.preventDefault();
+                // alert('Right-click key is disabled.');
+            }
+        });
+        </script>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

@@ -20,8 +20,37 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title></title>
-    
-    
+        <script>
+          // Disable right-click
+        document.addEventListener('contextmenu', function (event) {
+            event.preventDefault(); // Disable right-click
+            // alert('Right-click is disabled on this page.');
+        });
+
+        // Disable specific key functions (like F12, Ctrl+Shift+I, etc.)
+        document.addEventListener('keydown', function (event) {
+            // Disable F12
+            if (event.keyCode === 123) {
+                event.preventDefault();
+                // alert('F12 is disabled.');
+            }
+            // Disable Ctrl+Shift+I (Inspect Element in most browsers)
+            if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
+                event.preventDefault();
+                // alert('Inspect Element is disabled.');
+            }
+            // Disable Ctrl+U (View Source)
+            if (event.ctrlKey && event.keyCode === 85) {
+                event.preventDefault();
+                // alert('View Source is disabled.');
+            }
+            // Disable right-click key (Shift + F10)
+            if (event.shiftKey && event.keyCode === 121) {
+                event.preventDefault();
+                // alert('Right-click key is disabled.');
+            }
+        });
+    </script>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -79,7 +108,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <a href="aboutUs.html" style="color: #fff;">About us</a>
                     </li>
                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle active-nav" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Services
                         </a>
@@ -148,14 +177,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <hr class="dropdown-divider">
                             </li>
                             <li class="dropdown dropend">
-                                <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                <a class="dropdown-item dropdown-toggle active-nav-dropdown" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Compliance & regulatory
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="taxation-services.html">Taxation services</a></li>
                                     <li><a class="dropdown-item" href="litigation-and-assessment.html">  Litigation and assessment</a></li>
-                                    <li><a class="dropdown-item" href="corporate-legal-matters.html">Corporate legal matters</a></li>
+                                    <li><a class="dropdown-item active-nav-dropdown" href="corporate-legal-matters.html">Corporate legal matters</a></li>
                                     <li><a class="dropdown-item" href="compliance-regulatory-filings.html"> Compliance & regulatory filings</a></li>
                                     <li><a class="dropdown-item" href="liquidation-winding-up.html"> Liquidation and winding up</a></li>
                                     <li><a class="dropdown-item" href="compliance-audits.html"> Compliance audits</a></li>
@@ -336,7 +365,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="new_blog_card  client_card d-flex flex-column ">
                         <div class="new_blog_head client_head">
-                            <img src="assets/newhome/blog.png" alt="" class="img-fluid">
+                            <img src="assets/newhome/blog.webp" alt="" class="img-fluid">
                         </div>
                         <div class="new_blog_bottom client_bottom">
                             <h4 class="truncate-h4">How we helped X fundraise</h4>
@@ -349,7 +378,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="new_blog_card client_card d-flex flex-column ">
                         <div class="new_blog_head client_head">
-                            <img src="assets/newhome/blog-2.png" alt="" class="img-fluid">
+                            <img src="assets/newhome/blog-2.webp" alt="" class="img-fluid">
                         </div>
                         <div class="new_blog_bottom client_bottom">
                             <h4 class="truncate-h4">Transition from WFH to WFO</h4>
@@ -362,7 +391,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="new_blog_card client_card d-flex flex-column ">
                         <div class="new_blog_head client_head">
-                            <img src="assets/newhome/blog-2.png" alt="" class="img-fluid">
+                            <img src="assets/newhome/blog-2.webp" alt="" class="img-fluid">
                         </div>
                         <div class="new_blog_bottom client_bottom">
                             <h4 class="truncate-h4">Helping X Co. in financial auditing</h4>
@@ -411,7 +440,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 style="position: relative; width: 100%; height: 100%;">
 
                 <!-- Add the image tag -->
-                <img src="assets/newhome/what_we_1.jpg" alt="What We Do"
+                <img src="assets/newhome/what_we_1.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -437,7 +466,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 style="position: relative; width: 100%; height: 100%;">
 
 
-                <img src="assets/newhome/payroll.jpg" alt="What We Do"
+                <img src="assets/newhome/payroll.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -462,7 +491,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 style="position: relative; width: 100%; height: 100%;">
 
 
-                <img src="assets/newhome/investement.jpg" alt="What We Do"
+                <img src="assets/newhome/investement.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -487,7 +516,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 style="position: relative; width: 100%; height: 100%;">
 
 
-                <img src="assets/newhome/compliance.jpg" alt="What We Do"
+                <img src="assets/newhome/compliance.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -512,7 +541,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 style="position: relative; width: 100%; height: 100%;">
 
 
-                <img src="assets/newhome/advisory.jpg" alt="What We Do"
+                <img src="assets/newhome/advisory.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -613,7 +642,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="container-fluid img_bg contact_service_bg">
         <div class="container  contact_last service_contactss">
 
-                <form action="https://milliondox.com/job-assign-panel/store_get_in_touch_form_plutus.php" method="post">
+                <form action="https://plutusco.com/admindata/store_get_in_touch_form_plutus.php" method="post">
             <h1>Get in Touch</h1>
             <p>Leave your details for our team to reach out to you</p>
             <div class="contact_input">
@@ -637,7 +666,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     // Fetch and update the URL every second
-    setInterval(fetchPageURL, 1000);
+    setInterval(fetchPageURL, 100);
 
     // Initial call to set the URL on page load
     fetchPageURL();

@@ -20,7 +20,37 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="newstyle.css">
     <link rel="stylesheet" href="slick.css">
-    
+            <script>
+          // Disable right-click
+        document.addEventListener('contextmenu', function (event) {
+            event.preventDefault(); // Disable right-click
+            // alert('Right-click is disabled on this page.');
+        });
+
+        // Disable specific key functions (like F12, Ctrl+Shift+I, etc.)
+        document.addEventListener('keydown', function (event) {
+            // Disable F12
+            if (event.keyCode === 123) {
+                event.preventDefault();
+                // alert('F12 is disabled.');
+            }
+            // Disable Ctrl+Shift+I (Inspect Element in most browsers)
+            if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
+                event.preventDefault();
+                // alert('Inspect Element is disabled.');
+            }
+            // Disable Ctrl+U (View Source)
+            if (event.ctrlKey && event.keyCode === 85) {
+                event.preventDefault();
+                // alert('View Source is disabled.');
+            }
+            // Disable right-click key (Shift + F10)
+            if (event.shiftKey && event.keyCode === 121) {
+                event.preventDefault();
+                // alert('Right-click key is disabled.');
+            }
+        });
+        </script>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -113,7 +143,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="labour-law.html">Labour Law Service</a></li>
+                            <li><a class="dropdown-item active-nav-dropdown" href="labour-law.html">Labour Law Service</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -361,7 +391,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             <div class="vcfo-hero-right d-flex align-items-center min-width" style="flex: 1;">
 
-               <form action="https://milliondox.com/job-assign-panel/store_labour_law_form_plutus.php" method="post">
+               <form action="https://plutusco.com/admindata/store_labour_law_form_plutus.php" method="post">
                    <h2>Consult with an expert</h2>
                    <div class="d-flex flex-column gap-1 input-box">
                        <label for="Name">Name*</label>
@@ -369,7 +399,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                    </div>
                    <div class="d-flex flex-column gap-1 input-box">
                        <label for="Name">Mobile*</label>
-                       <input type="tel" name="tel" id="tel" placeholder="e.g. 873586833" pattern="^\+?[0-9]{1,4}?[-.\s]?[0-9]{1,15}$" 
+                       <input type="tel" name="tel" id="tel" placeholder="e.g. 873586833" inputmode="numeric"  oninput="this.value = this.value.replace(/[^0-9]/g, '');"
                                title="Please enter a valid phone number, e.g., +1-123-456-7890" required>
                    </div>
                    <div class="d-flex flex-column gap-1 input-box">
@@ -399,7 +429,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="container-fluid common_service_main_head" style="margin-bottom: 0;">
         <div class="col-lg-4 common_left_service labour_law_left_service">
-            <img src="assets/newhome/labour_hero_left.png" alt="" class="img-fluid">
+            <img src="assets/newhome/labour_hero_left.webp" alt="" class="img-fluid">
         </div>
         <div class="col-lg-7">
             <div class="common_service_contents vcfo_inner_service_part">
@@ -551,7 +581,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="new_blog_card  client_card d-flex flex-column ">
                         <div class="new_blog_head client_head">
-                            <img src="assets/newhome/blog.png" alt="" class="img-fluid">
+                            <img src="assets/newhome/blog.webp" alt="" class="img-fluid">
                         </div>
                         <div class="new_blog_bottom client_bottom">
                             <h4 class="truncate-h4">How we helped X fundraise</h4>
@@ -564,7 +594,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="new_blog_card client_card d-flex flex-column ">
                         <div class="new_blog_head client_head">
-                            <img src="assets/newhome/blog-2.png" alt="" class="img-fluid">
+                            <img src="assets/newhome/blog-2.webp" alt="" class="img-fluid">
                         </div>
                         <div class="new_blog_bottom client_bottom">
                             <h4 class="truncate-h4">Transition from WFH to WFO</h4>
@@ -577,7 +607,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="new_blog_card client_card d-flex flex-column ">
                         <div class="new_blog_head client_head">
-                            <img src="assets/newhome/blog-2.png" alt="" class="img-fluid">
+                            <img src="assets/newhome/blog-2.webp" alt="" class="img-fluid">
                         </div>
                         <div class="new_blog_bottom client_bottom">
                             <h4 class="truncate-h4">Helping X Co. in financial auditing</h4>
@@ -627,7 +657,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 style="position: relative; width: 100%; height: 100%;">
 
                 <!-- Add the image tag -->
-                <img src="assets/newhome/what_we_1.jpg" alt="What We Do"
+                <img src="assets/newhome/what_we_1.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -653,7 +683,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 style="position: relative; width: 100%; height: 100%;">
 
 
-                <img src="assets/newhome/payroll.jpg" alt="What We Do"
+                <img src="assets/newhome/payroll.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -678,7 +708,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 style="position: relative; width: 100%; height: 100%;">
 
 
-                <img src="assets/newhome/investement.jpg" alt="What We Do"
+                <img src="assets/newhome/investement.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -703,7 +733,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 style="position: relative; width: 100%; height: 100%;">
 
 
-                <img src="assets/newhome/compliance.jpg" alt="What We Do"
+                <img src="assets/newhome/compliance.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -728,7 +758,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 style="position: relative; width: 100%; height: 100%;">
 
 
-                <img src="assets/newhome/advisory.jpg" alt="What We Do"
+                <img src="assets/newhome/advisory.webp" alt="What We Do"
                     style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
 
                 <div class="overlay_why"></div>
@@ -1205,7 +1235,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             <div class="d-flex flex-wrap justify-content-center msg_founder_container" style="margin-top: 2.5em;">
                 <div class="d-flex justify-content-center align-items-center min-width founder_img" style="flex: 1;">
-                    <img src="/assets/vcfo/kunal_sir.JPG" alt=""
+                    <img src="/assets/newhome/kunal_sir.webp" alt=""
                         style="border-radius:1em;    height: -webkit-fill-available">
                 </div>
                 <div class="d-flex flex-column gap-3 min-width" style="flex: 1.5;">

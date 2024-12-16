@@ -2953,7 +2953,7 @@ margin-bottom: 25px;
     color: #ffffff;
     padding-top: 0;
     padding-bottom: 1em;
-    height: calc(100vh - 100px);
+    height: calc(90vh - 100px);
     position: relative;
     margin: auto;
     display: flex;
@@ -3009,7 +3009,7 @@ margin-bottom: 25px;
 }
 
 .vcfo-hero-right form {
-    position: relative;
+    position: absolute;
     z-index: 2;
     width: 480px;
     /* background-color: rgba(255, 255, 255, 0.9); */
@@ -3024,7 +3024,7 @@ margin-bottom: 25px;
     border: 1px solid rgba(198, 198, 198, 1);
     backdrop-filter: blur(30px);
     color: #ffffff;
-    top: 100px;
+        bottom: -8%;
 }
 
 .vcfo-hero-right form input {
@@ -3141,6 +3141,12 @@ input[type="checkbox"]:checked::after {
     position: relative;
     height: 670px !IMPORTANT;
 }
+
+.vcfo-hero-right form {
+    position: relative;
+    bottom: 0;
+}
+
 
 }
 
