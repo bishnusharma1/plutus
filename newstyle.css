@@ -1364,7 +1364,9 @@ background: #ffffff;
         max-width: none;
         padding:0em;
     }
-
+.head_mission .mission_left .mission_left_inner h1 {
+    font-size:28px;
+}
     
 
     .head_mission .mission_left .mission_left_inner h1,
@@ -1444,9 +1446,37 @@ background: #ffffff;
     color: #5A5A5A;
     font-weight: 500;
 }
+.contact_left form .input_s select{
+    border: none;
+    cursor:pointer;
+    border-radius:0;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 0.5em 0;
+    margin-bottom: 0.5em;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.59px;
+    width: 80%;
+    color:#757575;
+    font-weight: 500;
+    padding:10px 10px;
+box-shadow:none;
+}
+.contact_left form .input_s select option {
+    font-size: 18px; 
+    background-color: #ffffff;
+    color: #5A5A5A;
+    border-bottom: 1px solid #e0e0e0; 
+    cursor:pointer;
+}
 
-.contact_left form .input_s input:focus-within {
-    outline: none;
+.contact_left form .input_s select option:hover {
+    background-color: #d7a942; 
+    color: #ffffff; 
+}
+
+.contact_left form .input_s input:focus-within,.contact_left form .input_s select:focus-within, .contact_left form .input_s select option:focus-within {
+    outline: none !important;
 }
 
 .file-upload {
@@ -1496,7 +1526,7 @@ background: #ffffff;
 }
 
 @media screen and (max-width:768px) {
-    .contact_left form .input_s input {
+    .contact_left form .input_s input,.contact_left form .input_s select {
         width: 100%;
     }
 
@@ -1652,6 +1682,7 @@ background: #ffffff;
         width: 100%;
 
     }
+    
 
     .location_left {
         width: 100%;
@@ -1687,8 +1718,28 @@ background: #ffffff;
     .location_left .location_box .loc_detail h3 {
         font-size: 16px;
         line-height: 1.2;
+        margin-bottom:0;
     }
 
+    .location_left .location_box .loc_img {
+        min-width:auto;
+        width:120px;
+        min-height:100px;
+        border-radius: 0px 12px 12px 0px;
+    }
+     .location_left .location_box .loc_img img{
+         max-width:80%;
+     }
+     .location_box:nth-child(even) .img_border,
+     .location_box:nth-child(odd) .img_border,
+     .location_left .img_border{
+        min-width: 20px;
+        width:20px;
+        border-radius: 12px 0px 0px 12px;
+     }
+     .location_box{
+        border-radius: 12px;  
+     }
 }
 
 .mission_left .mission_left_inner.services_left_inner p {
@@ -2568,4 +2619,185 @@ letter-spacing: 0.1em;
     .about_card_head span{
         color: #000000;
     }
+}
+.service_contactss.home_contact_bottom{
+    margin-top:15em;
+}
+@media screen and (max-width:768px) {
+    .service_contactss.home_contact_bottom{
+    margin-top:2em;
+}
+}
+.calculator_top{
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.calculator_head h1{
+   
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 72.8px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: rgba(66, 66, 65, 1);
+
+    
+}
+.calculator_head p{
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+color: rgba(66, 66, 65, 1);
+margin-bottom: 4em;
+
+}
+.calculator_cards{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cal_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 380px;
+    border-radius: 20px;
+    gap: 18px;
+    border: 1px solid rgba(218, 188, 104, 1);
+    margin-bottom: 20px;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+}
+
+.cal_card p{
+    font-family: Manrope;
+font-size: 24px;
+font-weight: 400;
+line-height: 32.78px;
+text-align: center;
+
+}
+.cal_card:hover{
+    background-color: rgba(218, 188, 104, 1);
+   
+}
+.cal_card:hover p, .cal_card:hover svg{
+    color: #ffffff;
+}
+@media screen and (max-width:900px) {
+    .calculator_top{
+        padding-top: 120px;
+    }
+    .cal_card{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .calculator_head h1{
+        font-size: 32px;
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+
+/* inner page calculation */
+.calculation_top{
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+.light_text{
+    color:rgba(147, 147, 147, 1) ;
+}
+.blod_text{
+    color: rgba(147, 147, 147, 1);
+    font-weight: 700;
+}
+.common_text_contents{
+    gap: 1.5em;
+}
+.common_text_contents h1{
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 54.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+  margin-bottom: 0.5em;
+    
+}
+.common_text_contents p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  
+}
+.common_text_contents h2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    margin-top: 2.5em;
+ 
+    
+}
+.common_text_contents strong{
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+
+
+}
+.common_text_contents ul li{
+    text-align: left;
+    list-style: none;
+}
+
+@media screen and (max-width:768px) {
+    .common_text_contents{
+        gap: 1em;
+    }
+
+    .common_text_contents h1{
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    .common_text_contents p{
+    
+    }
+    .common_text_contents h2{
+    
+    }
+    .common_text_contents strong{
+        
+    }
+}
+
+.faq_top_part{
+    margin-top:5em;
+}
+.calculation_faq_main .accordion-items.calculation_accordian{
+    margin-bottom: 1em;
+}
+.calculation_accordian{
+    border: 1px solid rgba(211, 211, 211, 1) !important;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.12);
+    margin-bottom: 2em;
+    
+    border-radius: 8px !important;
+
+}
+.calculation_accordian .accordion-body{
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column; gap: 0.5em;
+}
+.calculation_accordian .accordion-button{
+    padding: 2em;
+    background-color: transparent;
+}
+.calculation_accordian .accordion-header .accordion-button::before{
+    display: none;
 }
